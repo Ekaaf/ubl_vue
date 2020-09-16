@@ -1,0 +1,364 @@
+<template>
+    <div>
+        <!-- Modal -->
+	    <div class="modal fade register-modal" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content bg-default">
+	                <div class="modal-header">
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Registration for Free Dental Camp</h5>
+	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true">&times;</span>
+	                    </button>
+	                </div>
+	                <div class="modal-body">
+	                    <form>
+	                        <div class="form-group py-2">
+	                            <h5 class="w-100 float-left  bg-white color-default">
+	                                I am<select class="form-control w-50 float-right modal-select" id="exampleFormControlSelect1">
+	                                    <option class="">Select One</option>
+	                                    <option>Doctor</option>
+	                                    <option>Company</option>
+	                                    <option>School</option>
+	                                    <option>College</option>
+	                                    <option>University</option>
+	                                </select>
+	                            </h5>
+	                        </div>
+	                    </form>
+	                </div>
+	                <!--<div class="modal-footer">
+	                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	                    <button type="button" class="btn bg-white color-default">Submit</button>
+	                </div>-->
+	            </div>
+	        </div>
+	    </div>
+
+
+	    <!-- Modal  Edit Information-->
+	    <div class="modal fade edit-info-modal" id="exampleModalProfile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content bg-default">
+	                <div class="modal-header">
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Edit Information</h5>
+	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true">&times;</span>
+	                    </button>
+	                </div>
+	                <div class="modal-body">
+	                    <form>
+	                        <div class="row">
+	                            <div class="col-md-6 border-right2">
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="exampleFormControlInput12" placeholder="Name">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="exampleFormControlInput4" placeholder="Specialization">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="exampleFormControlInput6" placeholder="Chamber Name">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="exampleFormControlInput17" placeholder="Chamber Address (click to edit)">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="email" class="form-control color-default rounded-pill" id="exampleFormControlInput18" placeholder="Email">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="number" class="form-control color-default rounded-pill" id="exampleFormControlInput122" placeholder="Phone Number">
+	                                </div>
+	                            </div>
+	                            <div class="col-md-6">
+	                                <div class="text-center mb-2">
+	                                    <button type="button" class="btn btn-add-img">+ add image</button>
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="password" class="form-control color-default rounded-pill" id="exampleFormControlInput62" placeholder="Create Password">
+	                                </div>
+	                                <div class="form-group row-position-relative">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="exampleFormControlInput1744" placeholder="BMDC Certificate">
+	                                    <span class="bg-default color-white view-cert">View </span>
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="password" class="form-control color-default rounded-pill" id="exampleFormControlInput158" placeholder="Update Password">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="password" class="form-control color-default rounded-pill" id="exampleFormControlInput1262" placeholder="Re-enter Password">
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="row mt-3 small-inputs">
+	                            <div class="col-md-6">
+	                                <div class="text-left color-white">Select Your Working Days</div>
+	                                <div class="form-group row">
+	                                    <input type="text" class="col-md-2 color-default rounded-pill" id="exampleFormControlInput123" placeholder="Sat">
+	                                    <input type="text" class="col-md-2 color-default rounded-pill" id="exampleFormControlInput1266" placeholder="Mon">
+	                                    <input type="text" class="col-md-2 color-default rounded-pill" id="exampleFormControlInput125" placeholder="Tue">
+	                                    <input type="text" class="col-md-2 color-default rounded-pill" id="exampleFormControlInput126" placeholder="Wed">
+	                                    <input type="text" class="col-md-2 color-default rounded-pill" id="exampleFormControlInput127" placeholder="Thr">
+	                                    <input type="text" class="col-md-2 color-default rounded-pill" id="exampleFormControlInput129" placeholder="Fri">
+	                                </div>
+	                            </div>
+	                            <div class="col-md-6">
+	                                <div class="text-left color-white">Select Your Working Hours</div>
+	                                <div class="form-group row">
+	                                    <input type="text" class="col-md-3 color-default rounded-pill" id="exampleFormControlInput12345" placeholder="00:00">
+	                                    <input type="text" class="col-md-2 color-default rounded-pill" id="exampleFormControlInput124665" placeholder="AM">
+	                                    <div class="col-md-2 color-white text-center">To</div>
+	                                    <input type="text" class="col-md-3 color-default rounded-pill" id="exampleFormControlInput125335" placeholder="00:00">
+	                                    <input type="text" class="col-md-2 color-default rounded-pill" id="exampleFormControlInput1212456" placeholder="PM">
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="mt-2 text-center">
+	                            <button type="button" class="btn btn-sub-modal color-default  px-4 p-2">Submit & Register</button>
+	                        </div>
+	                    </form>
+	                </div>
+
+	            </div>
+	        </div>
+	    </div>
+
+
+	    <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true">&times;</span>
+	                    </button>
+	                </div>
+	                <div class="modal-body">
+	                    <form>
+	                        <div class="form-group">
+	                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+	                            <input type="text" class="form-control" id="recipient-name">
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="message-text" class="col-form-label">Message:</label>
+	                            <textarea class="form-control" id="message-text"></textarea>
+	                        </div>
+	                    </form>
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	                    <button type="button" class="btn btn-primary">Send message</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+
+	    <div class="modal fade edit-info-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true" style="z-index: 9999999">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content bg-default">
+	                <div class="modal-header">
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> <span>Have an account??</span></h5>
+	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true">&times;</span>
+	                    </button>
+	                </div>
+	                <div class="modal-body">
+	                    <form>
+	                        <div class="row">
+	                            <div class="col-md-6 border-right2">
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="login_email" name="login_email" placeholder="Email" v-model="login_email">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="password" class="form-control color-default rounded-pill" id="login_password" name="login_password" placeholder="Password" v-model="login_password">
+	                                </div>
+	                                <div class="form-check mb-2">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label" for="exampleCheck1" style="color: white;">
+											By agreeing terms and conditions and privacy and policy
+										</label>
+									</div>
+									<div class="form-group">
+	                                    <a href="" style="color: white;">Forgot password?</a>
+	                                </div>
+			                        <div class="row">
+			                        	<div class="col-6">
+			                        		<button type="button" class="btn btn-sub-modal color-default" @click="login();">Login</button>
+			                        	</div>
+			                        	<div class="col-6">
+			                        		
+			                        	</div>
+			                        </div>
+	                            </div>
+	                            <div class="col-md-6">
+	                            </div>
+	                        </div>
+	                        
+	                    </form>
+	                </div>
+
+	            </div>
+	        </div>
+	    </div>
+
+
+	    <div class="modal fade edit-info-modal" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true" style="z-index: 9999999">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content bg-default">
+	                <div class="modal-header">
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> <span>Have an account??</span></h5>
+	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true">&times;</span>
+	                    </button>
+	                </div>
+	                <div class="modal-body">
+	                    <form id="signUpForm">
+	                        <div class="row">
+	                            <div class="col-md-6 border-right2">
+	                            	<div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="name" name="name" placeholder="name" v-model="signup_name">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="email" name="email" placeholder="Email" v-model="signup_email">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="password" class="form-control color-default rounded-pill" id="password" name="password" placeholder="Password" v-model="signup_password">
+	                                </div>
+
+	                                <div class="form-group">
+	                                    <input type="password" class="form-control color-default rounded-pill" id="con_password" name="con_password" placeholder="Confirm Password" v-model="signup_con_password">
+	                                </div>
+
+	                                <div class="form-group">
+									    <label for="exampleFormControlSelect1">I am </label>
+									    <select class="form-control" id="role_id" name="role_id" v-model="signup_role_id">
+									      <option value="">Select</option>
+									      <option value="2">Doctor</option>
+									      <option value="3">Patient</option>
+									    </select>
+									</div>
+	                                <div class="form-check mb-2">
+										<input type="checkbox" class="form-check-input" id="agree" name="agree" value="1">
+										<label class="form-check-label" for="exampleCheck1" style="color: white;">
+											By agreeing terms and conditions and privacy and policy
+										</label>
+									</div>
+									<div class="form-group">
+	                                    <a href="" style="color: white;">Forgot password?</a>
+	                                </div>
+			                        <div class="row">
+			                        	<div class="col-6">
+			                        		<button type="button" class="btn btn-sub-modal color-default" @click="signUp();">Sign Up</button>
+			                        	</div>
+			                        	<div class="col-6">
+			                        		
+			                        	</div>
+			                        </div>
+	                            </div>
+	                            <div class="col-md-6">
+	                            </div>
+	                        </div>
+	                        
+	                    </form>
+	                </div>
+
+	            </div>
+	        </div>
+	    </div>
+
+    </div>
+</template>
+
+<script>
+	import Mixin  from "../mixin.js";
+    import { authHeader } from '../auth';
+    export default {
+        name: 'Modals',
+        data: function(){
+            return {
+            	signup_name : '',
+            	signup_email : '',
+            	signup_password : '',
+            	signup_con_password : '',
+            	signup_role_id : '',
+            	login_email : '',
+            	login_password : ''
+            }
+        },
+        mixins: [Mixin],
+        methods: {
+        	signUp(){
+        		var vm = this;
+        		if($("#name").val()==""){
+        			alert("Please insert name");
+        			return false;
+        		}
+        		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    			if(!emailReg.test($("#email").val())){
+        		// if($("#email").val()==""){
+        			alert("Please insert a valid email address");
+        			return false;
+
+        		}
+        		if($("#password").val()==""){
+        			alert("Please insert password");
+        			return false;
+        		}
+        		if($("#con_password").val()==""){
+        			alert("Please Confirm Password");
+        			return false;
+        		}
+        		if($("#password").val()!= $("#con_password").val()){
+        			alert("Password and confirm password do not match");
+        			return false;
+        		}
+        		if($("#role_id").val()==""){
+        			alert("Please Select Role");
+        			return false;
+        		}
+
+        		if(!$("#agree").is(':checked')){
+        			alert("Please agree to terms and conditions");
+        			return false;
+        		}
+        		axios({	
+        				url: "http://localhost/ubl_laravel/api/signUp",
+                        method: "post",
+                        // params: query,
+                        data: $('#signUpForm').serialize() ,
+                }).then(function (response) {
+                	alert(response.data.message);
+                    // vm.$router.push('/user/success') 
+                    
+                }).catch(function (error) {
+                    vm.error = error
+                });
+        	},
+
+        	login(){
+
+                var vm = this;
+                vm.error = '';
+                var request_data = {
+                    "email": vm.login_email,
+                    "password": vm.login_password,
+                };
+
+                axios({
+                        url: "http://localhost/ubl_laravel/api/postlogin",
+                        method: "post",
+                        data: request_data,
+                }).then(function (response) {
+                    console.log(response.data)
+                    vm.loggedin = true
+                    localStorage.setItem('accessToken',JSON.stringify(response.data))
+                    // vm.$router.push('/user/dashboard') 
+                }).catch(function (error) {
+                    vm.error = error
+                });
+            }
+        }
+    }
+</script>
+
+<style>
+  
+</style>
