@@ -455,8 +455,8 @@ input::placeholder {
     border-radius: 15px;
 }
 .register-modal .modal-body {
-    padding-top: 130px;
-    height: 320px;
+    /*padding-top: 130px;*/
+    /*height: 320px;*/
 }
 .register-modal .modal-select {
     background-color: #843d71 !important;

@@ -7,6 +7,8 @@ import Router from 'vue-router'
 *
 */
 import Home from '@/pages/Home'
+import AboutUs from '@/pages/AboutUs'
+import ContactUs from '@/pages/ContactUs'
 import Dashboard from '@/pages/Dashboard'
 import AddStore from '@/pages/AddStore'
 import Audit from '@/pages/Audit'
@@ -30,6 +32,18 @@ const router =  new Router({
             path: '/Home',
             name: 'Home',
             component: Home
+        },
+
+        {
+            path: '/AboutUs',
+            name: 'AboutUs',
+            component: AboutUs
+        },
+
+        {
+            path: '/ContactUs',
+            name: 'ContactUs',
+            component: ContactUs
         },
 
         {

@@ -13,10 +13,10 @@
                             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                 <div class="navbar-nav">
                                     <a class="nav-item nav-link active" href="index.html">Home</a>
-                                    <a class="nav-item nav-link" href="index.html#">About Us</a>
-                                    <a class="nav-item nav-link" href="appointments.html">Contact Us</a>
+                                    <router-link class="nav-item nav-link"  to="/AboutUs">About Us </router-link>
+                                    <router-link class="nav-item nav-link"  to="/ContactUs">Contact Us </router-link>
                                     <!-- Button trigger modal -->
-                                    <a href="javascript:" class="btn-register-free nav-item nav-link" data-toggle="modal" data-target="#exampleModalLong">
+                                    <a href="javascript:" class="btn-register-free nav-item nav-link" data-toggle="modal" data-target="#reg_dental_camp_modal">
                                         Registration for<br />
                                         <span>Free Dental Camp</span>
                                     </a>

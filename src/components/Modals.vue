@@ -1,29 +1,53 @@
 <template>
     <div>
         <!-- Modal -->
-	    <div class="modal fade register-modal" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	    <div class="modal fade register-modal" id="reg_dental_camp_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="z-index:999999999;">
 	        <div class="modal-dialog" role="document">
 	            <div class="modal-content bg-default">
 	                <div class="modal-header">
-	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Registration for Free Dental Camp</h5>
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Registration</h5>
 	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
 	                        <span aria-hidden="true">&times;</span>
 	                    </button>
 	                </div>
 	                <div class="modal-body">
-	                    <form>
-	                        <div class="form-group py-2">
-	                            <h5 class="w-100 float-left  bg-white color-default">
-	                                I am<select class="form-control w-50 float-right modal-select" id="exampleFormControlSelect1">
-	                                    <option class="">Select One</option>
-	                                    <option>Doctor</option>
-	                                    <option>Company</option>
-	                                    <option>School</option>
-	                                    <option>College</option>
-	                                    <option>University</option>
-	                                </select>
-	                            </h5>
+	                    <form id="reg_dental_camp_form">
+	                        
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="reg_name" id="reg_name" name="reg_name" placeholder="Name">
 	                        </div>
+	                        <div class="form-group mb-3">
+	                            <input type="email" class="form-control color-default rounded-pill" v-model="reg_email" id="reg_email" name="reg_email" placeholder="Email">
+	                        </div>
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="reg_phone" id="reg_phone" name="reg_phone" placeholder="Phone Number">
+	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <select class="form-control color-default rounded-pill" v-model="reg_type" id="reg_type" name="reg_type" @change="updatePlaceholder();">
+	                            	<option value="">Select</option>
+	                            	<option value="Doctor">Doctor</option>
+	                            	<option value="Company">Company</option>
+	                            	<option value="School">School</option>
+	                            	<option value="College">College</option>
+	                            	<option value="University">University</option>
+	                            </select>
+	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="reg_info" id="reg_info" name="reg_info" placeholder="Phone Number" style="display:none;">
+	                        </div>
+
+	                        <div class="form-check mb-2">
+								<input type="checkbox" class="form-check-input" id="reg_agree">
+								<label class="form-check-label" for="exampleCheck1" style="color: white;">
+									By agreeing terms and conditions and privacy and policy
+								</label>
+							</div>
+
+							<div class="form-group">
+								<button type="button" class="btn btn-sub-modal color-default" @click="regDentalCamp();">Submit & Register</button>
+							</div>
 	                    </form>
 	                </div>
 	                <!--<div class="modal-footer">
@@ -280,7 +304,12 @@
             	signup_con_password : '',
             	signup_role_id : '',
             	login_email : '',
-            	login_password : ''
+            	login_password : '',
+            	reg_name: '',
+            	reg_email: '',
+            	reg_phone: '',
+            	reg_type: '',
+            	reg_info: ''
             }
         },
         mixins: [Mixin],
@@ -292,7 +321,7 @@
         			return false;
         		}
         		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-    			if(!emailReg.test($("#email").val())){
+    			if(!emailReg.test($("#email").val()) || $("#email").val()==""){
         		// if($("#email").val()==""){
         			alert("Please insert a valid email address");
         			return false;
@@ -346,11 +375,86 @@
                         url: "http://localhost/ubl_laravel/api/postlogin",
                         method: "post",
                         data: request_data,
+                        
                 }).then(function (response) {
                     console.log(response.data)
                     vm.loggedin = true
-                    localStorage.setItem('accessToken',JSON.stringify(response.data))
+                    localStorage.setItem('accessToken',JSON.stringify(response.data));
+                    window.location.reload();
                     // vm.$router.push('/user/dashboard') 
+                }).catch(function (error) {
+                    vm.error = error
+                });
+            },
+
+            updatePlaceholder(){
+            	if($("#reg_type").val()=="Doctor"){
+            		$("#reg_info").attr("placeholder", "BMDC Number");
+            	}
+            	else if($("#reg_type").val()=="Company"){
+            		$("#reg_info").attr("placeholder", "Company Address");
+            	}
+            	else if($("#reg_type").val()=="School"){
+            		$("#reg_info").attr("placeholder", "School Address");
+            	}
+            	else if($("#reg_type").val()=="College"){
+            		$("#reg_info").attr("placeholder", "College Address");
+            	}
+            	else if($("#reg_type").val()=="University"){
+            		$("#reg_info").attr("placeholder", "University Address");
+            	}
+
+            	if($("#reg_type").val()==""){
+            		$("#reg_info").css("display", "none");
+            	}
+            	else if($("#reg_type").val()=="Doctor"){
+            		$("#reg_info").css("display", "block");
+            	}
+
+            },
+
+            regDentalCamp(){
+            	var vm = this;
+            	if(vm.reg_name==""){
+            		alert("Please insert name");
+            		return false;
+            	}
+            	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    			if(!emailReg.test(vm.reg_email) || vm.reg_email==""){
+        		// if($("#email").val()==""){
+        			alert("Please insert a valid email address");
+        			return false;
+
+        		}
+            	if(vm.reg_phone==""){
+            		alert("Please insert phone number");
+            		return false;
+            	}
+            	if(vm.reg_type==""){
+            		alert("Please Select type");
+            		return false;
+            	}
+            	if(vm.reg_info==""){
+            		alert("Please update field");
+            		return false;
+            	}
+            	if(!$("#reg_agree").is(':checked')){
+        			alert("Please agree to terms and conditions");
+        			return false;
+        		}
+            	axios({
+                        url: this.getApiUrl()+"regDentalCamp",
+                        method: "post",
+                        data: $('#reg_dental_camp_form').serialize() ,
+                }).then(function (response) {
+                    alert(response.data.message);
+                    vm.reg_name = "";
+                    vm.reg_email = "";
+                    vm.reg_phone = "";
+                    vm.reg_type = "";
+                    vm.reg_info = "";
+                    $('#reg_dental_camp_modal').modal('hide');
+                    
                 }).catch(function (error) {
                     vm.error = error
                 });

@@ -15,7 +15,7 @@ export default {
         getApiUrl(){
             // return 'https://'+document.domain+'/uniliver_laravel/api/auth/'
             // return 'http://'+"npab.net"+'/uniliver_laravel/api/auth/'
-            return 'http://localhost/uniliver_laravel/api/auth/'
+            return 'http://localhost/ubl_laravel/api/'
             // if(document.domain=='localhost'){
             //     return 'http://'+document.domain+'/uniliver_laravel/api/auth/'
             // }
