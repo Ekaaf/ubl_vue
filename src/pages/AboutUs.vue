@@ -1,8 +1,17 @@
 <template>
     <div>
-        About us page is under construction. Will be completed soon.
+        
+    <section class="slider">
+        <img class="w-100" src="/assets/img/aboutus.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-
 </template>
 
 <script>

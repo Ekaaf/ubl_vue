@@ -24,16 +24,18 @@
                                         <button class="btn btn-secondary dropdown-toggle bg-default" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctor</button>
                                         <div class="dropdown-menu m-0" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#doctor_edit">Edit Profile</a>
+                                            <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#change_pass">Change Password</a>
                                             <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#exampleModal-2" data-whatever="@mdo">Provide A Notice</a>
-                                            <a class="dropdown-item py-1 px-2" href="index.html#">Log Out</a>
+                                            <a class="dropdown-item py-1 px-2" @click="logout();">Log Out</a>
                                         </div>
                                     </li>
                                     <li class="dropdown" v-if="role_id==3">
                                         <button class="btn btn-secondary dropdown-toggle bg-default" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</button>
                                         <div class="dropdown-menu m-0" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#exampleModalProfile">Edit Profile</a>
+                                            <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#user_edit">Edit Profile</a>
+                                            <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#change_pass">Change Password</a>
                                             <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#exampleModal-2" data-whatever="@mdo">Provide A Notice</a>
-                                            <a class="dropdown-item py-1 px-2" href="index.html#">Log Out</a>
+                                            <a class="dropdown-item py-1 px-2" @click="logout();">Log Out</a>
                                         </div>
                                     </li>
                                     <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#loginModal" v-if="!loggedin">Login</a>
@@ -75,19 +77,21 @@
           // console.log(this.image)
         },
         methods: {
-          // logout(){
-          //   var vm = this;
-          //   axios({ 
-          //           headers: authHeader(),
-          //           url: this.getApiUrl()+"logout",
-          //           method: "post"
-          //   }).then(function (response) {
-          //       localStorage.clear()
-          //       vm.$router.push('/') 
-          //   }).catch(function (error) {
-          //       vm.$router.push('/') 
-          //   });
-          // }
+          logout(){
+            var vm = this;
+            localStorage.clear()
+            window.location.reload();
+            // axios({ 
+            //         headers: authHeader(),
+            //         url: this.getApiUrl()+"logout",
+            //         method: "post"
+            // }).then(function (response) {
+            //     localStorage.clear()
+            //     vm.$router.push('/') 
+            // }).catch(function (error) {
+            //     vm.$router.push('/') 
+            // });
+          }
         }
     }
 </script>

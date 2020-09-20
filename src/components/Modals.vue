@@ -71,7 +71,7 @@
 	                </div>
 	                <div class="modal-body">
 	                    <form id="doctor_edit_form">
-	                        
+	                        <input type="hidden" id="doctor_id" name="doctor_id">
 	                        <div class="form-group mb-3">
 	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_name" id="doctor_name" name="doctor_name" placeholder="Name">
 	                        </div>
@@ -90,7 +90,7 @@
 	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_email" id="doctor_email" name="doctor_email" placeholder="Doctor Email" >
 	                        </div>
 
-							<div class="form-group">
+							<div class="form-group text-center">
 								<button type="button" class="btn btn-sub-modal color-default" @click="updateDoctor();">Update</button>
 							</div>
 	                    </form>
@@ -102,6 +102,81 @@
 	            </div>
 	        </div>
 	    </div>
+
+
+	    <div class="modal fade register-modal" id="user_edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="z-index:999999999;">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content bg-default">
+	                <div class="modal-header">
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Edit Information</h5>
+	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true">&times;</span>
+	                    </button>
+	                </div>
+	                <div class="modal-body">
+	                    <form id="user_edit_form">
+	                        <input type="hidden" id="user_id" name="user_id">
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="user_name" id="user_name" name="user_name" placeholder="Name">
+	                        </div>
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="user_phone" id="user_phone" name="user_phone" placeholder="Phone" >
+	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="user_email" id="user_email" name="user_email" placeholder="Email" >
+	                        </div>
+
+							<div class="form-group text-center">
+								<button type="button" class="btn btn-sub-modal color-default" @click="updateUser();">Update</button>
+							</div>
+	                    </form>
+	                </div>
+	                <!--<div class="modal-footer">
+	                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	                    <button type="button" class="btn bg-white color-default">Submit</button>
+	                </div>-->
+	            </div>
+	        </div>
+	    </div>
+
+
+	    <div class="modal fade register-modal" id="change_pass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="z-index:999999999;">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content bg-default">
+	                <div class="modal-header">
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Edit Information</h5>
+	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true">&times;</span>
+	                    </button>
+	                </div>
+	                <div class="modal-body">
+	                    <form id="change_pass_form">
+	                        <input type="hidden" id="pass_id" name="pass_id">
+	                        <div class="form-group mb-3">
+	                            <input type="password" class="form-control color-default rounded-pill" v-model="current_pass" id="current_pass" name="current_pass" placeholder="Current Password">
+	                        </div>
+	                        <div class="form-group mb-3">
+	                            <input type="password" class="form-control color-default rounded-pill" v-model="new_pass" id="new_pass" name="new_pass" placeholder="New Password" >
+	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <input type="password" class="form-control color-default rounded-pill" v-model="con_new_pass" id="con_new_pass" name="con_new_pass" placeholder="Confirm New Password" >
+	                        </div>
+
+							<div class="form-group text-center">
+								<button type="button" class="btn btn-sub-modal color-default" @click="updatePassword();">Update</button>
+							</div>
+	                    </form>
+	                </div>
+	                <!--<div class="modal-footer">
+	                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	                    <button type="button" class="btn bg-white color-default">Submit</button>
+	                </div>-->
+	            </div>
+	        </div>
+	    </div>
+
 	    <!-- Modal  Edit Information-->
 	    <div class="modal fade edit-info-modal" id="exampleModalProfile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 	        <div class="modal-dialog" role="document">
@@ -238,7 +313,7 @@
 	                                    <input type="password" class="form-control color-default rounded-pill" id="login_password" name="login_password" placeholder="Password" v-model="login_password">
 	                                </div>
 	                                <div class="form-check mb-2">
-										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<input type="checkbox" class="form-check-input" id="login_agree">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
 											By agreeing terms and conditions and privacy and policy
 										</label>
@@ -285,6 +360,9 @@
 	                                </div>
 	                                <div class="form-group">
 	                                    <input type="text" class="form-control color-default rounded-pill" id="email" name="email" placeholder="Email" v-model="signup_email">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="number" class="form-control color-default rounded-pill" id="phone_number" name="phone_number" placeholder="Phone Number" v-model="signup_phone">
 	                                </div>
 	                                <div class="form-group">
 	                                    <input type="password" class="form-control color-default rounded-pill" id="password" name="password" placeholder="Password" v-model="signup_password">
@@ -343,6 +421,7 @@
             return {
             	signup_name : '',
             	signup_email : '',
+            	signup_phone: '',
             	signup_password : '',
             	signup_con_password : '',
             	signup_role_id : '',
@@ -358,13 +437,35 @@
             	doctor_chamber_address: '',
             	doctor_email: '',
             	doctor_phone: '',
-            	user: {
-            		id : 1
-            	},
+            	loggedinUserId: '',
+            	user_name: '',
+            	user_email: '',
+            	user_phone: '',
+            	current_pass: '',
+            	new_pass: '',
+            	con_new_pass: ''
+            	// user: {
+            	// 	id : 1
+            	// },
 
             }
         },
         mixins: [Mixin],
+        mounted(){
+        	var vm = this;
+        	var accessToken = JSON.parse(this.getAccesstoken());
+        	if(accessToken){
+        		vm.loggedinUserId = accessToken.user.id
+	        }
+	        $('#doctor_edit').on('shown.bs.modal', function () {
+	  			vm.getDoctorInfo(vm.loggedinUserId);
+			})
+
+			$('#user_edit').on('shown.bs.modal', function () {
+	  			vm.getUserInfo(vm.loggedinUserId);
+			})
+    		
+        },
         methods: {
         	signUp(){
         		var vm = this;
@@ -378,6 +479,10 @@
         			alert("Please insert a valid email address");
         			return false;
 
+        		}
+        		if($("#phone_number").val()==""){
+        			alert("Please insert phone number");
+        			return false;
         		}
         		if($("#password").val()==""){
         			alert("Please insert password");
@@ -401,12 +506,20 @@
         			return false;
         		}
         		axios({	
-        				url: "http://localhost/ubl_laravel/api/signUp",
+        				url: this.getApiUrl()+"signUp",
                         method: "post",
                         // params: query,
                         data: $('#signUpForm').serialize() ,
                 }).then(function (response) {
                 	alert(response.data.message);
+                	$('#signupModal').modal('hide');
+                	$("#name").val("");
+                	$("#email").val("");
+                	$("#phone_number").val("");
+                	$("#password").val("");
+                	$("#con_password").val("");
+                	$("#role_id").val("");
+                	$("#agree").val("");
                     // vm.$router.push('/user/success') 
                     
                 }).catch(function (error) {
@@ -422,9 +535,20 @@
                     "email": vm.login_email,
                     "password": vm.login_password,
                 };
-
+                if(vm.login_email==""){
+                	alert("Please insert email");
+                	return false;
+                }
+                if(vm.login_password == ""){
+                	alert("Please insert password");
+                	return false;
+                }
+                if(!$("#login_agree").is(':checked')){
+        			alert("Please agree to terms and conditions");
+        			return false;
+        		}
                 axios({
-                        url: "http://localhost/ubl_laravel/api/postlogin",
+                        url: this.getApiUrl()+"postlogin",
                         method: "post",
                         data: request_data,
                         
@@ -512,22 +636,106 @@
                 });
             },
 
+            getDoctorInfo(id){
+            	var vm = this;
+            	axios({
+                        headers: authHeader(),
+                        url: this.getApiUrl()+"getDoctorInfo",
+                        method: "GET",
+                        params: {
+                        	id : id
+                        },
+                        // data: form_data,
+                }).then(function (response) {
+                	vm.doctor_name= response.data[0].name;
+                	vm.doctor_chamber_name= response.data[0].chamber_name;
+                	vm.doctor_chamber_address= response.data[0].chamber_address;
+                	vm.doctor_email= response.data[0].email;
+                	vm.doctor_phone= response.data[0].phone_number;
+                	$("#doctor_id").val(response.data[0].id)
+                    
+                }).catch(function (error) {
+                    vm.error = error
+                });
+            },
+
+            getUserInfo(id){
+            	var vm = this;
+            	axios({
+                        headers: authHeader(),
+                        url: this.getApiUrl()+"getUserInfo",
+                        method: "GET",
+                        params: {
+                        	id : id
+                        },
+                        // data: form_data,
+                }).then(function (response) {
+                	vm.user_name= response.data[0].name;
+                	vm.user_email= response.data[0].email;
+                	vm.user_phone= response.data[0].phone_number;
+                	$("#user_id").val(response.data[0].id)
+                    
+                }).catch(function (error) {
+                    vm.error = error
+                });
+            },
+
             updateDoctor(){
             	var vm = this;
-            	// var accessToken = JSON.parse(this.getAccesstoken());
-            	// vm.user = accessToken.user
-            	console.log(vm.user)
-            	// axios({
-             //            headers: authHeader(),
-             //            url: this.getApiUrl()+"updateDoctor",
-             //            method: "post",
-             //            data: $('#doctor_edit_form').serialize() ,
-             //    }).then(function (response) {
-             //        alert(response.data.message);
+            	axios({
+                        headers: authHeader(),
+                        url: this.getApiUrl()+"updateDoctor",
+                        method: "post",
+                        data: $('#doctor_edit_form').serialize() ,
+                }).then(function (response) {
+                	$('#doctor_edit').modal('hide');
+                    alert(response.data.message);
                     
-             //    }).catch(function (error) {
-             //        vm.error = error
-             //    });
+                }).catch(function (error) {
+                    vm.error = error
+                });
+            },
+
+            updateUser(){
+            	var vm = this;
+            	axios({
+                        headers: authHeader(),
+                        url: this.getApiUrl()+"updateUser",
+                        method: "post",
+                        data: $('#user_edit_form').serialize() ,
+                }).then(function (response) {
+                	$('#user_edit').modal('hide');
+                    alert(response.data.message);
+                    
+                }).catch(function (error) {
+                    vm.error = error
+                });
+            },
+
+            updatePassword(){
+            	var vm = this;
+            	$("#pass_id").val(vm.loggedinUserId);
+            	if(vm.new_pass != vm.con_new_pass){
+            		alert("New password do not match");
+            		return false;
+            	}
+            	axios({
+                        headers: authHeader(),
+                        url: this.getApiUrl()+"updatePassword",
+                        method: "post",
+                        data: $('#change_pass_form').serialize() ,
+                }).then(function (response) {
+                	if(response.data.success){
+                		$('#change_pass').modal('hide');
+	                	vm.current_pass = "";
+	                	vm.new_pass = "";
+	                	vm.con_new_pass = "";
+                	}
+                	alert(response.data.message);
+                    
+                }).catch(function (error) {
+                    vm.error = error
+                });
             }
         }
     }
