@@ -3,7 +3,7 @@ export default {
     data() {
         return {
             currentPosition : '',
-            loggedin :false
+            // loggedin :false
         }
     },
     methods: {

@@ -20,16 +20,24 @@
                                         Registration for<br />
                                         <span>Free Dental Camp</span>
                                     </a>
-                                    <li class="dropdown" v-if="loggedin">
+                                    <li class="dropdown" v-if="role_id==2">
                                         <button class="btn btn-secondary dropdown-toggle bg-default" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctor</button>
+                                        <div class="dropdown-menu m-0" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#doctor_edit">Edit Profile</a>
+                                            <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#exampleModal-2" data-whatever="@mdo">Provide A Notice</a>
+                                            <a class="dropdown-item py-1 px-2" href="index.html#">Log Out</a>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown" v-if="role_id==3">
+                                        <button class="btn btn-secondary dropdown-toggle bg-default" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</button>
                                         <div class="dropdown-menu m-0" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#exampleModalProfile">Edit Profile</a>
                                             <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#exampleModal-2" data-whatever="@mdo">Provide A Notice</a>
                                             <a class="dropdown-item py-1 px-2" href="index.html#">Log Out</a>
                                         </div>
                                     </li>
-                                    <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#loginModal">Login</a>
-                                    <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#signupModal">SignUp</a>
+                                    <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#loginModal" v-if="!loggedin">Login</a>
+                                    <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#signupModal" v-if="!loggedin">SignUp</a>
                                 </div>
                             </div>
                         </nav>
@@ -51,30 +59,18 @@
         data: function() {
             return {
                 user:[],
-                image:'' 
+                image:'',
+                loggedin: "",
+                role_id: ""
             }
         },
         created(){
-          // var accessToken = JSON.parse(this.getAccesstoken())
-          // if(accessToken){
-          //   this.user = accessToken.user
-          //   if(this.user.type==1){
-          //     this.user.type="Admin"
-          //   }
-          //   else if(this.user.type==2){
-          //     this.user.type="BDO"
-          //   }
-          //   else{
-          //     this.user.type="BDS"
-          //   }
-          //   if(this.user.image){
-          //     this.image = 'http://'+document.domain+'/admin/'+this.user.image;
-          //     this.image = 'http://npab.net/admin/'+this.user.image;
-          //   }
-          //   else{
-          //     this.image = "/assets/images/user.png"
-          //   }
-          // }
+          var accessToken = JSON.parse(this.getAccesstoken())
+          if(accessToken){
+            this.user = accessToken.user;
+            this.role_id = this.user.role_id;
+            this.loggedin = true;
+          }
           
           // console.log(this.image)
         },

@@ -59,6 +59,49 @@
 	    </div>
 
 
+
+	    <div class="modal fade register-modal" id="doctor_edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="z-index:999999999;">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content bg-default">
+	                <div class="modal-header">
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Edit Information</h5>
+	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true">&times;</span>
+	                    </button>
+	                </div>
+	                <div class="modal-body">
+	                    <form id="doctor_edit_form">
+	                        
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_name" id="doctor_name" name="doctor_name" placeholder="Name">
+	                        </div>
+	                        <div class="form-group mb-3">
+	                            <input type="email" class="form-control color-default rounded-pill" v-model="doctor_chamber_name" id="doctor_chamber_name" name="doctor_chamber_name" placeholder="Chamber Name">
+	                        </div>
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_chamber_address" id="doctor_chamber_address" name="doctor_chamber_address" placeholder="Doctor Chamber Address">
+	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_phone" id="doctor_phone" name="doctor_phone" placeholder="Doctor Phone" >
+	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_email" id="doctor_email" name="doctor_email" placeholder="Doctor Email" >
+	                        </div>
+
+							<div class="form-group">
+								<button type="button" class="btn btn-sub-modal color-default" @click="updateDoctor();">Update</button>
+							</div>
+	                    </form>
+	                </div>
+	                <!--<div class="modal-footer">
+	                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	                    <button type="button" class="btn bg-white color-default">Submit</button>
+	                </div>-->
+	            </div>
+	        </div>
+	    </div>
 	    <!-- Modal  Edit Information-->
 	    <div class="modal fade edit-info-modal" id="exampleModalProfile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 	        <div class="modal-dialog" role="document">
@@ -309,7 +352,16 @@
             	reg_email: '',
             	reg_phone: '',
             	reg_type: '',
-            	reg_info: ''
+            	reg_info: '',
+            	doctor_name:'',
+            	doctor_chamber_name: '',
+            	doctor_chamber_address: '',
+            	doctor_email: '',
+            	doctor_phone: '',
+            	user: {
+            		id : 1
+            	},
+
             }
         },
         mixins: [Mixin],
@@ -458,6 +510,24 @@
                 }).catch(function (error) {
                     vm.error = error
                 });
+            },
+
+            updateDoctor(){
+            	var vm = this;
+            	// var accessToken = JSON.parse(this.getAccesstoken());
+            	// vm.user = accessToken.user
+            	console.log(vm.user)
+            	// axios({
+             //            headers: authHeader(),
+             //            url: this.getApiUrl()+"updateDoctor",
+             //            method: "post",
+             //            data: $('#doctor_edit_form').serialize() ,
+             //    }).then(function (response) {
+             //        alert(response.data.message);
+                    
+             //    }).catch(function (error) {
+             //        vm.error = error
+             //    });
             }
         }
     }
