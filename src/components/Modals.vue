@@ -75,6 +75,27 @@
 	                        <div class="form-group mb-3">
 	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_name" id="doctor_name" name="doctor_name" placeholder="Name">
 	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_email" id="doctor_email" name="doctor_email" placeholder="Doctor Email" >
+	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_designation" id="doctor_designation" name="doctor_designation" placeholder="Doctor Designation" >
+	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_institution" id="doctor_institution" name="doctor_institution" placeholder="Doctor Intitution" >
+	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="bmdc_number" id="bmdc_number" name="bmdc_number" placeholder="BMDC Number" >
+	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" v-model="specialization" id="specialization" name="specialization" placeholder="Specialization" >
+	                        </div>
+
 	                        <div class="form-group mb-3">
 	                            <input type="email" class="form-control color-default rounded-pill" v-model="doctor_chamber_name" id="doctor_chamber_name" name="doctor_chamber_name" placeholder="Chamber Name">
 	                        </div>
@@ -86,9 +107,7 @@
 	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_phone" id="doctor_phone" name="doctor_phone" placeholder="Doctor Phone" >
 	                        </div>
 
-	                        <div class="form-group mb-3">
-	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_email" id="doctor_email" name="doctor_email" placeholder="Doctor Email" >
-	                        </div>
+	                        
 
 							<div class="form-group text-center">
 								<button type="button" class="btn btn-sub-modal color-default" @click="updateDoctor();">Update</button>
@@ -433,9 +452,14 @@
             	reg_type: '',
             	reg_info: '',
             	doctor_name:'',
+            	doctor_email: '',
+            	doctor_designation: '',
+            	doctor_institution: '',
+            	bmdc_number: '',
+            	specialization: '',	
             	doctor_chamber_name: '',
             	doctor_chamber_address: '',
-            	doctor_email: '',
+            	
             	doctor_phone: '',
             	loggedinUserId: '',
             	user_name: '',
@@ -648,9 +672,17 @@
                         // data: form_data,
                 }).then(function (response) {
                 	vm.doctor_name= response.data[0].name;
+                	vm.doctor_email= response.data[0].email;
+
+                	vm.doctor_designation= response.data[0].designation;
+                	vm.doctor_institution= response.data[0].organization;
+                	vm.bmdc_number= response.data[0].bmdc_number;
+                	vm.specialization= response.data[0].Specialization;
+                	// vm.doctor_email= response.data[0].email;
+                	
                 	vm.doctor_chamber_name= response.data[0].chamber_name;
                 	vm.doctor_chamber_address= response.data[0].chamber_address;
-                	vm.doctor_email= response.data[0].email;
+                	
                 	vm.doctor_phone= response.data[0].phone_number;
                 	$("#doctor_id").val(response.data[0].id)
                     

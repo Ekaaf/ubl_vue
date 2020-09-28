@@ -6,25 +6,21 @@
                     <div class="col-md-12 main-menu">
                         <!---Main-Menu Code---Starts--->
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand" href="#"><img class="w-40" src="/assets/img/logo.png"></a>
+                            <a class="navbar-brand" href="#"><img class="w-50" src="/assets/img/logo.png"></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                 <div class="navbar-nav">
-                                    <router-link class="nav-item nav-link active"  to="/Home">Home</router-link>
+                                    <a class="nav-item nav-link active" href="index.html">Home</a>
                                     <router-link class="nav-item nav-link"  to="/AboutUs">About Us </router-link>
                                     <router-link class="nav-item nav-link"  to="/ContactUs">Contact Us </router-link>
+                                    <!-- Button trigger modal -->
                                     <a href="javascript:" class="btn-register-free nav-item nav-link" data-toggle="modal" data-target="#reg_dental_camp_modal">
                                         Registration for<br />
                                         <span>Free Dental Camp</span>
                                     </a>
-                                    <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#loginModal" v-if="!loggedin">Login</a>
-                                    <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#signupModal" v-if="!loggedin">SignUp</a>
-                                    <!-- Button trigger modal -->
-                                    
-
-                                    <li class="dropdown doctorbutton" v-if="role_id==2">
+                                    <li class="dropdown" v-if="role_id==2">
                                         <button class="btn btn-secondary dropdown-toggle bg-default" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctor</button>
                                         <div class="dropdown-menu m-0" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#doctor_edit">Edit Profile</a>
@@ -33,9 +29,7 @@
                                             <a class="dropdown-item py-1 px-2" @click="logout();">Log Out</a>
                                         </div>
                                     </li>
-
-
-                                    <li class="dropdown doctorbutton" v-if="role_id==3">
+                                    <li class="dropdown" v-if="role_id==3">
                                         <button class="btn btn-secondary dropdown-toggle bg-default" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</button>
                                         <div class="dropdown-menu m-0" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#user_edit">Edit Profile</a>
@@ -44,6 +38,8 @@
                                             <a class="dropdown-item py-1 px-2" @click="logout();">Log Out</a>
                                         </div>
                                     </li>
+                                    <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#loginModal" v-if="!loggedin">Login</a>
+                                    <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#signupModal" v-if="!loggedin">SignUp</a>
                                 </div>
                             </div>
                         </nav>
