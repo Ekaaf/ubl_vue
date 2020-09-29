@@ -12,74 +12,28 @@
             </div>
         </section>
         <!---slider-img-end-->
-        <section class="find-dentist">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 select-var-font h2">
-                        <h2><u>Select Your Variables</u></h2>
-                        <div class="col-sm-12 ">
-                            <form class="select-var-form ">
-                                <div class="form-group py-2">
-                                    <select class="form-control color-default rounded-pill" id="exampleFormControlSelect1">
-                                        <option>Location</option>
-
-                                    </select>
-                                </div>
-
-                                <div class="form-group py-2">
-                                    <select class="form-control color-default rounded-pill" id="exampleFormControlSelect1">
-                                        <option>Doctor Name</option>
-
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control color-default rounded-pill" id="exampleFormControlInput1" placeholder="Chamber Name">
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control color-default rounded-pill" id="exampleFormControlInput1" placeholder="Department">
-                                </div>
-                                <div class="form-group py-2">
-                                    <input type="number" class="form-control color-default rounded-pill" id="exampleFormControlInput1" placeholder="Phone Number">
-                                </div>
-                                <div class="form-group py-2">
-                                    <button type="button" class="btn btn-find-now">Find Now</button>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                    <div class="col-md-7 select-var-font find-dentist-text">
-                        <h2><u>Find Your Dentist</u></h2>
-                        <p class="color-yellow">
-                            One of the world's leading hospitals providing safe &<br /> compassionate care at its best for everyone
-                        </p>
-                        <p class="color-yellow">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit consectetur dolor ullam illo ipsa numquam, quod iusto enim ipsum amet iusto amet consec.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit consectetur dolor ullam illo ipsa numquam, quod iusto enim ipsum amet iusto amet consec.
-                        </p>
-                        <div>
-                            <button type="button" class="btn btn-readmore rounded px-4 p-2">Read More</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <FindDentist></FindDentist>
     </div>
 
 </template>
 
 <script>
     import Mixin  from "../mixin.js";
+    import FindDentist  from "../components/FindDentist.vue";
     export default {
         name: 'Home',
         data: function(){
             return {
             	name : '',
                 password : '',
-                error : ''
+                error : '',
+                currentUrl : "Home"
             }
         },
         mixins: [Mixin],
+        components:{
+            FindDentist
+        },
         methods: {
 
             login(){
@@ -105,7 +59,9 @@
             },
 
         },
-        mounted(){var vm = this;
+        
+        mounted(){
+            var vm = this;
             $(document).on('keypress',function(e) {
 
                 if(e.which == 13) {

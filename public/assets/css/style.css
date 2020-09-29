@@ -355,7 +355,7 @@ input::placeholder {
 	margin-top: 0px !important;
 }
 .find-dentist-text {
-	margin-top: 60px;
+	margin-top: 10px;
 }
 .show-dentist-text {
 	margin-top: 20px;
@@ -407,7 +407,7 @@ input::placeholder {
 }
 .navbar-brand {
     text-align: left;
-    width: 420px;
+    width: 300px;
 }
 
 .main-menu .navbar-nav a {
@@ -585,16 +585,17 @@ input::placeholder {
 }
 @media (min-width: 992px){
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1em;
-    padding-left: 1em;
-    padding-top: 4px;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 #dropdownMenuButton {
 	position: absolute;
-    height: 70px;
-    width: 70px;
+    height: 51px;
+    width: 55px;
     border-radius: 50%;
-	padding: 1px;
+	padding: 2px;
 	box-shadow: none;
 
 }

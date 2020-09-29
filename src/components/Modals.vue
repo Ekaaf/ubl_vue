@@ -70,7 +70,7 @@
 	                    </button>
 	                </div>
 	                <div class="modal-body">
-	                    <form id="doctor_edit_form">
+	                    <form id="doctor_edit_form" enctype="multipart/form-data">
 	                        <input type="hidden" id="doctor_id" name="doctor_id">
 	                        <div class="form-group mb-3">
 	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_name" id="doctor_name" name="doctor_name" placeholder="Name">
@@ -105,6 +105,10 @@
 
 	                        <div class="form-group mb-3">
 	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_phone" id="doctor_phone" name="doctor_phone" placeholder="Doctor Phone" >
+	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <input type="file" class="form-control color-default rounded-pill" id="file" name="file" >
 	                        </div>
 
 	                        
@@ -677,14 +681,14 @@
                 	vm.doctor_designation= response.data[0].designation;
                 	vm.doctor_institution= response.data[0].organization;
                 	vm.bmdc_number= response.data[0].bmdc_number;
-                	vm.specialization= response.data[0].Specialization;
+                	vm.specialization= response.data[0].specialization;
                 	// vm.doctor_email= response.data[0].email;
                 	
                 	vm.doctor_chamber_name= response.data[0].chamber_name;
                 	vm.doctor_chamber_address= response.data[0].chamber_address;
                 	
                 	vm.doctor_phone= response.data[0].phone_number;
-                	$("#doctor_id").val(response.data[0].id)
+                	$("#doctor_id").val(response.data[0].user_id)
                     
                 }).catch(function (error) {
                     vm.error = error
@@ -712,13 +716,29 @@
                 });
             },
 
+
             updateDoctor(){
             	var vm = this;
+            	var formData = new FormData();
+            	// console.log($('#doctor_edit_form').serialize());
+            	formData.append('doctor_id',$("#doctor_id").val());
+            	formData.append('doctor_name',vm.doctor_name);
+            	formData.append('doctor_email', vm.doctor_email);
+            	formData.append('doctor_designation', vm.doctor_designation);
+            	formData.append('doctor_institution', vm.doctor_institution);
+            	formData.append('bmdc_number', vm.bmdc_number);
+            	formData.append('specialization', vm.specialization);
+            	formData.append('doctor_chamber_name', vm.doctor_chamber_name);
+            	formData.append('doctor_chamber_address', vm.doctor_chamber_address);
+            	formData.append('doctor_phone', vm.doctor_phone);
+            	// formData.append('designation', 'designation');
+            	// formData.append('designation', 'designation');
+				formData.append('image', $('input[type=file]')[0].files[0]); 
             	axios({
                         headers: authHeader(),
                         url: this.getApiUrl()+"updateDoctor",
                         method: "post",
-                        data: $('#doctor_edit_form').serialize() ,
+                        data: formData ,
                 }).then(function (response) {
                 	$('#doctor_edit').modal('hide');
                     alert(response.data.message);

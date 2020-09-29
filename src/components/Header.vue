@@ -6,15 +6,15 @@
                     <div class="col-md-12 main-menu">
                         <!---Main-Menu Code---Starts--->
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand" href="#"><img class="w-40" src="/assets/img/logo.png"></a>
+                            <a class="navbar-brand" href="#"><img class="w-50" src="/assets/img/logo.png"></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                 <div class="navbar-nav">
-                                    <router-link class="nav-item nav-link active"  to="/Home">Home</router-link>
-                                    <router-link class="nav-item nav-link"  to="/AboutUs">About Us </router-link>
-                                    <router-link class="nav-item nav-link"  to="/ContactUs">Contact Us </router-link>
+                                    <router-link class="nav-item nav-link" v-bind:class = "(currentUrl=='Home')?'active':''"  to="/Home">Home</router-link>
+                                    <router-link class="nav-item nav-link" v-bind:class = "(currentUrl=='AboutUs')?'active':''"  to="/AboutUs">About Us </router-link>
+                                    <router-link class="nav-item nav-link" v-bind:class = "(currentUrl=='ContactUs')?'active':''"  to="/ContactUs">Contact Us </router-link>
                                     <a href="javascript:" class="btn-register-free nav-item nav-link" data-toggle="modal" data-target="#reg_dental_camp_modal">
                                         Registration for<br />
                                         <span>Free Dental Camp</span>
@@ -67,11 +67,13 @@
                 user:[],
                 image:'',
                 loggedin: "",
-                role_id: ""
+                role_id: "",
+                currentUrl : "Home"
             }
         },
         created(){
           var accessToken = JSON.parse(this.getAccesstoken())
+          this.currentUrl = this.$router.currentRoute.name;
           if(accessToken){
             this.user = accessToken.user;
             this.role_id = this.user.role_id;
@@ -96,7 +98,13 @@
             //     vm.$router.push('/') 
             // });
           }
-        }
+        },
+        watch:{
+            $route (to, from){
+                var vm = this;
+                vm.currentUrl = this.$router.currentRoute.name;
+            }
+        } 
     }
 </script>
 

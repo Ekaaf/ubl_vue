@@ -9,6 +9,8 @@ import Router from 'vue-router'
 import Home from '@/pages/Home'
 import AboutUs from '@/pages/AboutUs'
 import ContactUs from '@/pages/ContactUs'
+import DoctorDetails from '@/pages/Doctor-details'
+
 import Dashboard from '@/pages/Dashboard'
 import AddStore from '@/pages/AddStore'
 import Audit from '@/pages/Audit'
@@ -44,6 +46,12 @@ const router =  new Router({
             path: '/ContactUs',
             name: 'ContactUs',
             component: ContactUs
+        },
+
+        {
+            path: '/Doctor/:id',
+            name: 'DoctorDetails',
+            component: DoctorDetails
         },
 
         {

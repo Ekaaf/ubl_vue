@@ -9,7 +9,7 @@
         <!-- Menu header end -->
         <router-view></router-view>  
         <!--Contact Us--Start--->
-        <ContactUs></ContactUs>
+        <ContactUs v-if="this.$router.currentRoute.name!= 'AboutUs' && this.$router.currentRoute.name!= 'ContactUs'"></ContactUs>
         <!--Contact US--End--->
         
         <!---accounting--start-->
@@ -24,7 +24,7 @@
         <Modals></Modals>
         <!-- all modals end -->
         
-        <img src="/assets/img/loading.gif" class="img-waiting">
+        <!-- <img src="/assets/img/loading.gif" class="img-waiting"> -->
     </div>
 </template>
 
