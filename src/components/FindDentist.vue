@@ -40,10 +40,10 @@
                     <div class="col-md-8 select-var-font find-dentist-text" v-if="doctors.length==0">
                         <h2><u>Find Your Dentist</u></h2>
                         <p class="color-yellow">
-                            One of the world's leading hospitals providing safe &<br /> compassionate care at its best for everyone
+                            Find the nearest BMDC registered Dentist by filtering your location. 
                         </p>
                         <p class="color-yellow">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit consectetur dolor ullam illo ipsa numquam, quod iusto enim ipsum amet iusto amet consec.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi molestiae autem fugit consectetur dolor ullam illo ipsa numquam, quod iusto enim ipsum amet iusto amet consec.
+                            Visitors can be assured to find Dental professionals who are not only authorized by the Bangladesh Medical & Dental Council (BMDC) but also who provide a high quality of care for their patients and believe in Sensitive Expert’s mission in defeating threats against Oral Health.
                         </p>
                         <div>
                             <!-- <button type="button" class="btn btn-readmore rounded px-4 p-2">Read More</button> -->

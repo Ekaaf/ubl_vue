@@ -11,7 +11,7 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div class="navbar-nav">
+                                <div class="navbar-nav" v-bind:style="{ marginRight: marginRight + 'px' }">
                                     <router-link class="nav-item nav-link" v-bind:class = "(currentUrl=='Home')?'active':''"  to="/Home">Home</router-link>
                                     <router-link class="nav-item nav-link" v-bind:class = "(currentUrl=='AboutUs')?'active':''"  to="/AboutUs">About Us </router-link>
                                     <router-link class="nav-item nav-link" v-bind:class = "(currentUrl=='ContactUs')?'active':''"  to="/ContactUs">Contact Us </router-link>
@@ -68,7 +68,8 @@
                 image:'',
                 loggedin: "",
                 role_id: "",
-                currentUrl : "Home"
+                currentUrl : "Home",
+                marginRight : 0,
             }
         },
         created(){
@@ -78,6 +79,7 @@
             this.user = accessToken.user;
             this.role_id = this.user.role_id;
             this.loggedin = true;
+            this.marginRight = 75;
           }
           
           // console.log(this.image)

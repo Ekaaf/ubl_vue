@@ -7,7 +7,7 @@
 	                <div class="modal-header">
 	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Registration</h5>
 	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
-	                        <span aria-hidden="true">&times;</span>
+	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
 	                    </button>
 	                </div>
 	                <div class="modal-body">
@@ -66,7 +66,7 @@
 	                <div class="modal-header">
 	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Edit Information</h5>
 	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
-	                        <span aria-hidden="true">&times;</span>
+	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
 	                    </button>
 	                </div>
 	                <div class="modal-body">
@@ -133,7 +133,7 @@
 	                <div class="modal-header">
 	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Edit Information</h5>
 	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
-	                        <span aria-hidden="true">&times;</span>
+	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
 	                    </button>
 	                </div>
 	                <div class="modal-body">
@@ -170,7 +170,7 @@
 	                <div class="modal-header">
 	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Edit Information</h5>
 	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
-	                        <span aria-hidden="true">&times;</span>
+	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
 	                    </button>
 	                </div>
 	                <div class="modal-body">
@@ -207,7 +207,7 @@
 	                <div class="modal-header">
 	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Edit Information</h5>
 	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
-	                        <span aria-hidden="true">&times;</span>
+	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
 	                    </button>
 	                </div>
 	                <div class="modal-body">
@@ -292,7 +292,7 @@
 	                <div class="modal-header">
 	                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
 	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	                        <span aria-hidden="true">&times;</span>
+	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
 	                    </button>
 	                </div>
 	                <div class="modal-body">
@@ -320,9 +320,9 @@
 	        <div class="modal-dialog" role="document">
 	            <div class="modal-content bg-default">
 	                <div class="modal-header">
-	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> <span>Have an account??</span></h5>
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> <span>Login</span></h5>
 	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
-	                        <span aria-hidden="true">&times;</span>
+	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
 	                    </button>
 	                </div>
 	                <div class="modal-body">
@@ -369,9 +369,9 @@
 	        <div class="modal-dialog" role="document">
 	            <div class="modal-content bg-default">
 	                <div class="modal-header">
-	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> <span>Have an account??</span></h5>
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> <span>New Here??</span></h5>
 	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
-	                        <span aria-hidden="true">&times;</span>
+	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
 	                    </button>
 	                </div>
 	                <div class="modal-body">
@@ -396,7 +396,7 @@
 	                                </div>
 
 	                                <div class="form-group">
-									    <label for="exampleFormControlSelect1">I am </label>
+									    <label for="exampleFormControlSelect1" style="color:white;">I am </label>
 									    <select class="form-control" id="role_id" name="role_id" v-model="signup_role_id">
 									      <option value="">Select</option>
 									      <option value="2">Doctor</option>

@@ -22,6 +22,7 @@ import guard from '../guard';
 
 Vue.use(Router)
 const router =  new Router({
+    mode: 'history',
 	routes: [
         {
             path: '/',

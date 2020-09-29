@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="margin-top: 10px;">
         <!--- slider-img-start-->
         <section class="slider">
             <img class="w-100" src="/assets/img/slide-1.png" />

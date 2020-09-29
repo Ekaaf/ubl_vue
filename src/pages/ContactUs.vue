@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="margin-top: 10px;">
 
         <section class="slider">
             <img class="w-100" src="/assets/img/contactus.png">
@@ -14,7 +14,7 @@
         <section class="contact-us" style="background: #843d71;">
             <div class="container">
                 <div class="row pb-4 text-center color-default">
-                    <div class="col-sm-12 col-md-12">
+                    <div class="col-sm-12 col-md-12" style="color:white;">
                         <h2 class="contact-after">Contact Us</h2>
                     </div>
                 </div>
@@ -22,16 +22,16 @@
                     <div class="row">
 
                         <div class="form-group col-md-4 col-sm-12">
-                            <input type="text" class="form-control" v-model="contact_name" id="contact_name" name="contact_name" placeholder="Name">
+                            <input type="text" class="form-control contact-input" v-model="contact_name" id="contact_name" name="contact_name" placeholder="Name">
                         </div>
                         <div class="form-group col-md-4 col-sm-12">
-                            <input type="email" class="form-control" v-model="contact_email" id="contact_email" name="contact_email" placeholder="Email">
+                            <input type="email" class="form-control contact-input" v-model="contact_email" id="contact_email" name="contact_email" placeholder="Email">
                         </div>
                         <div class="form-group col-md-4 col-sm-12">
-                            <input type="number" class="form-control" v-model="contact_number" id="contact_number" name="contact_number" placeholder="Phone Number">
+                            <input type="number" class="form-control contact-input" v-model="contact_number" id="contact_number" name="contact_number" placeholder="Phone Number">
                         </div>
                         <div class="form-group col-md-12 col-sm-12">
-                            <textarea class="form-control" v-model="contact_message" id="contact_message" name="contact_message" rows="3" placeholder="messege"></textarea>
+                            <textarea class="form-control contact-input" v-model="contact_message" id="contact_message" name="contact_message" rows="3" placeholder="messege"></textarea>
                         </div>
                     </div>
                     <div class="row text-center">
@@ -114,4 +114,20 @@
 
     }
 </script>
+<style scoped>
+    ::-webkit-input-placeholder { /* Edge */
+      color: white!important;
+    }
 
+    :-ms-input-placeholder { /* Internet Explorer */
+      color: white!important;
+    }
+
+    ::placeholder {
+      color: white!important;
+    }
+
+    .contact-input{
+        background: #843d71;color:white;border: 1px solid #ced4da;
+    }
+</style>

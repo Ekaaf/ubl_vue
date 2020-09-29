@@ -13,7 +13,9 @@
 
                     <div class="col-md-3 col-sm-12 social-icon">
                         <ul>
-                            <li><a href="index.html"><i class="fa fa-facebook-official facbok" aria-hidden="true"></i></a></li>
+                            <!-- <li><a href="index.html"><i class="fa fa-facebook-official facbok" aria-hidden="true"></i></a></li> -->
+
+                            <li><a href="index.html"><img src="/assets/img/fb.png" class="img-fluid" height="18" width="18" style="margin-top: -2%;"></a></li>
                             <li><a href="index.html"><i class="fa fa-youtube-play facbok" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
