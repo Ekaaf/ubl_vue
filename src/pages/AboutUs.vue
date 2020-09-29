@@ -34,9 +34,9 @@
                 <div class="row">
                     <div class="col-md-8 gola-font">
                         <h2>Our Goal</h2>
-                        <p>Sensitive Expert by Pepsodent’s social mission is “to eradicate oral disease so that everyone can unlock the power of their smile”.</p>
+                        <p>Sensitive Expert by Pepsodent's social mission is "to eradicate oral disease so that everyone can unlock the power of their smile".</p>
                         
-                        <p> In supporting our social mission, the “BDS Nah to Daater Daktar Nah” campaign aims to establish awareness about authenticity in field of Dentistry and eradicate false practices.</p>
+                        <p> In supporting our social mission, the "BDS Nah to Daater Daktar Nah" campaign aims to establish awareness about authenticity in field of Dentistry and eradicate false practices.</p>
                         
 
                         <p>

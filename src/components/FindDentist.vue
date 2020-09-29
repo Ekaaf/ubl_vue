@@ -43,7 +43,7 @@
                             Find the nearest BMDC registered Dentist by filtering your location. 
                         </p>
                         <p class="color-yellow">
-                            Visitors can be assured to find Dental professionals who are not only authorized by the Bangladesh Medical & Dental Council (BMDC) but also who provide a high quality of care for their patients and believe in Sensitive Expert’s mission in defeating threats against Oral Health.
+                            Visitors can be assured to find Dental professionals who are not only authorized by the Bangladesh Medical & Dental Council (BMDC) but also who provide a high quality of care for their patients and believe in Sensitive Expert's mission in defeating threats against Oral Health.
                         </p>
                         <div>
                             <!-- <button type="button" class="btn btn-readmore rounded px-4 p-2">Read More</button> -->
