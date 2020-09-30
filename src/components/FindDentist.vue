@@ -8,17 +8,11 @@
                         <div class="col-sm-12" style="padding: 0">
                             <form class="select-var-form" id="findDoctorForm">
                                 <div class="form-group">
-                                    <select class="form-control color-default rounded-pill" id="location" name="location" v-model= "location">
-                                        <option value="">Location</option>
-
-                                    </select>
+                                    <input type="text" class="form-control color-default rounded-pill" id="location" name="location" v-model= "location" placeholder="Location">
                                 </div>
 
                                 <div class="form-group">
-                                    <select class="form-control color-default rounded-pill" id="name" name="name" v-model= "name">
-                                        <option value="">Doctor Name</option>
-
-                                    </select>
+                                    <input type="text" class="form-control color-default rounded-pill" id="name" name="name" v-model= "name" placeholder="Doctor Name">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control color-default rounded-pill" id="chamber_name" name="chamber_name" v-model= "chamber_name" placeholder="Chamber Name">
@@ -53,8 +47,8 @@
                     <div class="col-md-8 select-var-font find-dentist-text">
                         <div class="row"  v-for="doctor in doctors">
                             <div class="col-4 text-center">
-                                <img class="img-fluid"  :src="'http://localhost/ubl_laravel/' + doctor.imagelink">
-                                <router-link class="btn btn-readmore rounded px-4 p-2 mt-3" v-bind:to="'/Doctor/' + doctor.id">Read More</router-link>
+                                <img class="img-fluid"  :src="'http://ubl.sensetiveexpert.com/ubl_laravel/' + doctor.imagelink">
+                                <router-link class="btn btn-readmore rounded px-4 p-2 mt-3" v-bind:to="'/Doctor/' + doctor.user_id">Read More</router-link>
                             </div>
                             <div class="col-8" style="color: white;">
                                 <p>

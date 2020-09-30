@@ -379,13 +379,13 @@
 	                        <div class="row">
 	                            <div class="col-md-6 border-right2">
 	                            	<div class="form-group">
-	                                    <input type="text" class="form-control color-default rounded-pill" id="name" name="name" placeholder="name" v-model="signup_name">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="signup_name" name="signup_name" placeholder="Name" v-model="signup_name">
 	                                </div>
 	                                <div class="form-group">
 	                                    <input type="text" class="form-control color-default rounded-pill" id="email" name="email" placeholder="Email" v-model="signup_email">
 	                                </div>
 	                                <div class="form-group">
-	                                    <input type="number" class="form-control color-default rounded-pill" id="phone_number" name="phone_number" placeholder="Phone Number" v-model="signup_phone">
+	                                    <input type="number" class="form-control color-default rounded-pill" id="signup_phone" name="signup_phone" placeholder="Phone Number" v-model="signup_phone">
 	                                </div>
 	                                <div class="form-group">
 	                                    <input type="password" class="form-control color-default rounded-pill" id="password" name="password" placeholder="Password" v-model="signup_password">
@@ -497,7 +497,7 @@
         methods: {
         	signUp(){
         		var vm = this;
-        		if($("#name").val()==""){
+        		if($("#signup_name").val()==""){
         			alert("Please insert name");
         			return false;
         		}
@@ -508,7 +508,7 @@
         			return false;
 
         		}
-        		if($("#phone_number").val()==""){
+        		if($("#signup_phone").val()==""){
         			alert("Please insert phone number");
         			return false;
         		}
@@ -541,9 +541,9 @@
                 }).then(function (response) {
                 	alert(response.data.message);
                 	$('#signupModal').modal('hide');
-                	$("#name").val("");
+                	$("#signup_name").val("");
                 	$("#email").val("");
-                	$("#phone_number").val("");
+                	$("#signup_phone").val("");
                 	$("#password").val("");
                 	$("#con_password").val("");
                 	$("#role_id").val("");
@@ -667,7 +667,7 @@
             getDoctorInfo(id){
             	var vm = this;
             	axios({
-                        headers: authHeader(),
+                        // headers: authHeader(),
                         url: this.getApiUrl()+"getDoctorInfo",
                         method: "GET",
                         params: {
