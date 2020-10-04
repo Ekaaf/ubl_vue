@@ -11,7 +11,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-us" style="background: #843d71;">
+        <!-- <section class="contact-us" style="background: #843d71;">
             <div class="container">
                 <div class="row pb-4 text-center color-default">
                     <div class="col-sm-12 col-md-12" style="color:white;">
@@ -43,7 +43,7 @@
                     </div>
                 </form>
             </div>
-        </section>
+        </section> -->
     </div>
 
 </template>

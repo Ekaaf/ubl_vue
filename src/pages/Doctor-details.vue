@@ -23,18 +23,52 @@
                 <div class="col-md-7 select-var-font show-dentist-text">
                     <div class="row">
                         <div class="col-md-12 ">
-                            <h2><u>{{doctor.name}}</u></h2>
+                            <h2>{{doctor.name}}</h2>
                             
-                            <!-- <p class="color-white">
-                                One of the world's leading hospitals providing safe &<br /> compassionate care at its best for everyone
-                            </p> -->
                             <p class="color-white">
                                 {{doctor.designation}}<br><br>
                                 Department: {{doctor.department}}<br>
-                                Spcialization: {{doctor.specialization}}<br><br>
+                                Specialization: {{doctor.specialization}}<br><br>
                                 Chamber Name: {{doctor.chamber_name}}<br>
                                 Chamber Address: {{doctor.chamber_address}}
                             </p>
+                            <!-- <p class="color-white">
+                                {{doctor.designation}}<br><br>
+                                <div class="row no-gutters color-white">
+                                    <div class="col-md-3">
+                                        Department
+                                    </div>
+                                    <div class="col-md-9">
+                                        : {{doctor.department}}<br>
+                                    </div>
+                                    
+                                </div>
+                                <div class="row no-gutters color-white">
+                                    <div class="col-md-3">
+                                        Spcialization
+                                    </div>
+                                    <div class="col-md-9">
+                                        : {{doctor.specialization}}<br><br>
+                                    </div>
+                                    
+                                </div>
+                                <div class="row no-gutters color-white">
+                                    <div class="col-md-3">
+                                        Chamber Name
+                                    </div>
+                                    <div class="col-md-9">
+                                        : {{doctor.chamber_name}}<br>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters color-white">
+                                    <div class="col-md-3">
+                                        Chamber Address
+                                    </div>
+                                    <div class="col-md-9">
+                                        : {{doctor.chamber_address}}
+                                    </div>
+                                </div>
+                            </p> -->
                         </div>
                     </div>
                 </div>
@@ -53,7 +87,11 @@
                             </ul> -->
                             <h5 class="bg-white color-default w-100 text-left p-2 "> <b>Phone Number</b></h5>
                             <div class="row doctor-text color-white pb-2">{{doctor.phone_number}}</div>
-                            <h5 class="bg-white color-default w-100 text-left p-2 text-center"> <b>Call For Appoinment</b></h5>
+                            <h5 class="bg-white color-default w-100 text-left p-2 text-center"> 
+                                <a class="color-default" href="tel:doctor.phone_number" style="text-decoration: none;">
+                                    <b>Call For Appoinment</b>
+                                </a>
+                            </h5>
                             <h5 class="bg-white color-default w-100 text-left p-2 text-center"> <b>Request for Online Consultation</b></h5>
                             
 
@@ -102,8 +140,11 @@
                         // data: form_data,
                 }).then(function (response) {
                     vm.doctor = response.data[0];
-                    vm.degrees = vm.doctor.education.split(",");
-                    console.log(vm.degrees);
+                    // vm.degrees = vm.doctor.education.split(",");
+                    // console.log(vm.degrees);
+                    if(vm.doctor.education ==null || vm.doctor.education==""){
+                        vm.doctor.education = "BDS";
+                    }
                     
                 }).catch(function (error) {
                     vm.error = error

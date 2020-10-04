@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 select-var-font h2">
-                        <h2><u>Select Your Variables</u></h2>
+                        <h2>Select Your Variables</h2>
                         <div class="col-sm-12" style="padding: 0">
                             <form class="select-var-form" id="findDoctorForm">
                                 <div class="form-group">
@@ -45,10 +45,10 @@
                     </div>
 
                     <div class="col-md-8 select-var-font find-dentist-text">
-                        <div class="row"  v-for="doctor in doctors">
+                        <div class="row mb-5"  v-for="doctor in doctors">
                             <div class="col-4 text-center">
                                 <img class="img-fluid"  :src="'http://ubl.sensetiveexpert.com/ubl_laravel/' + doctor.imagelink">
-                                <router-link class="btn btn-readmore rounded px-4 p-2 mt-3" v-bind:to="'/Doctor/' + doctor.user_id">Read More</router-link>
+                                <router-link class="btn btn-readmore rounded px-4 p-2 mt-3" v-bind:to="'/Doctor/' + doctor.user_id">More Details</router-link>
                             </div>
                             <div class="col-8" style="color: white;">
                                 <p>
@@ -57,7 +57,7 @@
                                     <span>
                                         {{doctor.department}} 
                                     </span>
-                                    <span class="float-right">
+                                    <span>
                                         BMDC No. {{doctor.bmdc_number}}
                                     </span>
                                       

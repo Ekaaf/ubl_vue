@@ -9,8 +9,8 @@
         <!-- Menu header end -->
         <router-view></router-view>  
         <!--Contact Us--Start--->
-        <ContactUs v-if="this.$router.currentRoute.name!= 'AboutUs' && this.$router.currentRoute.name!= 'ContactUs'"></ContactUs>
-        <!--Contact US--End--->
+        <ContactUs ></ContactUs>
+        <!--Contact v-if="this.$router.currentRoute.name!= 'AboutUs' && this.$router.currentRoute.name!= 'ContactUs'" US--End--->
         
         <!---accounting--start-->
         <Accounting></Accounting>

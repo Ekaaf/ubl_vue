@@ -125,14 +125,14 @@ body {
 	color: #fff;
 	font-size: 40px;
 }
-.col-md-8.About-font h2::after {
+/*.col-md-8.About-font h2::after {
 	content: "";
 	width: 99%;
 	display: block;
 	background: #ffff;
 	height: 3px;
 	margin-top: 10px;
-}
+}*/
 .About-font p {
 	color: #fff;
 	text-align: justify;

@@ -332,9 +332,17 @@
 	                                <div class="form-group">
 	                                    <input type="text" class="form-control color-default rounded-pill" id="login_email" name="login_email" placeholder="Email" v-model="login_email">
 	                                </div>
-	                                <div class="form-group">
+	                                <!-- <div class="form-group">
 	                                    <input type="password" class="form-control color-default rounded-pill" id="login_password" name="login_password" placeholder="Password" v-model="login_password">
-	                                </div>
+	                                </div> -->
+
+	                                <div class="input-group mb-3">
+									  	<input type="password" class="form-control color-default rounded-pill" id="login_password" name="login_password" placeholder="Password" v-model="login_password">
+									  	<div class="input-group-append">
+									    	<i class=" fa fa-eye" aria-hidden="true" style="position:absolute;margin-left:-20px;margin-top:8px;cursor:pointer;z-index:99999;" @click="showPassword('login_password');"></i>
+									  	</div>
+									</div>
+
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="login_agree">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
@@ -387,10 +395,17 @@
 	                                <div class="form-group">
 	                                    <input type="number" class="form-control color-default rounded-pill" id="signup_phone" name="signup_phone" placeholder="Phone Number" v-model="signup_phone">
 	                                </div>
-	                                <div class="form-group">
+	                                <!-- <div class="form-group">
 	                                    <input type="password" class="form-control color-default rounded-pill" id="password" name="password" placeholder="Password" v-model="signup_password">
-	                                </div>
+	                                </div> -->
 
+	                                <div class="input-group mb-3">
+									  	<input type="password" class="form-control color-default rounded-pill" id="password" name="password" placeholder="Password" v-model="signup_password">
+									  	<div class="input-group-append">
+									    	<i class=" fa fa-eye" aria-hidden="true" style="position:absolute;margin-left:-20px;margin-top:8px;cursor:pointer;z-index:99999;" @click="showPassword('password');"></i>
+									  	</div>
+									</div>
+									
 	                                <div class="form-group">
 	                                    <input type="password" class="form-control color-default rounded-pill" id="con_password" name="con_password" placeholder="Confirm Password" v-model="signup_con_password">
 	                                </div>
@@ -790,6 +805,16 @@
                 }).catch(function (error) {
                     vm.error = error
                 });
+            },
+
+            showPassword(id){
+            	var type = $("#"+id).attr('type');
+            	if(type=="text"){
+            		$('#'+id).get(0).type = 'password';
+            	}
+            	else{
+            		$('#'+id).get(0).type = 'text';
+            	}
             }
         }
     }

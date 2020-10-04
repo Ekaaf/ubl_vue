@@ -1,9 +1,9 @@
 <template>
     <div>
-        <section class="main-header">
+        <section class="main-header" >
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 main-menu">
+                    <div class="col-md-12 main-menu" style="z-index:11">
                         <!---Main-Menu Code---Starts--->
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <a class="navbar-brand" href="#"><img class="w-50" src="/assets/img/logo.png"></a>

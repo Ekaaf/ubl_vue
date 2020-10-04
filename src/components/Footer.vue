@@ -34,9 +34,9 @@
 	                        </li>
 	                    </ul>
 	                </div>
-	                <div class="col-md-3 col-sm-6 text-white py-4 visitors text-center rounded my-auto">
-	                    <h2>51,335</h2>
-	                    <h3>Current<br>Visitors</h3>
+	                <div class="col-md-3 col-sm-6 text-white py-2 visitors text-center rounded my-auto">
+	                    <h2 style="font-size:1.5rem;">51,335</h2>
+	                    <h3 style="font-size:1.1rem;">Current<br>Visitors</h3>
 	                </div>
 	            </div>
 	        </div>
