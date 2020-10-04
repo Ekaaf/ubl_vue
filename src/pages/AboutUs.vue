@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-md-8 About-font">
                         <h2 style="font-size:38px;"><b>About BDS Nah to Daater Daktar Nah:</b></h2>
-                        <p>"BDS Nah to Daater Daktar Nah" is a joint social awareness campaign run by Bangladesh Dental Society and Sensitive Expert by Pepsodent to raise awareness about authenticity in the field of dentistry in Bangladesh. The campaign promotes BMDC registered dentists and help patients learn that only surgeons obtaining the Bachelor of Dental Surgery (BDS) certification can attain a BMDC registration. The BMDC registration is bestowed by Bangladesh Medical & Dental Council, the regulatory authority and the custodian of medical and dental education and practice. Only BMDC certified dental professionals are licensed to practice on oral health.
+                        <p>"BDS Nah to Daater Daktar Nah" is a joint social awareness campaign run by Bangladesh Dental Society and Sensitive Expert by Pepsodent to raise awareness about authenticity in the field of dentistry in Bangladesh. The campaign promotes BMDC registered dentists and help patients learn that only surgeons obtaining the Bachelor of Dental Surgery (BDS) certification can attain a BMDC registration. The BMDC registration is bestowed by Bangladesh Medical & Dental Council, the regulatory authority and the custodian of medical and dental education and practice. Only BMDC certified dental professionals are licensed to practice oral health.
                         </p>
 
                         
@@ -36,7 +36,7 @@
                         <h2>Our Goal</h2>
                         <p>Sensitive Expert by Pepsodent's social mission is "to eradicate oral disease so that everyone can unlock the power of their smile".</p>
                         
-                        <p> In supporting our social mission, the "BDS Nah to Daater Daktar Nah" campaign aims to establish awareness about authenticity in field of Dentistry and eradicate false practices.</p>
+                        <p> In supporting our social mission, the "BDS Nah to Daater Daktar Nah" campaign aims to establish awareness about authenticity in the field of Dentistry and eradicate false practices.</p>
                         
 
                         <p>

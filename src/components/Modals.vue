@@ -41,7 +41,7 @@
 	                        <div class="form-check mb-2">
 								<input type="checkbox" class="form-check-input" id="reg_agree">
 								<label class="form-check-label" for="exampleCheck1" style="color: white;">
-									By agreeing terms and conditions and privacy and policy
+									By agreeing terms and conditions and privacy policy
 								</label>
 							</div>
 
@@ -406,7 +406,7 @@
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="agree" name="agree" value="1">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
-											By agreeing terms and conditions and privacy and policy
+											By agreeing terms and conditions and privacy policy
 										</label>
 									</div>
 									<div class="form-group">

@@ -6,7 +6,7 @@
 	                <div class="col-md-3 col-sm-6 call-us">
 	                    <h5 class="font-weight-normal text-info">Call Us</h5>
 	                    <ul>
-	                        <li><a href="tel:09-999-666-999" class="text-secondary"><i class="fa fa-phone p-1" aria-hidden="true"></i>09-999-666-999 (8 am - 12 pm, 7 days a week)</a></li>
+	                        <li><a href="tel:09-999-666-999" class="text-secondary"><i class="fa fa-phone p-1" aria-hidden="true"></i>09-999-666-999 <br><b>(8 am - 12 pm, 7 days a week)</b></a></li>
 	                        <li><a href="mailto:careline.bd@unilever.com" class="text-secondary"><i class="fa fa-envelope p-1" aria-hidden="true"></i>careline.bd@unilever.com</a></li>
 	                    </ul>
 	                </div>
@@ -23,10 +23,14 @@
 	                    <h5>Follow Us On</h5>
 	                    <ul>
 	                        <li class="p-2 mx-1 rounded-circle">
-	                            <i class="fa fa-facebook" aria-hidden="true"></i>
+	                        	<a target="_blank" href="https://www.facebook.com/SensitiveExpert" style="color: white;">
+	                        		<i class="fa fa-facebook" aria-hidden="true"></i>
+	                        	</a>
 	                        </li>
 	                        <li class="p-2 mx-1 rounded-circle">
-	                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+	                        	<a target="_blank" href="https://www.youtube.com/channel/UCfErz4OnrzZM4nej4J833yw" style="color: white;">
+	                        		<i class="fa fa-youtube-play" aria-hidden="true"></i>
+	                        	</a>
 	                        </li>
 	                    </ul>
 	                </div>
