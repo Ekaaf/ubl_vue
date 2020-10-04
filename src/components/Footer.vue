@@ -6,7 +6,7 @@
 	                <div class="col-md-3 col-sm-6 call-us">
 	                    <h5 class="font-weight-normal text-info">Call Us</h5>
 	                    <ul>
-	                        <li><a href="tel:09-999-666-999" class="text-secondary"><i class="fa fa-phone p-1" aria-hidden="true"></i>09-999-666-999</a></li>
+	                        <li><a href="tel:09-999-666-999" class="text-secondary"><i class="fa fa-phone p-1" aria-hidden="true"></i>09-999-666-999 (8 am - 12 pm, 7 days a week)</a></li>
 	                        <li><a href="mailto:careline.bd@unilever.com" class="text-secondary"><i class="fa fa-envelope p-1" aria-hidden="true"></i>careline.bd@unilever.com</a></li>
 	                    </ul>
 	                </div>

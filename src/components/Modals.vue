@@ -338,7 +338,7 @@
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="login_agree">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
-											By agreeing terms and conditions and privacy and policy
+											By agreeing terms and conditions and privacy policy
 										</label>
 									</div>
 									<div class="form-group">
@@ -369,7 +369,7 @@
 	        <div class="modal-dialog" role="document">
 	            <div class="modal-content bg-default">
 	                <div class="modal-header">
-	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> <span>New Here??</span></h5>
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> <span>New Here?</span></h5>
 	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
 	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
 	                    </button>
@@ -587,7 +587,9 @@
                     window.location.reload();
                     // vm.$router.push('/user/dashboard') 
                 }).catch(function (error) {
-                    vm.error = error
+                    if(error.response.data.success == false){
+                    	alert("Email and password do not match")
+                    }
                 });
             },
 
@@ -611,7 +613,7 @@
             	if($("#reg_type").val()==""){
             		$("#reg_info").css("display", "none");
             	}
-            	else if($("#reg_type").val()=="Doctor"){
+            	else if($("#reg_type").val()!=""){
             		$("#reg_info").css("display", "block");
             	}
 

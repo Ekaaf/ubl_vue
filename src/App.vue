@@ -49,7 +49,14 @@ export default {
 	    TopHeader, Header, ContactUs, Accounting, Modals, Footer
 	},
 	created(){
-  }
+        
+    },
+    mounted(){
+        $('.navbar-collapse a').click(function (e) {
+            console.log('aaaa');
+            $('.navbar-collapse').collapse('toggle');
+        });
+    }
 }
 </script>
 

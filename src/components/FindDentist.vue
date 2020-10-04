@@ -19,10 +19,10 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control color-default rounded-pill" id="specialization" name="specialization" v-model= "specialization" placeholder="Department">
-                                </div>
-                                <div class="form-group">
-                                    <input type="number" class="form-control color-default rounded-pill" id="phone_number" name="phone_number" v-model= "phone_number" placeholder="Phone Number">
+                                    <select class="form-control color-default rounded-pill" id="department" name="department" v-model= "department">
+                                        <option value="" selected>Select</option>
+                                        <option v-for="option in departmentOptions" :value="option">{{option}}</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <button type="button" class="btn btn-find-now" @click="findDoctor();">Find Now</button>
@@ -55,7 +55,7 @@
                                     <h3><b>{{doctor.name}}</b></h3>
                                     <br>
                                     <span>
-                                        {{doctor.specialization}} 
+                                        {{doctor.department}} 
                                     </span>
                                     <span class="float-right">
                                         BMDC No. {{doctor.bmdc_number}}
@@ -91,8 +91,8 @@
                 location : '',
                 name: '',
                 chamber_name: '',
-                specialization: '',
-                phone_number : '',
+                department: '',
+                departmentOptions:[1,2,3,4],
                 doctors: []
             }
         },
@@ -111,6 +111,17 @@
                     vm.error = error
                 });
             },
+
+        },
+
+        mounted(){
+            var vm = this;
+            $('body').keypress(function (e) {
+                var key = e.which;
+                if(key == 13){
+                    vm.findDoctor();
+                }
+            });   
         }
     }
 </script>

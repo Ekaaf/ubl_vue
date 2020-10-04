@@ -7,7 +7,7 @@
                     <div class="col-md-9 col-sm-12 menu">
                         <ul>
                             <li><a href="index.html#"><i class="fa fa-envelope-o pes" aria-hidden="true"></i>careline.bd@unilever.com</a></li>
-                            <li><a href="index.html#"><i class="fa fa-phone pes" aria-hidden="true"></i>09-666-999-666</a></li>
+                            <li><a href="tel:09-666-999-666"><i class="fa fa-phone pes" aria-hidden="true"></i>09-666-999-666  (8 am - 12 pm, 7 days a week)</a></li>
                         </ul>
                     </div>
 
@@ -15,8 +15,8 @@
                         <ul>
                             <!-- <li><a href="index.html"><i class="fa fa-facebook-official facbok" aria-hidden="true"></i></a></li> -->
 
-                            <li><a href="index.html"><img src="/assets/img/fb.png" class="img-fluid" height="18" width="18" style="margin-top: -2%;"></a></li>
-                            <li><a href="index.html"><i class="fa fa-youtube-play facbok" aria-hidden="true"></i></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/SensitiveExpert"><img src="/assets/img/fb.png" class="img-fluid" height="18" width="18" style="margin-top: -2%;"></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/channel/UCfErz4OnrzZM4nej4J833yw"><i class="fa fa-youtube-play facbok" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
 

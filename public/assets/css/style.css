@@ -22,6 +22,7 @@ body {
     background: #fff;
     width: 100%;
     justify-content: flex-end;
+    text-align: left;
 }
 .navbar-brand {
 	padding-top: 0;
@@ -399,12 +400,16 @@ input::placeholder {
 }
 .doctor-details h5 {
 	border-radius: 15px;
-	padding-left: 12px !important;
+	padding-left: 20px !important;
 }
 .doctor-details .qualification-list {
 	font-size: 16px !important;
 	margin: 0px 0px 15px 0px !important;
 	padding: 0px 0px 0px 30px;
+}
+.doctor-text{
+	font-size: 16px;
+	margin-left: 20px;
 }
 .doctor-details .btn {
 	border-radius: 15px !important;
@@ -534,7 +539,7 @@ input::placeholder {
     }
 
         .main-menu .navbar .btn-register-free {
-            text-align: right !important;
+            /*text-align: right !important;*/
         }
 
         .main-menu .navbar .nav-item {
@@ -596,6 +601,23 @@ input::placeholder {
 		display: block;
 	}
 	/* STYLES GO HERE */
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+	.bold{
+		font-size: 15px;
+	}
+	.fdc{
+		font-size: 15px;
+	}
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
 }
 @media (min-width: 992px){
 .navbar-expand-lg .navbar-nav .nav-link {
