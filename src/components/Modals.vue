@@ -339,7 +339,7 @@
 	                                <div class="input-group mb-3">
 									  	<input type="password" class="form-control color-default rounded-pill" id="login_password" name="login_password" placeholder="Password" v-model="login_password">
 									  	<div class="input-group-append">
-									    	<i class=" fa fa-eye" aria-hidden="true" style="position:absolute;margin-left:-20px;margin-top:8px;cursor:pointer;z-index:99999;" @click="showPassword('login_password');"></i>
+									    	<i class=" fa fa-eye" aria-hidden="true" style="position:absolute;margin-left:-25px;margin-top:10px;cursor:pointer;z-index:99999;" @click="showPassword('login_password');"></i>
 									  	</div>
 									</div>
 
@@ -402,7 +402,7 @@
 	                                <div class="input-group mb-3">
 									  	<input type="password" class="form-control color-default rounded-pill" id="password" name="password" placeholder="Password" v-model="signup_password">
 									  	<div class="input-group-append">
-									    	<i class=" fa fa-eye" aria-hidden="true" style="position:absolute;margin-left:-20px;margin-top:8px;cursor:pointer;z-index:99999;" @click="showPassword('password');"></i>
+									    	<i class=" fa fa-eye" aria-hidden="true" style="position:absolute;margin-left:-25px;margin-top:10px;cursor:pointer;z-index:99999;" @click="showPassword('password');"></i>
 									  	</div>
 									</div>
 									

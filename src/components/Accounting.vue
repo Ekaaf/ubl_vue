@@ -2,7 +2,7 @@
     <div class="account-background">
         <div class="container">
             <div class="row">
-                <div class="col pb-2">
+                <div class="custom-width pb-2">
                     <div class="icon-color">
                         <i class="fa fa-thumbs-o-up style" aria-hidden="true"></i>
                         <h1 class="bold">181</h1>
@@ -10,16 +10,16 @@
                     </div>
                 </div>
 
-                <div class="col pb-2">
+                <div class="custom-width pb-2">
                     <div class="icon-color">
                         <i class="fa fa-users style" aria-hidden="true"></i>
                         <h1 class="bold">728672</h1>
-                        <p class="fdc">Pantients Reached</p>
+                        <p class="fdc">Patients Reached</p>
                     </div>
                 </div>
 
 
-                <div class="col pb-2">
+                <div class="custom-width pb-2">
                     <div class="icon-color">
                         <i class="fa fa-spinner style" aria-hidden="true"></i>
                         <h1 class="bold">750524</h1>
@@ -27,7 +27,7 @@
                     </div>
                 </div>
 
-                <div class="col pb-2">
+                <div class="custom-width pb-2">
                     <div class="icon-color">
                         <i class="fa fa-user-md style" aria-hidden="true"></i>
                         <h1 class="bold">19</h1>
@@ -35,7 +35,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="custom-width">
                     <div class="icon-color">
                         <i class="fa fa-user-md style" aria-hidden="true"></i>
                         <h1 class="bold">4</h1>
@@ -69,6 +69,20 @@
 
 <style scoped>
 .custom-width{
-    width: 20%;
+    background: #843d71;
+    padding: 0!important;
+    margin: 1%;
+    width: 18%;
 }  
+.col {
+    background: #843d71;
+    padding: 0!important;
+    margin: 1%;
+}
+
+@media (max-width: 992px){
+    .custom-width {
+        width: 100%!important;
+    }
+}
 </style>

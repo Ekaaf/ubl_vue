@@ -85,8 +85,8 @@
                             <!-- <ul class="color-white qualification-list">
                                 <li></li>
                             </ul> -->
-                            <h5 class="bg-white color-default w-100 text-left p-2 "> <b>Phone Number</b></h5>
-                            <div class="row doctor-text color-white pb-2">{{doctor.phone_number}}</div>
+                            <h5 class="bg-white color-default w-100 text-left p-2 "> <b>Phone Number</b>: {{doctor.phone_number}}</h5>
+                            <!-- <div class="row doctor-text color-white pb-2">{{doctor.phone_number}}</div> -->
                             <h5 class="bg-white color-default w-100 text-left p-2 text-center"> 
                                 <a class="color-default" href="tel:doctor.phone_number" style="text-decoration: none;">
                                     <b>Call For Appoinment</b>

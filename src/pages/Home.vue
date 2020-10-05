@@ -2,7 +2,7 @@
     <div style="margin-top: 10px;">
         <!--- slider-img-start-->
         <section class="slider">
-            <img class="w-100" src="/assets/img/slide-1.png" />
+            <img class="w-100" src="/assets/img/home.png" />
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">

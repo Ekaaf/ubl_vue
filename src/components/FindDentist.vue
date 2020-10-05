@@ -20,7 +20,7 @@
 
                                 <div class="form-group">
                                     <select class="form-control color-default rounded-pill" id="department" name="department" v-model= "department">
-                                        <option value="" selected>Select</option>
+                                        <option value="" selected>Department</option>
                                         <option v-for="option in departmentOptions" :value="option">{{option}}</option>
                                     </select>
                                 </div>
