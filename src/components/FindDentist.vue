@@ -54,9 +54,10 @@
                                 <p>
                                     <h3><b>{{doctor.name}}</b></h3>
                                     <br>
-                                    <span>
+                                    <!-- <span>
                                         {{doctor.department}} 
                                     </span>
+                                    <br> -->
                                     <span>
                                         BMDC No. {{doctor.bmdc_number}}
                                     </span>

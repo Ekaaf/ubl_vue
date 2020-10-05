@@ -118,7 +118,8 @@ body {
 
 .about {
 	background: #843d71;
-	padding: 40px 0px;
+	/*padding: 40px 0px;*/
+	padding-top: 30px;
 	margin-top: 50px;
 }
 .About-font h2 {
@@ -138,7 +139,7 @@ body {
 	text-align: justify;
 	font-weight: 500;
 	font-size: 17px;
-	line-height: 35px;
+	/*line-height: 35px;*/
 	margin-top: 25px;
 }
 .About-i {
@@ -152,7 +153,7 @@ body {
 /*---Our-gola--css-start--*/
 
 .our-goal {
-	padding: 70px 0px;
+	padding: 30px 0px;
 	padding-bottom: 0px;
 }
 .gola-font h2 {
@@ -166,14 +167,14 @@ body {
 	font-weight: 700;
 	margin-top: 30px;
 }
-.gola-font h2::after {
+/*.gola-font h2::after {
 	content: "";
 	width: 22%;
 	display: block;
 	background: #843d71;
 	height: 3px;
 	margin-top: 10px;
-}
+}*/
 .About-2 img {
 	width: 86%;
 }
@@ -192,7 +193,7 @@ body {
 .icon-color {
 	/*background: #843d71;*/
 	color: #fff;
-	padding: 42px 20px;
+	padding: 42px 18px;
 	text-align: center;
 }
 .style {
@@ -201,6 +202,7 @@ body {
 .bold {
 	font-size: 35px;
 	font-weight: bold;
+	margin-bottom: 0px!important;
 }
 .fdc {
 	font-size: 15px;
@@ -287,7 +289,7 @@ i.fa.fa-youtube-play {
 	width: 71.5%;
 }
 .contact-us {
-	padding: 100px 0px;
+	padding: 30px 0px;
 }
 form.contact-form {
 	width: 100%;
@@ -366,7 +368,8 @@ input::placeholder {
 }
 .find-dentist {
 	background: #843d71;
-	padding: 40px 0px;
+	/*padding: 40px 0px;*/
+	padding-top: 30px;
 	margin-top: 0px !important;
 }
 .find-dentist-text {
@@ -398,6 +401,13 @@ input::placeholder {
 	padding: 20px 10px;
 	margin-top: 20px;
 }
+.modal-header .close{
+	padding: 0 !important;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
 .doctor-details h5 {
 	border-radius: 15px;
 	padding-left: 20px !important;
@@ -574,7 +584,7 @@ input::placeholder {
 		display: block;
 	}
 	.top-header.mobile .menu{
-		text-align: center;
+		text-align: left;
 
 	}
 	.top-header.mobile .menu a{

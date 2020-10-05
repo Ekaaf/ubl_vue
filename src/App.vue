@@ -7,7 +7,7 @@
         <!-- Menu header start -->
         <Header></Header>
         <!-- Menu header end -->
-        <router-view></router-view>  
+        <router-view :key="$route.fullPath"></router-view>  
         <!--Contact Us--Start--->
         <ContactUs v-if="this.$router.currentRoute.name!= 'Home' && this.$router.currentRoute.name!= '/'"></ContactUs>
         <!--Contact v-if="this.$router.currentRoute.name!= 'AboutUs' && this.$router.currentRoute.name!= 'ContactUs'" US--End--->

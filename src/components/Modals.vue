@@ -5,10 +5,11 @@
 	        <div class="modal-dialog" role="document">
 	            <div class="modal-content bg-default">
 	                <div class="modal-header">
-	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Registration</h5>
 	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
 	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
 	                    </button>
+	                    <br>
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Registration</h5>
 	                </div>
 	                <div class="modal-body">
 	                    <form id="reg_dental_camp_form">
@@ -45,7 +46,7 @@
 								</label>
 							</div>
 
-							<div class="form-group">
+							<div class="form-group text-center">
 								<button type="button" class="btn btn-sub-modal color-default" @click="regDentalCamp();">Submit & Register</button>
 							</div>
 	                    </form>
@@ -352,14 +353,10 @@
 									<div class="form-group">
 	                                    <a href="" style="color: white;">Forgot password?</a>
 	                                </div>
-			                        <div class="row">
-			                        	<div class="col-6">
-			                        		<button type="button" class="btn btn-sub-modal color-default" @click="login();">Login</button>
-			                        	</div>
-			                        	<div class="col-6">
-			                        		
-			                        	</div>
-			                        </div>
+
+	                                <div class="form-group text-center">
+	                                    <button type="button" class="btn btn-sub-modal color-default" @click="login();">Login</button>
+	                                </div>
 	                            </div>
 	                            <div class="col-md-6">
 	                            </div>
@@ -412,7 +409,7 @@
 
 	                                <div class="form-group">
 									    <label for="exampleFormControlSelect1" style="color:white;">I am </label>
-									    <select class="form-control" id="role_id" name="role_id" v-model="signup_role_id">
+									    <select class="form-control rounded-pill" id="role_id" name="role_id" v-model="signup_role_id">
 									      <option value="">Select</option>
 									      <option value="2">Doctor</option>
 									      <option value="3">Patient</option>
@@ -427,14 +424,9 @@
 									<div class="form-group">
 	                                    <a href="" style="color: white;">Forgot password?</a>
 	                                </div>
-			                        <div class="row">
-			                        	<div class="col-6">
-			                        		<button type="button" class="btn btn-sub-modal color-default" @click="signUp();">Sign Up</button>
-			                        	</div>
-			                        	<div class="col-6">
-			                        		
-			                        	</div>
-			                        </div>
+	                                <div class="form-group text-center">
+	                                    <button type="button" class="btn btn-sub-modal color-default" @click="signUp();">Sign Up</button>
+	                                </div>
 	                            </div>
 	                            <div class="col-md-6">
 	                            </div>

@@ -23,7 +23,7 @@
                 <div class="col-md-7 select-var-font show-dentist-text">
                     <div class="row">
                         <div class="col-md-12 ">
-                            <h2>{{doctor.name}}</h2>
+                            <h3 class="color-white">{{doctor.name}}</h3>
                             
                             <p class="color-white">
                                 {{doctor.designation}}<br><br>
@@ -80,19 +80,22 @@
                     <div class="">
                         <div class="doctor-details">
                             <h5 class="bg-white color-default w-100 text-left py-2"> <b>Education</b></h5>
-                            <div class="row doctor-text color-white pb-2">{{doctor.education}}</div>
+                            <!-- <div class="row doctor-text color-white pb-2">{{doctor.education}}</div> -->
+                            <ul class="color-white qualification-list">
+                                <li v-for="degree in degrees">{{degree}}</li>
+                            </ul>
                             <h5 class="bg-white color-default w-100 text-left p-2 "> <b>BMDC Registration No</b>: {{doctor.bmdc_number}}</h5>
                             <!-- <ul class="color-white qualification-list">
                                 <li></li>
                             </ul> -->
                             <h5 class="bg-white color-default w-100 text-left p-2 "> <b>Phone Number</b>: {{doctor.phone_number}}</h5>
                             <!-- <div class="row doctor-text color-white pb-2">{{doctor.phone_number}}</div> -->
-                            <h5 class="bg-white color-default w-100 text-left p-2 text-center"> 
+                            <h5 class="bg-white color-default w-100 text-left p-2"> 
                                 <a class="color-default" href="tel:doctor.phone_number" style="text-decoration: none;">
                                     <b>Call For Appoinment</b>
                                 </a>
                             </h5>
-                            <h5 class="bg-white color-default w-100 text-left p-2 text-center"> <b>Request for Online Consultation</b></h5>
+                            <h5 class="bg-white color-default w-100 text-left p-2"> <b>Request for Online Consultation</b></h5>
                             
 
                             <!-- <div class="row">
@@ -143,7 +146,10 @@
                     // vm.degrees = vm.doctor.education.split(",");
                     // console.log(vm.degrees);
                     if(vm.doctor.education ==null || vm.doctor.education==""){
-                        vm.doctor.education = "BDS";
+                        vm.degrees = "BDS";
+                    }
+                    else{
+                        vm.degrees = vm.doctor.education.split(",");
                     }
                     
                 }).catch(function (error) {

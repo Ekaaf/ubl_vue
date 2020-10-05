@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="custom-width pb-2">
                     <div class="icon-color">
-                        <i class="fa fa-thumbs-o-up style" aria-hidden="true"></i>
+                        <i class="fa fa-thumbs-o-up style" aria-hidden="true"></i><br>
                         <h1 class="bold">181</h1>
                         <p class="fdc">FDC Organized</p>
                     </div>

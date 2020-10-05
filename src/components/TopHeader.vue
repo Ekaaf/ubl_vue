@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-md-3 col-sm-12 social-icon">
                         <ul>
-                             <li class="number"><a href="tel:09-666-999-666" style="margin-left:17%;"><i class="fa fa-phone pes" aria-hidden="true"></i>09-666-999-666</a></li>
+                             <li class="number"><a href="tel:09-666-999-666"><i class="fa fa-phone pes" aria-hidden="true"></i>09-666-999-666</a></li>
                             <li><a target="_blank" href="https://www.facebook.com/SensitiveExpert"><i class="fa fa-facebook-official facbok" aria-hidden="true"></i></a></li>
                             <li><a target="_blank" href="https://www.youtube.com/channel/UCfErz4OnrzZM4nej4J833yw"><i class="fa fa-youtube-play facbok" aria-hidden="true"></i></a></li>
                         </ul>
