@@ -165,7 +165,7 @@ body {
 	color: #843d71;
 	font-size: 18px;
 	font-weight: 700;
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 }
 /*.gola-font h2::after {
 	content: "";
@@ -533,7 +533,7 @@ input::placeholder {
 }
 .btn-sub-modal {
 	background: #fff !important;
-	width: 250px;
+	/*width: 250px;*/
 	border-radius: 70px !important;
 }
 /*--modal--css-end--*/

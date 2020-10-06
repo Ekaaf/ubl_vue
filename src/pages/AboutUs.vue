@@ -15,15 +15,15 @@
         <section class="About">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 About-font">
+                    <div class="col-sm-9 About-font">
                         <h2 style="font-size:30px;"><b>About BDS Nah to Daater Daktar Nah:</b></h2>
                         <p style="font-size:15px;">"BDS Nah to Daater Daktar Nah" is a joint social awareness campaign run by Bangladesh Dental Society and Sensitive Expert by Pepsodent to raise awareness about authenticity in the field of dentistry in Bangladesh. The campaign promotes BMDC registered dentists and help patients learn that only surgeons obtaining the Bachelor of Dental Surgery (BDS) certification can attain a BMDC registration. The BMDC registration is bestowed by Bangladesh Medical & Dental Council, the regulatory authority and the custodian of medical and dental education and practice. Only BMDC certified dental professionals are licensed to practice oral health.
                         </p>
 
                         
                     </div>
-                    <div class="col-md-4 About-i">
-                        <img src="/assets/img/about-img.png" />
+                    <div class="col-sm-3 About-i text-center">
+                        <img src="/assets/img/about-img.png" class="img-fluid" />
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
         <section class="our-goal">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 gola-font">
+                    <div class="col-sm-9 gola-font ">
                         <h2 style="font-size:30px;">Our Goal</h2>
                         <p style="font-size:15px;">Sensitive Expert by Pepsodent's social mission is "to eradicate oral disease so that everyone can unlock the power of their smile".</p>
                         
@@ -47,8 +47,8 @@
                             <a href="https://bangladeshdentalsociety.com/" style="color: background: #001A70 !important;word-wrap:break-word;">https://bangladeshdentalsociety.com/</a>
                         </p>
                     </div>
-                    <div class="col-md-4 About-2">
-                        <img src="/assets/img/about.png" />
+                    <div class="col-sm-3 About-i text-center">
+                        <img src="/assets/img/about.png" class="img-fluid"/>
                     </div>
                     
                 </div>
@@ -103,3 +103,10 @@
     }
 </script>
 
+<style scoped>
+    @media only screen and (max-width: 640px) {
+        .img-fluid{
+            width: 70%;
+        }
+    }
+</style>
