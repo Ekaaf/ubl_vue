@@ -18,7 +18,7 @@
                 <div class="row mt-3" >
                     <h2 style="margin: 0 auto;">Select Your Variables</h2>
                 </div>
-                <div class="row mt-3">
+                <div class="row mt-3 mb-3">
                     <div class="col-md-6">
                         <div class="form-group">
                             <input type="text" class="form-control rounded-pill right-side" id="location" name="location" v-model= "location" placeholder="Location" style="width: 80%;">
@@ -29,9 +29,9 @@
                             <input type="text" class="form-control rounded-pill" id="name" name="name" v-model= "name" placeholder="Doctor Name" style="width: 80%;">
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
 
-                <div class="row mt-3 mb-3">
+                <!-- <div class="row mt-3 mb-3"> -->
                     <div class="col-md-6">
                         <div class="form-group">
                             <input type="text" class="form-control rounded-pill right-side" id="chamber_name" name="chamber_name" v-model= "chamber_name" placeholder="Chamber Name" style="width: 80%;">
@@ -47,10 +47,46 @@
                     </div>
                 </div>
 
+
                 <!-- <div class="form-group"> -->
-                    <button type="button" class="btn btn-find-now" @click="findDoctor();" style="margin: 0 auto;width: 25%;position: absolute; margin-left: -12%;margin-top: -1.2%;">Find Now</button>
+                    <button type="button" class="btn btn-find-now" @click="findDoctor();" style="margin: 0 auto;width: 25%;position: absolute; margin-left: -12%;margin-top: -18px;">Find Now</button>
                 <!-- </div> -->
             </div>
+
+            <div class="container select-var-font find-dentist-text mt-5" >
+                <div class="row mt-3 mb-3">
+                    <div class="col-md-6 color-white p-3" style="border: 1px solid white; border-radius: 10px;" v-for="doctor in doctors">
+                        <div class="row">
+                            <div class="col-5">
+                                <img data-v-13b4122a="" src="http://ubl.sensetiveexpert.com/ubl_laravel/public/images/doctor/120547222_393279075022923_3829097587868763414_n.png" class="img-fluid">
+                            </div>
+                            <div class="col-7">
+                                <p >
+                                    <h3><b>{{doctor.name}}</b></h3>
+                                    <br>
+                                    <span>
+                                        {{doctor.department}} 
+                                    </span>
+                                    <span>
+                                        BMDC No. {{doctor.bmdc_number}}
+                                    </span>
+                                      
+                                    <hr style="color: white;">
+                                    <ul>
+                                        <li>BDS</li>
+                                        <li>FCPS</li>
+                                    </ul>
+                                    {{doctor.chamber_name}}
+                                    <br>
+                                    {{doctor.chamber_address}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <router-link class="btn btn-readmore rounded px-4 p-2 mt-3" v-bind:to="'/Doctor/' + doctor.user_id" >More Details</router-link>
+            </div>
+
         </section>
     </div>
 </template>
@@ -126,6 +162,9 @@
     @media only screen  and (max-width: 767px) {
         .right-side{
            float: none;
+        }
+        .rounded-pill{
+            margin: 0 auto;
         }
     }
   
