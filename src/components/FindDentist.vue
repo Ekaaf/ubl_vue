@@ -84,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-                <router-link class="btn btn-readmore rounded px-4 p-2 mt-3" v-bind:to="'/Doctor/' + doctor.user_id" >More Details</router-link>
+                
             </div>
 
         </section>
