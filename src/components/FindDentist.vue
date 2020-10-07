@@ -1,81 +1,55 @@
 <template>
     <div>
-        <section class="find-dentist">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 select-var-font h2">
-                        <h2>Select Your Variables</h2>
-                        <div class="col-sm-12" style="padding: 0">
-                            <form class="select-var-form" id="findDoctorForm">
-                                <div class="form-group">
-                                    <input type="text" class="form-control color-default rounded-pill" id="location" name="location" v-model= "location" placeholder="Location">
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control color-default rounded-pill" id="name" name="name" v-model= "name" placeholder="Doctor Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control color-default rounded-pill" id="chamber_name" name="chamber_name" v-model= "chamber_name" placeholder="Chamber Name">
-                                </div>
-
-                                <div class="form-group">
-                                    <select class="form-control color-default rounded-pill" id="department" name="department" v-model= "department">
-                                        <option value="" selected>Department</option>
-                                        <option v-for="option in departmentOptions" :value="option">{{option}}</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-find-now" @click="findDoctor();">Find Now</button>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                    <div class="col-md-8 select-var-font find-dentist-text" v-if="doctors.length==0">
-                        <h2><u>Find Your Dentist</u></h2>
-                        <p class="color-yellow">
-                            Find the nearest BMDC registered Dentist by filtering your location. 
-                        </p>
-                        <p class="color-yellow">
-                            Visitors can be assured to find Dental professionals who are not only authorized by the Bangladesh Medical & Dental Council (BMDC) but also who provide a high quality of care for their patients and believe in Sensitive Expert's mission in defeating threats against Oral Health.
-                        </p>
-                        <div>
-                            <!-- <button type="button" class="btn btn-readmore rounded px-4 p-2">Read More</button> -->
+        <section class="find-dentist" >
+            <div class="container select-var-font find-dentist-text">
+                <div class="row text-center" >
+                    <h2 style="margin: 0 auto;">Find Your Dentist</h2>
+                </div>
+                <div class="row text-center mt-3">
+                    <p class="color-yellow" style="margin: 0 auto;">
+                        Find the nearest BMDC registered Dentist by filtering your location. 
+                    </p>
+                    <p class="color-yellow mt-3" style="margin: 0 auto;">
+                        Visitors can be assured to find Dental professionals who are not only authorized by the Bangladesh Medical & Dental Council (BMDC) but also who provide a high quality of care for their patients and believe in Sensitive Expert's mission in defeating threats against Oral Health.
+                    </p>
+                </div>
+            </div>
+            <div class="container select-var-font find-dentist-text text-center mt-5" style="border: 1px solid white; border-radius: 10px;">
+                <div class="row mt-3" >
+                    <h2 style="margin: 0 auto;">Select Your Variables</h2>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-pill right-side" id="location" name="location" v-model= "location" placeholder="Location" style="width: 80%;">
                         </div>
                     </div>
-
-                    <div class="col-md-8 select-var-font find-dentist-text">
-                        <div class="row mb-5"  v-for="doctor in doctors">
-                            <div class="col-4 text-center">
-                                <img class="img-fluid"  :src="'http://ubl.sensetiveexpert.com/ubl_laravel/' + doctor.imagelink">
-                                <router-link class="btn btn-readmore rounded px-4 p-2 mt-3" v-bind:to="'/Doctor/' + doctor.user_id">More Details</router-link>
-                            </div>
-                            <div class="col-8" style="color: white;">
-                                <p>
-                                    <h3><b>{{doctor.name}}</b></h3>
-                                    <br>
-                                    <span>
-                                        {{doctor.department}} 
-                                    </span>
-                                    <span>
-                                        BMDC No. {{doctor.bmdc_number}}
-                                    </span>
-                                      
-                                    <hr style="color: white;">
-                                    <ul>
-                                        <li>BDS</li>
-                                        <li>FCPS</li>
-                                    </ul>
-                                    {{doctor.chamber_name}}
-                                    <br>
-                                    {{doctor.chamber_address}}
-                                </p>
-                                    
-                            </div>
-
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-pill" id="name" name="name" v-model= "name" placeholder="Doctor Name" style="width: 80%;">
                         </div>
                     </div>
                 </div>
+
+                <div class="row mt-3 mb-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-pill right-side" id="chamber_name" name="chamber_name" v-model= "chamber_name" placeholder="Chamber Name" style="width: 80%;">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <select class="form-control rounded-pill" id="department" name="department" v-model= "department" style="width: 80%;">
+                                <option value="" selected>Department</option>
+                                <option v-for="option in departmentOptions" :value="option">{{option}}</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="form-group"> -->
+                    <button type="button" class="btn btn-find-now" @click="findDoctor();" style="margin: 0 auto;width: 25%;position: absolute; margin-left: -12%;margin-top: -1.2%;">Find Now</button>
+                <!-- </div> -->
             </div>
         </section>
     </div>
@@ -126,6 +100,33 @@
     }
 </script>
 
-<style>
+<style scoped>
+    .rounded-pill{
+        border: 1px solid white;
+        color: white!important;
+        background: #843d71!important;
+    }
+
+    ::-webkit-input-placeholder { /* Edge */
+      color: white!important;
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer */
+      color: white!important;
+    }
+
+    ::placeholder {
+      color: white!important;
+    }
+
+    .right-side{
+         float: right;
+    }
+
+    @media only screen  and (max-width: 767px) {
+        .right-side{
+           float: none;
+        }
+    }
   
 </style>
