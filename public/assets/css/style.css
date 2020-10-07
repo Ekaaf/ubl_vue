@@ -40,11 +40,13 @@ body {
 .menu ul {
 	margin: 0px;
 	padding: 0px;
+	text-align: left;
 }
 .menu ul li {
 	list-style: none;
 	display: inline;
-	margin: 0px 21px;
+	/*margin: 0px 21px;*/
+	margin-right: 22px;
 }
 .menu ul li a {
 	color: #fff !important;

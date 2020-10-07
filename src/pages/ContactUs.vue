@@ -31,7 +31,7 @@
                             <input type="number" class="form-control contact-input" v-model="contact_number" id="contact_number" name="contact_number" placeholder="Phone Number">
                         </div>
                         <div class="form-group col-md-12 col-sm-12">
-                            <textarea class="form-control contact-input" v-model="contact_message" id="contact_message" name="contact_message" rows="3" placeholder="messege"></textarea>
+                            <textarea class="form-control contact-input" v-model="contact_message" id="contact_message" name="contact_message" rows="3" placeholder="Messege"></textarea>
                         </div>
                     </div>
                     <div class="row text-center">

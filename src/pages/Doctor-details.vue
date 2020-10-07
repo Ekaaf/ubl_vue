@@ -23,14 +23,14 @@
                 <div class="col-md-7 select-var-font show-dentist-text">
                     <div class="row">
                         <div class="col-md-12 ">
-                            <h3 class="color-white">{{doctor.name}}</h3>
+                            <h3 class="color-white">{{doctor.doctor_name}}</h3>
                             
                             <p class="color-white">
-                                {{doctor.designation}}<br><br>
-                                Department: {{doctor.department}}<br>
-                                Specialization: {{doctor.specialization}}<br><br>
-                                Chamber Name: {{doctor.chamber_name}}<br>
-                                Chamber Address: {{doctor.chamber_address}}
+                                {{doctor.designation}}<br v-if="doctor.designation"><br v-if="doctor.designation">
+                                <span v-if="doctor.department">Department: {{doctor.department}}</span> <br v-if="doctor.department">
+                                <span v-if="doctor.specialization">Specialization: {{doctor.specialization}}</span><br v-if="doctor.specialization"><br v-if="doctor.specialization">
+                                <span v-if="doctor.chamber_name">Chamber Name: {{doctor.chamber_name}}</span><br v-if="doctor.chamber_name">
+                                <span v-if="doctor.chamber_address">Chamber Address: {{doctor.chamber_address}}</span>
                             </p>
                             <!-- <p class="color-white">
                                 {{doctor.designation}}<br><br>
@@ -95,7 +95,7 @@
                                     <b>Call For Appoinment</b>
                                 </a>
                             </h5>
-                            <h5 class="bg-white color-default w-100 text-left p-2"> <b>Request for Online Consultation</b></h5>
+                            <h5 class="bg-white color-default w-100 text-left p-2" v-if="doctor.online_consultation"> <b>Request for Online Consultation</b></h5>
                             
 
                             <!-- <div class="row">
@@ -146,7 +146,7 @@
                     // vm.degrees = vm.doctor.education.split(",");
                     // console.log(vm.degrees);
                     if(vm.doctor.education ==null || vm.doctor.education==""){
-                        vm.degrees = "BDS";
+                        vm.degrees[0] = "BDS";
                     }
                     else{
                         vm.degrees = vm.doctor.education.split(",");

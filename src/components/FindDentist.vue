@@ -15,10 +15,11 @@
                 </div>
             </div>
             <div class="container select-var-font find-dentist-text text-center mt-5" style="border: 1px solid white; border-radius: 10px;">
-                <div class="row mt-3" >
+                <form class="select-var-form" id="findDoctorForm">
+                <div class="row mt-4" >
                     <h2 style="margin: 0 auto;">Select Your Variables</h2>
                 </div>
-                <div class="row mt-3 mb-3">
+                <div class="row mt-3 mb-4">
                     <div class="col-md-6">
                         <div class="form-group">
                             <input type="text" class="form-control rounded-pill right-side" id="location" name="location" v-model= "location" placeholder="Location" style="width: 80%;">
@@ -49,16 +50,17 @@
 
 
                 <!-- <div class="form-group"> -->
-                    <button type="button" class="btn btn-find-now" @click="findDoctor();" style="margin: 0 auto;width: 25%;position: absolute; margin-left: -12%;margin-top: -18px;">Find Now</button>
+                    <button type="button" id="findnow" class="btn btn-find-now" @click="findDoctor();" style="margin: 0 auto;width: 25%;position: absolute; margin-left: -12%;margin-top: -18px;">Find Now</button>
                 <!-- </div> -->
+                </form>
             </div>
 
             <div class="container select-var-font find-dentist-text mt-5" >
                 <div class="row mt-3 mb-3">
-                    <div class="col-md-6 color-white p-3" style="border: 1px solid white; border-radius: 10px;" v-for="doctor in doctors">
+                    <div class="col-6 color-white mr-3 mb-5 p-3" style="border: 1px solid white; border-radius: 10px; max-width:90%;" v-for="doctor in doctors">
                         <div class="row">
                             <div class="col-5">
-                                <img data-v-13b4122a="" src="http://ubl.sensetiveexpert.com/ubl_laravel/public/images/doctor/120547222_393279075022923_3829097587868763414_n.png" class="img-fluid">
+                                <img data-v-13b4122a="" :src="'http://ubl.sensetiveexpert.com/ubl_laravel/' + doctor.imagelink" class="img-fluid">
                             </div>
                             <div class="col-7">
                                 <p >
@@ -73,8 +75,7 @@
                                       
                                     <hr style="color: white;">
                                     <ul>
-                                        <li>BDS</li>
-                                        <li>FCPS</li>
+                                        <li v-for="d in doctor.education">{{d}}</li>
                                     </ul>
                                     {{doctor.chamber_name}}
                                     <br>
@@ -82,7 +83,9 @@
                                 </p>
                             </div>
                         </div>
+                        <router-link type="button" class="btn btn-find-now" v-bind:to="'/Doctor/' + doctor.user_id" @click="findDoctor();" style="width: 65%;position: absolute;     right: 96px;bottom: -20px;">More Details</router-link>
                     </div>
+                    
                 </div>
                 
             </div>
@@ -117,6 +120,11 @@
                         // data: form_data,
                 }).then(function (response) {
                     vm.doctors = response.data;
+                    $.each(vm.doctors, function(index, item) {
+                        // do something with `item` (or `this` is also `item` if you like)
+                        vm.doctors.index[0] = item.split(",");
+                        console.log(item)
+                    });
                 }).catch(function (error) {
                     vm.error = error
                 });
@@ -159,12 +167,29 @@
          float: right;
     }
 
+    .col-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 48% !important;
+    }
     @media only screen  and (max-width: 767px) {
         .right-side{
            float: none;
         }
         .rounded-pill{
             margin: 0 auto;
+        }
+        .col-6 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100% !important;
+        }
+        h3{
+            font-size: 1.25rem;
+        }
+        #findnow{
+            margin: -20px auto 0px -24% !important;
+            width: 50%!important;
         }
     }
   
