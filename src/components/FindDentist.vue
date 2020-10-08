@@ -68,7 +68,7 @@
                                     <br>
                                     <span>
                                         {{doctor.department}} 
-                                    </span>
+                                    </span><br>
                                     <span>
                                         BMDC No. {{doctor.bmdc_number}}
                                     </span>

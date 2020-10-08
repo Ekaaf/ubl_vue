@@ -6,7 +6,8 @@
                     <div class="col-md-12 main-menu" style="z-index:11">
                         <!---Main-Menu Code---Starts--->
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand" href="#"><img class="w-50" src="/assets/img/logo.png"></a>
+                            <!-- <a class="navbar-brand" href="#"><img class="w-50" src="/assets/img/logo.png"></a> -->
+                            <router-link class="navbar-brand" v-bind:class = "(currentUrl=='Home')?'active':''"  to="/Home"><img class="w-50" src="/assets/img/logo.png"></router-link>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>

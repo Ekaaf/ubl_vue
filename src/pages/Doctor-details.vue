@@ -27,10 +27,10 @@
                             
                             <p class="color-white">
                                 {{doctor.designation}}<br v-if="doctor.designation"><br v-if="doctor.designation">
-                                <span v-if="doctor.department">Department: {{doctor.department}}</span> <br v-if="doctor.department">
-                                <span v-if="doctor.specialization">Specialization: {{doctor.specialization}}</span><br v-if="doctor.specialization"><br v-if="doctor.specialization">
-                                <span v-if="doctor.chamber_name">Chamber Name: {{doctor.chamber_name}}</span><br v-if="doctor.chamber_name">
-                                <span v-if="doctor.chamber_address">Chamber Address: {{doctor.chamber_address}}</span>
+                                <span v-if="doctor.department"><b>DEPARTMENT:</b>  {{doctor.department}}</span> <br v-if="doctor.department">
+                                <span v-if="doctor.specialization"><b>SPECIALIZATION:</b> {{doctor.specialization}}</span><br v-if="doctor.specialization"><br v-if="doctor.specialization">
+                                <span v-if="doctor.chamber_name"><b>CHAMBER NAME:</b> {{doctor.chamber_name}}</span><br v-if="doctor.chamber_name">
+                                <span v-if="doctor.chamber_address"><b>CHAMBER ADDRESS:</b> {{doctor.chamber_address}}</span>
                             </p>
                             <!-- <p class="color-white">
                                 {{doctor.designation}}<br><br>
@@ -111,8 +111,22 @@
                     </div>
 
                 </div>
-                <div class="col-md-7 select-var-font show-dentist-text">
-                    <img class="w-100" src="/assets/img/map1.png" />
+                <div class="col-md-7 select-var-font show-dentist-text embed-responsive embed-responsive-16by9" >
+                    <!-- <img class="w-100" src="/assets/img/map1.png" /> -->
+                    <!-- <iframe
+                      width="600"
+                      height="450"
+                      frameborder="0" style="border:0"
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC9eHLdLnvzYQD1XG9o2VU0wtzffq5FYRo
+                        &q=Space+Needle,Seattle+WA" allowfullscreen>
+                    </iframe> -->
+
+                    <iframe class="embed-responsive-item" :src="'https://maps.google.com/maps?q='+doctor.location+'&amp&z=15&output=embed'" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+
+                    <!-- <iframe src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" width="100%" height="100%" frameborder="0" style="border:0"></iframe> -->
+
+
+                    <!-- <iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> -->
                 </div>
             </div>
         </div>
@@ -128,6 +142,7 @@
             return {
                 doctor: [],
                 degrees: "",
+                test: "23.74531,90.38201"
             }
         },
         mixins: [Mixin],
@@ -169,4 +184,6 @@
     h5{
         font-size:18px !important;
     }
+
+    
 </style>
