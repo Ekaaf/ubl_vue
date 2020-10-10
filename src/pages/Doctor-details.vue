@@ -10,7 +10,7 @@
                 </div>
             </div>
         </section>
-        <section class="find-dentist">
+        <section class="find-dentist" id='aaa'>
         <div class="container">
             <div class="row">
                 <div class="col-md-5 select-var-font h2 ">
@@ -174,7 +174,10 @@
 
         },
         mounted(){
-            this.getDoctorInfo(this.$route.params.id)
+            this.getDoctorInfo(this.$route.params.id);
+            $('html, body').animate({
+                scrollTop: $("#aaa").offset().top
+            }, 500);
         }
 
     }

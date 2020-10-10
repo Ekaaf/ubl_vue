@@ -351,7 +351,7 @@
 										</label>
 									</div>
 									<div class="form-group">
-	                                    <a href="" style="color: white;">Forgot password?</a>
+	                                    <a href="#" style="color: white;" @click="showForgetPass();">Forgot password?</a>
 	                                </div>
 
 	                                <div class="form-group text-center">
@@ -370,6 +370,36 @@
 	    </div>
 
 
+	    <div class="modal fade edit-info-modal" id="forget-modal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true" style="z-index: 9999999">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content bg-default">
+	                <div class="modal-header">
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> <span>Forget Password</span></h5>
+	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+	                    </button>
+	                </div>
+	                <div class="modal-body">
+	                    <form>
+	                        <div class="row">
+	                            <div class="col-md-8">
+	                            	<!-- Your Email Address -->
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="forget_email" name="forget_email" placeholder="Write your email address" v-model="forget_email">
+	                                </div>
+
+	                                <div class="form-group">
+	                                    <button type="button" class="btn btn-sub-modal color-default" @click="sendmail();">Send</button>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        
+	                    </form>
+	                </div>
+
+	            </div>
+	        </div>
+	    </div>
 	    <div class="modal fade edit-info-modal" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true" style="z-index: 9999999">
 	        <div class="modal-dialog" role="document">
 	            <div class="modal-content bg-default">
@@ -478,7 +508,9 @@
             	user_phone: '',
             	current_pass: '',
             	new_pass: '',
-            	con_new_pass: ''
+            	con_new_pass: '',
+
+            	forget_email: ''
             	// user: {
             	// 	id : 1
             	// },
@@ -807,7 +839,46 @@
             	else{
             		$('#'+id).get(0).type = 'text';
             	}
-            }
+            },
+
+            showForgetPass(){
+            	$("#loginModal").modal('hide');
+            	$("#forget-modal").modal('show');
+            },
+
+            sendmail(){
+            	var vm = this;
+            	if($("#forget_email").val()==""){
+            		alert("Please write your email address");
+            		return false;
+            	}
+
+            	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    			if(!emailReg.test($("#forget_email").val()) || $("#forget_email").val()==""){
+        		// if($("#email").val()==""){
+        			alert("Please insert a valid email address");
+        			return false;
+
+        		}
+
+            	axios({
+                        url: this.getApiUrl()+"sendmail",
+                        method: "GET",
+                        params: {
+                        	email : $('#forget_email').val()  
+                        },
+                }).then(function (response) {
+                	alert(response.data.message);
+                	if(response.data.success){
+                		$("#forget-modal").modal('hide');
+                		$('#forget_email').val('')
+                	}
+                	
+                    
+                }).catch(function (error) {
+                    vm.error = error
+                });
+            },
         }
     }
 </script>

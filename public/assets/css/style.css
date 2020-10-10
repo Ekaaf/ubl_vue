@@ -366,7 +366,7 @@ input::placeholder {
 	width: 100%;
 }
 .select-var-form {
-	width: 90%;
+	/*width: 90%;*/
 }
 .find-dentist {
 	background: #843d71;
@@ -625,6 +625,11 @@ input::placeholder {
 	}
 }
 
+@media only screen and (max-width: 1200px) {
+	.navbar-collapse{
+		font-size: 12px;
+	}
+}
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1em;
     padding-left: 1em;

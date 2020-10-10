@@ -14,7 +14,7 @@
                     </p>
                 </div>
             </div>
-            <div class="container select-var-font find-dentist-text text-center mt-5" style="border: 1px solid white; border-radius: 10px;">
+            <div class="container select-var-font find-dentist-text text-center mt-5" style="border: 1px solid white; border-radius: 10px;" id="select-mobile">
                 <form class="select-var-form" id="findDoctorForm">
                 <div class="row mt-4" >
                     <h2 style="margin: 0 auto;">Select Your Variables</h2>
@@ -56,13 +56,14 @@
             </div>
 
             <div class="container select-var-font find-dentist-text mt-5" >
+                 <!-- mr-3 mb-5 p-3 -->
                 <div class="row mt-3 mb-3">
-                    <div class="col-6 color-white mr-3 mb-5 p-3" style="border: 1px solid white; border-radius: 10px; max-width:90%;" v-for="doctor in doctors">
+                    <div style="border: 1px solid white; border-radius: 10px;" v-for="(doctor, index) in doctors" class="col-6 color-white mb-5 p-3" >
                         <div class="row">
-                            <div class="col-5">
+                            <div class="col-md-5 mobile-doc">
                                 <img data-v-13b4122a="" :src="'http://ubl.sensetiveexpert.com/ubl_laravel/' + doctor.imagelink" class="img-fluid">
                             </div>
-                            <div class="col-7">
+                            <div class="col-md-7">
                                 <p >
                                     <h3><b>{{doctor.name}}</b></h3>
                                     <br>
@@ -83,7 +84,7 @@
                                 </p>
                             </div>
                         </div>
-                        <router-link type="button" class="btn btn-find-now" v-bind:to="'/Doctor/' + doctor.user_id" @click="findDoctor();" style="width: 65%;position: absolute;     right: 96px;bottom: -20px;">More Details</router-link>
+                        <router-link type="button" class="btn btn-find-now more-details" v-bind:to="'/Doctor/' + doctor.user_id" @click="findDoctor();">More Details</router-link>
                     </div>
                     
                 </div>
@@ -170,7 +171,24 @@
     .col-6 {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
-        max-width: 48% !important;
+        max-width: 49.5% !important;
+    }
+
+    .col-6:nth-child(2n) {
+      margin-left: 1%;
+    }
+
+    #findnow{
+        margin: -20px auto 0px -24% !important;
+        width: 50%!important;
+    }
+    .more-details{
+        width: 65%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: -20px;
     }
     @media only screen  and (max-width: 767px) {
         .right-side{
@@ -182,14 +200,34 @@
         .col-6 {
             -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-            max-width: 100% !important;
+            max-width: 98% !important;
+            margin-left: 1%;
+            margin-right: 1%;
         }
+
         h3{
             font-size: 1.25rem;
         }
         #findnow{
             margin: -20px auto 0px -24% !important;
             width: 50%!important;
+        }
+        #select-mobile{
+            width: 98%;
+        }
+        .more-details{
+            width: 85%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border-radius: 10px!important;
+        }
+        .mobile-doc{
+            text-align: center;
+        }
+        .mobile-doc img{
+            width: 50%;
         }
     }
   

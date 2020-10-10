@@ -16,10 +16,12 @@
                                     <router-link class="nav-item nav-link" v-bind:class = "(currentUrl=='Home')?'active':''"  to="/Home">Home</router-link>
                                     <router-link class="nav-item nav-link" v-bind:class = "(currentUrl=='AboutUs')?'active':''"  to="/AboutUs">About Us </router-link>
                                     <router-link class="nav-item nav-link" v-bind:class = "(currentUrl=='ContactUs')?'active':''"  to="/ContactUs">Contact Us </router-link>
-                                    <a href="javascript:" class="btn-register-free nav-item nav-link" data-toggle="modal" data-target="#reg_dental_camp_modal">
+                                    <!-- <a href="javascript:" class="btn-register-free nav-item nav-link" data-toggle="modal" data-target="#reg_dental_camp_modal">
                                         Registration for<br />
                                         <span>Free Dental Camp</span>
-                                    </a>
+                                    </a> -->
+                                    <a href="javascript:" class="nav-item nav-link" data-toggle="modal" data-target="#reg_dental_camp_modal">Registration for Free Dental Camp</a>
+
                                     <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#loginModal" v-if="!loggedin">Login</a>
                                     <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#signupModal" v-if="!loggedin">SignUp</a>
                                     <!-- Button trigger modal -->
