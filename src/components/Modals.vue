@@ -42,7 +42,7 @@
 	                        <div class="form-check mb-2">
 								<input type="checkbox" class="form-check-input" id="reg_agree">
 								<label class="form-check-label" for="exampleCheck1" style="color: white;">
-									By agreeing terms and conditions and privacy policy
+									By agreeing<router-link class="nav-item nav-link"  to="/terms"> terms and conditions</router-link>  and <router-link class="nav-item nav-link"  to="/privacy"> privacy policy</router-link>
 								</label>
 							</div>
 
@@ -331,7 +331,7 @@
 	                        <div class="row">
 	                            <div class="col-md-6 border-right2">
 	                                <div class="form-group">
-	                                    <input type="text" class="form-control color-default rounded-pill" id="login_email" name="login_email" placeholder="Email" v-model="login_email">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="login_email" name="login_email" placeholder="Email / BMDC No." v-model="login_email">
 	                                </div>
 	                                <!-- <div class="form-group">
 	                                    <input type="password" class="form-control color-default rounded-pill" id="login_password" name="login_password" placeholder="Password" v-model="login_password">
@@ -347,7 +347,7 @@
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="login_agree">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
-											By agreeing terms and conditions and privacy policy
+											By agreeing<router-link to="/terms" style="color: white;"> terms and conditions</router-link>  and <router-link to="/privacy" style="color: white;"> privacy policy</router-link>
 										</label>
 									</div>
 									<div class="form-group">
@@ -400,6 +400,25 @@
 	            </div>
 	        </div>
 	    </div>
+
+
+	    <div class="modal fade edit-info-modal" id="modal-loaded" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true" style="z-index: 9999999">
+	        <div class="modal-dialog modal-dialog-centered" role="document">
+	            <div class="modal-content bg-default">
+	                <div class="modal-header">
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> <span>Please register to get a free sample</span></h5>
+	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+	                    </button>
+	                </div>
+	                <div class="modal-body">
+	                    
+	                </div>
+
+	            </div>
+	        </div>
+	    </div>
+	    
 	    <div class="modal fade edit-info-modal" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true" style="z-index: 9999999">
 	        <div class="modal-dialog" role="document">
 	            <div class="modal-content bg-default">
@@ -519,6 +538,13 @@
         },
         mixins: [Mixin],
         mounted(){
+        	if(sessionStorage.getItem('loaded')){
+            	// alert('loaded');
+	        }
+	        else{
+	            sessionStorage.setItem("loaded", true);
+	            $("#modal-loaded").modal('show');
+	        }
         	var vm = this;
         	var accessToken = JSON.parse(this.getAccesstoken());
         	if(accessToken){
@@ -627,7 +653,17 @@
                     // vm.$router.push('/user/dashboard') 
                 }).catch(function (error) {
                     if(error.response.data.success == false){
-                    	alert("Email and password do not match")
+                    	// alert("Email and password do not match");
+                    	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		    			if(!emailReg.test(vm.login_email) || vm.login_email==""){
+		        		// if($("#email").val()==""){
+		        			alert("BMDC No. and password do not match");
+		        			// return false;
+
+		        		}
+		        		else{
+		        			alert("Email and password do not match");
+		        		}
                     }
                 });
             },

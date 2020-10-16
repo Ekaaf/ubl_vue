@@ -17,6 +17,9 @@ import Audit from '@/pages/Audit'
 import Research from '@/pages/Research'
 import DailyVisit from '@/pages/DailyVisit'
 import Success from '@/pages/Success'
+import Term from '@/pages/Term'
+import Privacy from '@/pages/Privacy'
+
 import guard from '../guard';
 
 
@@ -38,6 +41,18 @@ const router =  new Router({
             path: '/Home',
             name: 'Home',
             component: Home
+        },
+
+        {
+            path: '/terms',
+            name: 'Term',
+            component: Term
+        },
+
+        {
+            path: '/privacy',
+            name: 'Privacy',
+            component: Privacy
         },
 
         {

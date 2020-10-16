@@ -20,7 +20,9 @@
                                         Registration for<br />
                                         <span>Free Dental Camp</span>
                                     </a> -->
-                                    <a href="javascript:" class="nav-item nav-link" data-toggle="modal" data-target="#reg_dental_camp_modal">Registration for Free Dental Camp</a>
+                                    <!-- <a href="javascript:" class="nav-item nav-link" data-toggle="modal" data-target="#reg_dental_camp_modal" v-if="role_id==2 || role_id==''">Registration for Free Dental Camp</a> -->
+
+                                    <a href="javascript:" class="nav-item nav-link" data-toggle="modal" data-target="#reg_dental_camp_modal" v-if="role_id==3">Apply for Free Sample</a>
 
                                     <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#loginModal" v-if="!loggedin">Login</a>
                                     <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#signupModal" v-if="!loggedin">SignUp</a>

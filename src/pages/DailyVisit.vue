@@ -424,7 +424,7 @@
                 vm.getDoctorInfo();
             });
 
-        	this.getCurrentpostion();
+        	// this.getCurrentpostion();
             this.getBdos().then(data => { this.bdoList = data});
             this.getZones().then(data => { this.zoneList = data});
             this.getOptions().then(data => { this.options = data});

@@ -263,7 +263,7 @@
 
         },
         mounted(){
-            this.getCurrentpostion();
+            // this.getCurrentpostion();
             this.getZones().then(data => { this.zoneList = data});
 
         },
