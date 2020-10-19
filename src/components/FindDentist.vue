@@ -107,18 +107,22 @@
                 chamber_name: '',
                 department: '',
                 departmentOptions:[1,2,3,4],
-                doctors: []
+                doctors: [],
+                location : []
             }
         },
         methods: {
 
             findDoctor(){
             	var vm = this;
+                var data = $('#findDoctorForm').serialize();
+                data = data+"&latitude="+vm.currentPosition.latitude+"&longitude="+this.currentPosition.longitude;
+                
             	axios({
                         url: this.getApiUrl()+"findDoctor",
                         method: "POST",
-                        data: $('#findDoctorForm').serialize(),
-                        // data: form_data,
+                        // data: $('#findDoctorForm').serialize(),
+                        data: data,
                 }).then(function (response) {
                     vm.doctors = response.data;
                     $.each(vm.doctors, function(index, item) {
@@ -135,6 +139,7 @@
 
         mounted(){
             var vm = this;
+            vm.getCurrentpostion();
             $('body').keypress(function (e) {
                 var key = e.which;
                 if(key == 13){

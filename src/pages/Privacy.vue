@@ -29,7 +29,7 @@
                                 </h5>
                             </div>
 
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
                                     <p style="color: #843d71;font-size:15px;">
                                         Any personal data provided to or collected by Unilever is controlled by Unilever Bangladesh Limited , the data controller.
@@ -51,7 +51,7 @@
                                 </h5>
                             </div>
 
-                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
                                     <p style="color: #843d71;font-size:15px;">
                                         Personal data means any information that can be used to identify directly or indirectly a specific individual.
@@ -71,15 +71,9 @@
                                         <br><br>
                                         You are not required to provide Unilever the personal data that we request, but if you choose not to do so, we may not be able to provide you with our products or services, or with a high quality of service or respond to any queries you may have.
                                         <br><br>
-                                    </p>
-
-
-                                    <p style="color: #843d71;font-size:15px;">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link" >
-                                                Ways in which we collect your personal data
-                                            </button>
-                                        </h5>
+                                    
+                                        <a href="">Ways in which we collect your personal data</a>
+                                        <br><br>
                                         We may collect personal data from a variety of sources. This includes:
                                         <br><br>
                                         <ul>
@@ -93,17 +87,10 @@
                                                 Personal data we collect from other sources. We collect personal data from other sources including our trusted partnerships with third-parties and where we operate Unilever accounts on third-party platforms: For example, when you use the “like” functionality on Facebook or the +1 functionality on Google+. Additionally, we receive information about you and other visitors’ interactions with our advertising to measure whether our advertising is relevant and successful. We also collect information about you and your activities from a third-party when we jointly offer services or products, or from third-party data enrichment providers (to find out more see our privacy key terms) who may deliver insights to Unilever about the personal data we hold.
                                             </li>
                                         </ul>
-                                    </p>
-
-
-                                    <p style="color: #843d71;font-size:15px;">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link" >
-                                                Ways in which we collect your personal data
-                                            </button>
-                                        </h5>
-                                        When and why we collect “special categories of personal data”
+                                    
+                                        <a href="">When and why we collect “special categories of personal data”</a>
                                         <br><br>
+
                                         Certain categories of personal data, such as race, ethnicity, religion, health, sexuality or biometric data are classified as “special categories of data” and benefit from additional protection under the European data protection legislation.
                                         <br><br>
                                         We limit the circumstances where we collect and process these special categories of data.
@@ -121,15 +108,10 @@
                                                 Similarly, Unilever collects personal data related to consumers’ allergies to provide consumers with ads and promotions for products which are relevant to their needs.
                                             </li>
                                         </ul>
-                                    </p>
+                                    
+                                        <a href="">How do we protect children’s privacy?</a>
+                                        <br><br>
 
-
-                                    <p style="color: #843d71;font-size:15px;">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link" >
-                                                How do we protect children’s privacy?
-                                            </button>
-                                        </h5>
                                         We understand the importance of taking extra precautions to protect the privacy and safety of children using Unilever products and services. 
                                         <br><br>
                                         Most of Unilever’s websites are designed and intended for use by adults. Where one of our websites is intended for use by a younger audience, we will obtain consent from the person with parental responsibility before we collect personal data where it is required by applicable laws and regulations (the age at which consent is necessary varies from Country to Country).
@@ -148,20 +130,342 @@
                             <div class="card-header" id="heading3">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                                        Ways in which we collect your personal data
+                                        What purpose do we use your data for?
                                     </button>
                                 </h5>
                             </div>
 
-                            <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordion">
+                            <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
                                 <div class="card-body">
                                     <p style="color: #843d71;font-size:15px;">
+                                        We collect, process and disclose your personal data only for specific and limited purposes. For example, to process your payments, to assess and handle any complaints, to develop and improve our products, services, communication methods and the functionality of our websites, to provide personalised products, communications and targeted advertising as well as product recommendations to you.
+                                        <br><br>
+                                        We also create profiles by analysing the information about your online surfing, searching and buying behaviour and your interactions with our brand communications by building segments (creating groups that have certain common characteristics) and by placing your personal data in one or more segments. 
+                                        <br><br>
+                                        Additionally, Unilever processes your personal data also using automated means. An automated decision is a decision which is made solely by automatic means, where no humans are involved in the decision-making process related to your personal data.
+                                        <br><br>
+                                        We collect, process and disclose your personal data for the following purposes:<br>
+                                        <ul>
+                                            <li>
+                                                To process your payments, if you purchase our products, to provide you with your order status, deal with your enquiries and requests, and assess and handle any complaints;
+                                            </li>
+                                            <li>
+                                                To process and answer your inquiries or to contact you to answer your questions and/or requests;
+                                            </li>
+                                            <li>
+                                                To develop and improve our products, services, communication methods and the functionality of our websites;
+                                            </li>
+                                            <li>
+                                                For the purposes of competitions or promotions that you have entered;
+                                            </li>
+                                            <li>
+                                                To communicate information to you and to manage your registration and/or subscription to our newsletter or other communications;
+                                            </li>
+                                            <li>
+                                                To manage our everyday business needs regarding your participation in our contests, sweepstakes or promotional activities or request;
+                                            </li>
+                                            <li>
+                                                To authenticate the identity of individuals contacting us by telephone, electronic means or otherwise;
+                                            </li>
+                                            <li>
+                                                For internal training and quality assurance purposes;
+                                            </li>
+                                            <li>
+                                                To understand and assess the interests, wants, and changing needs of consumers, to improve our website, our current products and services, and/or developing new products and services; and
+                                            </li>
+                                            <li>
+                                                To provide personalised products, communications and targeted advertising as well as product recommendations to you.
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        When we collect and use your personal data for purposes mentioned above or for other purposes, we will inform you before or at the time of collection.<br><br>
+                                        Where appropriate, we will ask for your consent to process the personal data. Where you have given consent for processing activities, you have the right to withdraw your consent at any time.
+                                        <br><br>
+                                        In some cases, we rely on legitimate interest for processing your personal data. A legitimate interest could exist for example, when you sign up for a loyalty scheme with one of our brands and we use the personal data collected to conduct data analytics to improve our products or services. This ground will only be used where it is necessary to achieve a legitimate interest, for example to assist in the performance of a contract, or to optimise a service, and does not outweigh your rights as an individual. This legal basis will only be relied upon where there is no less intrusive way to process your personal data. We can assure you that if legitimate interest is used as a ground for processing your personal data, we will keep a record of this and you have the right to ask for this information.
+                                        <br><br>
+                                        We process your personal data to perform a contract to which you are or will be a party. For example, we need to process your personal data to deliver a product or a service you bought, to allow you to take part in one of our competitions, or to send you samples that you have requested.
+                                        <br><br>
+                                        We also process your personal data when we have a legal obligation (e.g., tax or social security obligations) to perform such processing. For example, a court order or a subpoena may require us to process personal data for a particular purpose, or we may be compelled to process personal data to report suspicious transactions under the local anti-money laundering rules.
+                                        <br><br>
+                                        <a href="">Profiling</a>
+                                        <br><br>
+                                        Unilever uses your personal data to build profiles. We create profiles by analysing the information about your online surfing, searching and buying behaviour and your interactions with our brand communications by building segments (creating groups that have certain common characteristics) and by placing your personal data in one or more segments. These segments are used by Unilever to personalise the website and our communications to you (such as showing relevant content to you when you visit our site or in a newsletter to you), and to display relevant offers and advertisements from the Unilever brands on the Unilever sites, and via third-party websites. The segments can also be used for third-party campaigns on the Unilever sites. Unilever profiles your data where you have provided consent for us to do so; for example, accepting the setting of cookies on your browser online or signing up for email newsletters from one of our brands.
+                                        <br><br>
+                                        You can withdraw your consent to prevent your personal data being used this way at any time using the manage cookies section of our Cookie Notice or unsubscribing to the use of your email address if you have logged into one of our websites or signed up to any marketing newsletters.
+                                        <br><br>
+                                        By way of example – 
+                                        <br><br>
+                                        <ul>
+                                            <li>
+                                                Unilever collects data, with your consent, from: 
+                                                <ul>
+                                                    <li>
+                                                       Our websites about what you view and the way you interact with our content;   
+                                                    </li>
+                                                    <li>
+                                                        Our digital display advertising that we serve to you on social platforms and other publisher’s websites; and  
+                                                    </li>
+                                                    <li>
+                                                        Forms you fill in online and send to us about what your interests are.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                We also track the products you buy when you click on one of our display adverts and go on to purchase something from a selection of our retail partners.
+                                            </li>
+                                            <li>
+                                                If you have asked to receive emails or SMS communications from us, we track whether you open, read or click on the content to see what you are interested in so that we can give you more content that we think you are more likely to enjoy.
+                                            </li>
+                                            <li>
+                                                We use this data to profile your likes and dislikes.  For instance, if we see that you are regularly viewing Vegan recipes on our “Recipedia” website, and you have opted in to receiving emails from us, we might give you an update on the new Vegan recipes that have just hit the site for your interest, or we may tailor our web content when you visit towards things we think you’ll be most interested in.
+                                            </li>
+                                            <li>
+                                                Based on this profile information, we may also give you advertising that we think you will like and want to see as you view content from us or from our network of publishers that we advertise with.  Sometimes, with your consent, we may use your current location to serve advertising to you that is to do with promotions or events that are happening nearby that we think you might be interested in.
+                                            </li>
+                                            <li>
+                                                We may also use information you have provided to selected third-parties and consented to be shared, like your age, gender, life stage, lifestyle and wider interests to identify people who we think will have similar interests to you and who we believe will be interested in similar advertising.
+                                            </li>
+                                        </ul>
+                                        
+                                        <a href="">Automated decision-making</a>
+                                        <br><br>
+                                        In some instances, Unilever processes your personal data using automated means. An automated decision is a decision which is made solely by automatic means, where no humans are involved in the decision-making process related to your personal data. For example:
+                                        <br>
+                                        <ul>
+                                            <li>
+                                                Unilever uses game simulations of science-based behavioural assessments and data science techniques to assess prospective employees. Candidates are required to play a set of games and the behavioural patterns exhibited during gameplay are assessed by a Unilever customised algorithm to predict the candidate’s potential for a specific role. This algorithm is regularly tested to ensure it remains fair, effective and unbiased.
+                                            </li>
+                                        </ul>
+                                        We will not make decisions based solely on automated decision making that have significant impact on you. If we do so we notify you and provide you with clear information about our decision to rely on automated processing to make our decision and our lawful basis for doing so. For example, Unilever processes your personal data using automated means only if it is necessary for the entering into or the performance of a contract with you, or when you have given your explicit consent.
+                                        <br><br>
+                                        You have the right not to be subject to a decision which is based solely on automated processing and which produces legal or other significant effects on you. In particular, you have the right:
+                                        <ul>
+                                            <li>to obtain human intervention; </li>
+                                            <li>to express your point of view;</li>
+                                            <li>to obtain an explanation of the decision reached after an assessment; and</li>
+                                            <li>to challenge such a decision.</li>
+                                        </ul>
                                         
                                     </p>
                                 </div>
                             </div>
                         </div>
 
+
+                        <div class="card">
+                            <div class="card-header" id="heading4">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                        Who will it be shared with?
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p style="color: #843d71;font-size:15px;">
+                                        As part of the Unilever Group, a global business, Unilever Bangladesh Limitedshares your personal data within the Unilever Group and with selected third-parties in the following circumstances:
+                                        <br><br>
+                                        <ul>
+                                            <li>
+                                                Third-party service providers. In order to carry out your requests, respond to your inquiries, fulfil your orders, honour coupons, provide you with samples, enable you to participate in sweepstakes or make various other features, services and materials available to you through our websites we share your personal data with third-party service providers that perform functions on our behalf, such as companies that: host or operate Unilever’s websites, process payments, analyse data, provide customer service, postal or delivery services, and sponsors or other third-parties that participate in or administer our promotions. They have access to personal data needed to perform their functions but may not use it for other purposes. Further, they must process this personal data in accordance with this Privacy Notice and as permitted by applicable data protection laws and regulations.
+                                            </li>
+                                            <li>
+                                                Other third-parties. Your personal data will also be used by us or shared with our sponsors, advertisers, advertising networks, advertising servers, social media networks, and analytics companies or other third-parties in connection with marketing, promotional, data enrichment (to find out more about our privacy key terms follow the link) and other offers, as well as product information. 
+                                            </li>
+                                            <li>
+                                                Business transfers. Your personal data will be used by us or shared with the Unilever Group, primarily for business and operational purposes.  As Unilever Group continues to develop the business, it may sell or purchase assets, subsidiaries or business units.  In such transactions, your personal data generally is one of the transferred business assets but remains subject to the promises made in any pre-existing Privacy Notice (unless, of course, you consent otherwise). If another entity acquires us, our businesses or substantially all or part of our assets, or assets related to Unilever’s websites, your personal data will be disclosed to such entity as part of the due diligence process and will be transferred to such entity as one of the transferred assets.  Also, if any bankruptcy or reorganization proceeding is brought by or against us, all such personal data will be considered an asset of ours and as such it is possible they will be sold or transferred to third-parties. 
+                                            </li>
+                                            <li>
+                                                Legal disclosure. We may transfer and disclose your personal data to third-parties:
+                                                <ul>
+                                                    <li>To comply with a legal obligation;</li>
+                                                    <li>When we believe in good faith that an applicable law requires it;</li>
+                                                    <li>At the request of governmental authorities conducting an investigation; </li>
+                                                    <li>To verify or enforce our “Terms of Use” or other applicable policies;</li>
+                                                    <li>To detect and protect against fraud, or any technical or security vulnerabilities;</li>
+                                                    <li>To respond to an emergency; or otherwise</li>
+                                                    <li>To protect the rights, property, safety, or security of third-parties, visitors to Unilever’s websites, Unilever or the public. </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <a href="">International data transfers</a>
+                                        <br><br>
+                                        Unilever shares personal data within the Unilever Group or with third-parties for purposes described in this Privacy Notice. 
+                                        <br><br>
+                                        Unilever will only send personal data collected within the European Economic Area (EEA) to foreign countries in circumstances such as:
+                                        <br>
+                                        <ul>
+                                            <li>To follow your instructions; </li>
+                                            <li>To comply with a legal duty; or</li>
+                                            <li>To work with our agents and advisers who we use to help run our business and services.</li>
+                                        </ul>
+                                        <br>
+                                        If we do transfer personal data to outside of the EEA, Unilever will make sure that it is protected in the same way as if it was being used in the EEA. We’ll use one of the following safeguards:
+                                        <br>
+                                        <ul>
+                                            <li>Transfer to a non-EEA Country whose privacy legislation ensures an adequate level of protection of personal data to the EEA one; </li>
+                                            <li>Put in place a contract with the foreign third-party that means they must protect personal data to the same standards as the EEA; or</li>
+                                            <li>
+                                                Transfer personal data to organisations that are part of specific agreements on cross-border data transfers with the European Union (e.g., Privacy Shield, a framework that sets privacy standards for data sent between the United States and the European countries, or similar frameworks).
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card">
+                            <div class="card-header" id="heading5">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                        How Do We Protect Your Personal Data?
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p style="color: #843d71;font-size:15px;">
+                                        Unilever takes the security of your personal data very seriously. We take every effort to protect your personal data from misuse, interference, loss, unauthorised access, modification or disclosure. 
+                                        <br><br>
+                                        Our measures include implementing appropriate access controls, investing in the latest Information Security Capabilities to protect the IT environments we leverage, and ensuring we encrypt, pseudonymise and anonymise personal data wherever possible.
+                                        <br><br>
+                                        Access to your personal data is only permitted among our employees and agents on a need-to-know basis and subject to strict contractual confidentiality obligations when processed by third-parties.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header" id="heading6">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                        How Long Do We Keep Your Personal Data For?
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p style="color: #843d71;font-size:15px;">
+                                        We will keep your personal data for as long as we need it for the purpose it is being processed for. For example, where you make a purchase online with us we will keep the data related to your purchase, so we can perform the specific contract you have entered and after that, we will keep the personal data for a period which enables us to handle or respond to any complaints, queries or concerns relating to the purchase.
+                                        <br><br>
+                                        Your data may also be retained so that we can continue to improve your experience with us and to ensure that you receive any loyalty rewards which are due to you.<br><br>
+                                        We retain the identifiable data we collect directly for targeting purposes for as little time as possible, after which we employ measures to permanently delete it.<br><br>
+                                        We will actively review the personal data we hold and delete it securely, or in some cases anonymise it, when there is no longer a legal, business or consumer need for it to be retained.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="heading7">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                        What Are Your Rights?
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p style="color: #843d71;font-size:15px;">
+                                        Your rights in relation to your personal data how it is processed. You can exercise these rights at any point. We have provided an overview of these rights below together with what this entails for you. You can exercise your rights by sending an email or submitting a request through the “Contact Us” form on our websites.
+                                        <br><br>
+                                        Where we process your personal data, you have a number of rights over how the data is processed and can exercise these rights at any point. We have provided an overview of these rights below together with what this entails for you. You can exercise your rights by sending an email or submitting a request through the “Contact Us” form on our websites.<br>
+                                        <ul>
+                                            <li>The right to be informed. You have the right to be provided with clear, transparent and easily understandable information about how we use your personal data and your rights. Therefore, we’re providing you with the information in this Notice.</li>
+                                            <li>The right to access and rectification. You have the right to access, correct or update your personal data at any time. We understand the importance of this and should you want to exercise your rights, please contact us.</li>
+                                            <li>
+                                                The right to data portability. The personal data you have provided us with is portable. This means it can be moved, copied or transmitted electronically under certain circumstances.
+                                            </li>
+                                            <li>
+                                                The right to be forgotten. Under certain circumstances, you have right to request that we delete your data. If you wish to delete the personal data we hold about you, please let us know and we will take reasonable steps to respond to your request in accordance with legal requirements. If the personal data we collect is no longer needed for any purposes and we are not required by law to retain it, we will do what we can to delete, destroy or permanently de-identify it.
+                                            </li>
+                                            <li>
+                                                The right to restrict processing. Under certain circumstances, you have the right to restrict the processing of your personal data.
+                                            </li>
+                                            <li>
+                                                The right to object. Under certain circumstances, you have the right to object to certain types of processing, including processing for direct marketing (i.e., receiving emails from us notifying you or being contacted with varying potential opportunities).
+                                            </li>
+                                            <li>
+                                                The right to lodge a complaint with a Supervisory Authority. You have the right to lodge a complaint directly with any local Supervisory Authority about how we process your personal data.
+                                            </li>
+                                            <li>
+                                                The right to withdraw consent. If you have given your consent to anything we do with your personal data (i.e., we rely on consent as a legal basis for processing your personal data), you have the right to withdraw your consent at any time (although if you do so, it does not mean that anything we have done with your personal data with your consent up to that point is unlawful). You can withdraw your consent to the processing of your personal data at any time by contacting us with the details provided below.
+                                            </li>
+                                            <li>
+                                                Rights related to automated decision-making. You have the right not to be subject to a decision which is based solely on automated processing and which produces legal or other significant effects on you. In particular, you have the right:
+                                                <ul>
+                                                    <li>
+                                                        to obtain human intervention;
+                                                    </li>
+                                                    <li>to express your point of view;</li>
+                                                    <li>to obtain an explanation of the decision reached after an assessment; and</li>
+                                                    <li>
+                                                        to challenge such a decision.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        Further information and advice about your rights can be obtained from the data protection Regulator in your Country.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="heading8">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                                        How Do You Contact Unilever?
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p style="color: #843d71;font-size:15px;">
+                                        Unilever Bangladesh’s Privacy Officer can be contacted by email .
+                                        <br><br>
+                                        If you have any questions or concerns about Unilever’s Privacy Notice or data processing or if you would like to make a complaint about a possible breach of local privacy laws, please do so by sending an e-mail or submitting a request through the “Contact Us” form on our websites.
+                                        <br><br>
+                                        When a privacy question or access request is received we have a dedicated team which triages the contacts and seeks to address the specific concern or query which you are seeking to raise. Where your issue may be more substantive in nature, more information may be sought from you. All such substantive contacts receive a response. If you are unsatisfied with the reply received, you may refer your complaint to the relevant Supervisory Authority in your Country. If you ask us, we will endeavour to provide you with information about relevant complaint avenues which may be applicable to your circumstances.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="heading9">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                                        How Do We Keep This Notice Up To Date?
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p style="color: #843d71;font-size:15px;">
+                                        We will update this Privacy Notice when necessary to reflect customer feedback and changes in our products and services
+                                        <br><br>
+                                        We will update this Privacy Notice when necessary to reflect customer feedback and changes in our products and services. When we post changes to this statement, we will revise the “last updated” date at the top of this Notice. If the changes are significant, we will provide a more prominent notice (including, for certain services, email notification of Privacy Notice changes). We will also keep prior versions of this Privacy Notice in an archive for your review.
+                                        <br><br>
+                                        We will not reduce your rights under this Privacy Notice without your consent.
+                                        <br><br>
+                                        <a href="">Additional Privacy Terms or Notices</a>
+                                        <br><br>
+                                        In addition to this Privacy Notice, there may be specific campaigns or promotions which will be governed by additional privacy terms or notices. We encourage you to read these additional terms or notices before participating in any such campaigns or promotions as you will be required to comply with them if you participate. Any additional privacy terms or notices will be made prominently available to you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </p>
