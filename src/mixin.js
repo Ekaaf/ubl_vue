@@ -14,7 +14,7 @@ export default {
         },
         getApiUrl(){
             // return 'https://'+document.domain+'/uniliver_laravel/api/auth/'
-            return 'http://ubl.sensetiveexpert.com/ubl_laravel/api/'
+            return 'https://ubl.sensetiveexpert.com/ubl_laravel/api/'
             // return 'http://localhost/ubl_laravel/api/'
             // if(document.domain=='localhost'){
             //     return 'http://'+document.domain+'/uniliver_laravel/api/auth/'

@@ -458,12 +458,17 @@
 
 	                                <div class="form-group">
 									    <label for="exampleFormControlSelect1" style="color:white;">I am </label>
-									    <select class="form-control rounded-pill" id="role_id" name="role_id" v-model="signup_role_id">
+									    <select class="form-control rounded-pill" id="role_id" name="role_id" v-model="signup_role_id" @change="showDoctorReg();">
 									      <option value="">Select</option>
 									      <option value="2">Doctor</option>
 									      <option value="3">Patient</option>
 									    </select>
 									</div>
+
+									<div class="form-group" id="filediv" style="display:none;">
+	                                    <input type="file" class="form-control color-default rounded-pill" id="file" name="file" >
+	                                </div>
+
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="agree" name="agree" value="1">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
@@ -477,7 +482,35 @@
 	                                    <button type="button" class="btn btn-sub-modal color-default" @click="signUp();">Sign Up</button>
 	                                </div>
 	                            </div>
-	                            <div class="col-md-6">
+	                            <div class="col-md-6" id="doctor_reg_div" style="display:none;">
+	                            	<div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="designation_reg" name="designation_reg" placeholder="Designation" v-model="designation_reg">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="department_reg" name="department_reg" placeholder="Department" v-model="department_reg">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="specialization_reg" name="specialization_reg" placeholder="Specialization" v-model="specialization_reg">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="chamber_name_reg" name="chamber_name_reg" placeholder="Chamber Name" v-model="chamber_name_reg">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="chamber_address_reg" name="chamber_address_reg" placeholder="Chamber Address" v-model="chamber_address_reg">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="education_reg" name="education_reg" placeholder="Education" v-model="education_reg">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="bmdc_number_reg" name="bmdc_number_reg" placeholder="Bmdc Number" v-model="bmdc_number_reg">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="online_consultation_reg" name="online_consultation_reg" placeholder="Online Consultation" v-model="online_consultation_reg">
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="location_reg" name="location_reg" placeholder="Lat, Long" v-model="location_reg">
+	                                </div>
+	                                
 	                            </div>
 	                        </div>
 	                        
@@ -618,6 +651,18 @@
                 }).catch(function (error) {
                     vm.error = error
                 });
+        	},
+
+        	showDoctorReg(){
+        		var role_id = $("#role_id").val();
+        		if(role_id==2){
+        			$("#doctor_reg_div").show();
+        			$("#filediv").show();
+        		}
+        		else{
+        			$("#doctor_reg_div").hide();
+        			$("#filediv").hide();
+        		}
         	},
 
         	login(){
