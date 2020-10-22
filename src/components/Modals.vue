@@ -406,7 +406,7 @@
 	        <div class="modal-dialog modal-dialog-centered" role="document">
 	            <div class="modal-content bg-default">
 	                <div class="modal-header">
-	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> <span>Please register to get a free sample</span></h5>
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> <span>Please sign-up & register to get a free sample</span></h5>
 	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
 	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
 	                    </button>

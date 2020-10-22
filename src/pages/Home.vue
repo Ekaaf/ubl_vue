@@ -2,13 +2,15 @@
     <div style="margin-top: 3px;">
         <!--- slider-img-start-->
         <section class="slider">
-            <img class="w-100" src="/assets/img/home.png" />
+            <!-- <img class="w-100" src="/assets/img/home.png" /> -->
+            <!-- <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7v3Tz0zL4Qg?autoplay=1&mute=1&playlist=7v3Tz0zL4Qg&loop=1" allowfullscreen></iframe>
+            </div> -->
+            <video autoplay muted id="video">
+              <source src="/assets/video.webm" type="video/webm">
+              Your browser does not support HTML5 video.
+            </video>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-
-                    </div>
-                </div>
             </div>
         </section>
         <!---slider-img-end-->
@@ -61,7 +63,7 @@
         },
         
         mounted(){
-            
+            // $("#video").play();
         }
 
     }
@@ -104,4 +106,8 @@
         display:flex;
         height:100%;
     }
+    video {
+  max-width: 100%;
+  height: auto;
+}
 </style>
