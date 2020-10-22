@@ -42,7 +42,7 @@
 	                        <div class="form-check mb-2">
 								<input type="checkbox" class="form-check-input" id="reg_agree">
 								<label class="form-check-label" for="exampleCheck1" style="color: white;">
-									I agree to<router-link class="nav-item nav-link"  to="/terms"> terms and conditions</router-link>  and <router-link class="nav-item nav-link"  to="/privacy"> privacy policy</router-link> and I am at least 18 years old
+									I agree to<router-link to="/terms" style="color: white;"> terms and conditions</router-link>  and <router-link to="/privacy" style="color: white;"> privacy policy</router-link> and I am at least 18 years old
 								</label>
 							</div>
 

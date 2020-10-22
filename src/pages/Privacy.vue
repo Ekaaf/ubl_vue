@@ -508,7 +508,9 @@
             },
 
         },
-        mounted(){var vm = this;
+        mounted(){
+            $('.modal').modal('hide');
+            var vm = this;
             $(document).on('keypress',function(e) {
 
                 if(e.which == 13) {
