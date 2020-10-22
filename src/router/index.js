@@ -19,6 +19,7 @@ import DailyVisit from '@/pages/DailyVisit'
 import Success from '@/pages/Success'
 import Term from '@/pages/Term'
 import Privacy from '@/pages/Privacy'
+import Cookies from '@/pages/Cookies'
 
 import guard from '../guard';
 
@@ -53,6 +54,12 @@ const router =  new Router({
             path: '/privacy',
             name: 'Privacy',
             component: Privacy
+        },
+
+        {
+            path: '/cookies',
+            name: 'Cookies',
+            component: Cookies
         },
 
         {

@@ -6,7 +6,7 @@
             <!-- <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7v3Tz0zL4Qg?autoplay=1&mute=1&playlist=7v3Tz0zL4Qg&loop=1" allowfullscreen></iframe>
             </div> -->
-            <video autoplay muted id="video">
+            <video autoplay muted loop id="video">
               <source src="/assets/video.webm" type="video/webm">
               Your browser does not support HTML5 video.
             </video>

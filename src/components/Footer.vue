@@ -41,16 +41,94 @@
 	            </div>
 	        </div>
 	    </section>
-	    
+	    <div class="bottom" id="alert">
+			The Sensetive Expert website employs cookies to improve your user experience. We have updated our cookie policy to reflect changes in the law on cookies and tracking technologies used on websites. If you continue on this website, you will be providing your consent to our use of cookies.
+		  	<br>
+
+		  	<router-link to="/cookies" tag="button" class="mr-1" onclick="accpetCookie()"> Learn More</router-link>
+		  	
+		  	<button @click="accpetCookie()">
+		    	Click here for accpet cookie
+		 	</button>
+		</div>
+		<!-- <div class="scroll">
+		  website content
+		</div> -->
     </div>
 </template>
 
 <script>
     export default {
-        name: 'Footer'
+        name: 'Footer',
+        mounted(){
+        	if (this.getCookie('accepted') === 'yes') {
+		        document.getElementById("alert").style.display = "none";
+		    }
+
+		    // // user clicks the confirmation -> set the 'yes' value to cookie and set 'accepted' as name
+		    // function accpetCookie() {
+		    //     setCookie('accepted', 'yes', 100);
+		    // }
+
+		    // // code from :http://stackoverflow.com/a/4825695/191220
+		    // // set cookie method
+		    // function setCookie(c_name, value, exdays) {
+		    //     var exdate = new Date();
+		    //     exdate.setDate(exdate.getDate() + exdays);
+		    //     var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+		    //     document.cookie = c_name + "=" + c_value;
+		    // }
+
+		    // // get cookie method   
+		    // function getCookie(c_name) {
+		    //     var i, x, y, ARRcookies = document.cookie.split(";");
+		    //     for (i = 0; i < ARRcookies.length; i++) {
+		    //         x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+		    //         y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+		    //         x = x.replace(/^\s+|\s+$/g, "");
+		    //         if (x == c_name) {
+		    //             return unescape(y);
+		    //         }
+		    //     }
+		    // }
+        },
+        methods: {
+        	accpetCookie() {
+		        this.setCookie('accepted', 'yes', 100);
+		    },
+		    setCookie(c_name, value, exdays) {
+		        var exdate = new Date();
+		        exdate.setDate(exdate.getDate() + exdays);
+		        var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+		        document.cookie = c_name + "=" + c_value;
+		        document.getElementById("alert").style.display = "none";
+		    },
+		    getCookie(c_name) {
+		        var i, x, y, ARRcookies = document.cookie.split(";");
+		        for (i = 0; i < ARRcookies.length; i++) {
+		            x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+		            y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+		            x = x.replace(/^\s+|\s+$/g, "");
+		            if (x == c_name) {
+		                return unescape(y);
+		            }
+		        }
+		    }
+        }
     }
 </script>
 
 <style>
-  
+  .bottom {
+	  position: fixed;
+	  bottom: 0;
+	  width: 100%;
+	  background: darkgrey;
+	  color: #fff;
+	  padding:1%;
+	}
+
+	.scroll {
+	  min-height: 1500px;
+	}
 </style>

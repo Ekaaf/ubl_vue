@@ -8,9 +8,8 @@
         <Header></Header>
         <!-- Menu header end -->
         <router-view :key="$route.fullPath"></router-view>  
-        <!--Contact Us--Start--->
-        <ContactUs v-if="this.$router.currentRoute.name!= 'Home' && this.$router.currentRoute.name!= '/'"></ContactUs>
-        <!--Contact v-if="this.$router.currentRoute.name!= 'AboutUs' && this.$router.currentRoute.name!= 'ContactUs'" US--End--->
+        
+       <!--  <ContactUs v-if="this.$router.currentRoute.name!= 'Home' && this.$router.currentRoute.name!= '/'"></ContactUs> -->
         
         <!---accounting--start-->
         <Accounting></Accounting>
