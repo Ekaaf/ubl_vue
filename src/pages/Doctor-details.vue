@@ -121,7 +121,7 @@
                         &q=Space+Needle,Seattle+WA" allowfullscreen>
                     </iframe> -->
 
-                    <iframe class="embed-responsive-item" :src="'https://maps.google.com/maps?q='+doctor.location+'&amp&z=15&output=embed'" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                    <iframe class="embed-responsive-item" :src="'https://maps.google.com/maps?q='+doctor.latitude+','+doctor.longitude+'&amp&z=15&output=embed'" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
 
                     <!-- <iframe src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" width="100%" height="100%" frameborder="0" style="border:0"></iframe> -->
 

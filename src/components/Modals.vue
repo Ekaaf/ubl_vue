@@ -42,7 +42,7 @@
 	                        <div class="form-check mb-2">
 								<input type="checkbox" class="form-check-input" id="reg_agree">
 								<label class="form-check-label" for="exampleCheck1" style="color: white;">
-									By agreeing<router-link class="nav-item nav-link"  to="/terms"> terms and conditions</router-link>  and <router-link class="nav-item nav-link"  to="/privacy"> privacy policy</router-link>
+									I agree to<router-link class="nav-item nav-link"  to="/terms"> terms and conditions</router-link>  and <router-link class="nav-item nav-link"  to="/privacy"> privacy policy</router-link> and I am at least 18 years old
 								</label>
 							</div>
 
@@ -347,7 +347,7 @@
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="login_agree">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
-											By agreeing<router-link to="/terms" style="color: white;"> terms and conditions</router-link>  and <router-link to="/privacy" style="color: white;"> privacy policy</router-link>
+											I agree to<router-link to="/terms" style="color: white;"> terms and conditions</router-link>  and <router-link to="/privacy" style="color: white;"> privacy policy</router-link> and I am at least 18 years old
 										</label>
 									</div>
 									<div class="form-group">
@@ -472,7 +472,7 @@
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="agree" name="agree" value="1">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
-											By agreeing terms and conditions and privacy policy
+											I agree to<router-link to="/terms" style="color: white;"> terms and conditions</router-link>  and <router-link to="/privacy" style="color: white;"> privacy policy</router-link> and I am at least 18 years old
 										</label>
 									</div>
 									<div class="form-group">
