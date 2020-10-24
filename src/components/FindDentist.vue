@@ -61,11 +61,11 @@
                     <div style="border: 1px solid white; border-radius: 10px;" v-for="(doctor, index) in doctors" class="col-6 color-white mb-5 p-3" >
                         <div class="row">
                             <div class="col-md-5 mobile-doc">
-                                <img data-v-13b4122a="" :src="'http://ubl.sensetiveexpert.com/ubl_laravel/' + doctor.imagelink" class="img-fluid">
+                                <img  :src="'https://ubl.sensetiveexpert.com/ubl_laravel/' + doctor.imagelink"  @error="imageUrlAlt" class="img-fluid">
                             </div>
                             <div class="col-md-7">
                                 <p >
-                                    <h3><b>{{doctor.name}}</b></h3>
+                                    <h3><b>{{doctor.doctor_name}}</b></h3>
                                     <br>
                                     <span>
                                         {{doctor.department}} 
@@ -113,9 +113,13 @@
         },
         methods: {
 
+            imageUrlAlt(){
+                event.target.src = "https://ubl.sensetiveexpert.com/ubl_laravel/public/images/default.jpg"
+            },
             findDoctor(){
             	var vm = this;
                 var data = $('#findDoctorForm').serialize();
+                vm.doctors = [];
                 data = data+"&latitude="+vm.currentPosition.latitude+"&longitude="+this.currentPosition.longitude;
                 
             	axios({

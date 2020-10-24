@@ -61,8 +61,8 @@
 
 
 
-	    <div class="modal fade register-modal" id="doctor_edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="z-index:999999999;">
-	        <div class="modal-dialog" role="document">
+	    <div class="modal fade bd-example-modal-lg register-modal" id="doctor_edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="z-index:999999999;">
+	        <div class="modal-dialog modal-lg" role="document">
 	            <div class="modal-content bg-default">
 	                <div class="modal-header">
 	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Edit Information</h5>
@@ -73,43 +73,77 @@
 	                <div class="modal-body">
 	                    <form id="doctor_edit_form" enctype="multipart/form-data">
 	                        <input type="hidden" id="doctor_id" name="doctor_id">
-	                        <div class="form-group mb-3">
-	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_name" id="doctor_name" name="doctor_name" placeholder="Name">
+
+	                        <div class="form-group row mb-3">
+	                        	<label for="staticEmail" class="col-sm-3 col-form-label color-white">Name</label>
+	                            <div class="col-sm-9">
+	                            	<input type="text" class="form-control color-default rounded-pill" v-model="doctor_name" id="doctor_name" name="doctor_name" placeholder="Name">
+	                        	</div>
 	                        </div>
 
-	                        <div class="form-group mb-3">
-	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_email" id="doctor_email" name="doctor_email" placeholder="Doctor Email" >
+	                        <div class="form-group row mb-3">
+	                        	<label for="staticEmail" class="col-sm-3 col-form-label color-white">Email</label>
+	                            <div class="col-sm-9">
+	                            	<input type="text" class="form-control color-default rounded-pill" v-model="doctor_email" id="doctor_email" name="doctor_email" placeholder="Doctor Email" >
+	                        	</div>
 	                        </div>
 
-	                        <div class="form-group mb-3">
-	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_designation" id="doctor_designation" name="doctor_designation" placeholder="Doctor Designation" >
+	                        <div class="form-group row mb-3">
+	                        	<label for="staticEmail" class="col-sm-3 col-form-label color-white">Designation</label>
+	                            <div class="col-sm-9">
+	                            	<input type="text" class="form-control color-default rounded-pill" v-model="doctor_designation" id="doctor_designation" name="doctor_designation" placeholder="Doctor Designation" >
+	                        	</div>
 	                        </div>
 
-	                        <div class="form-group mb-3">
-	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_institution" id="doctor_institution" name="doctor_institution" placeholder="Doctor Intitution" >
+	                        
+	                        <div class="form-group row mb-3">
+	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">BMDC No</label>
+	                            <div class="col-sm-9">
+	                            	<input type="text" class="form-control color-default rounded-pill" v-model="bmdc_number" id="bmdc_number" name="bmdc_number" placeholder="BMDC Number" >
+	                        	</div>
 	                        </div>
 
-	                        <div class="form-group mb-3">
-	                            <input type="text" class="form-control color-default rounded-pill" v-model="bmdc_number" id="bmdc_number" name="bmdc_number" placeholder="BMDC Number" >
+	                        <div class="form-group row mb-3">
+	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">Specialization</label>
+	                            <div class="col-sm-9">
+	                            	<input type="text" class="form-control color-default rounded-pill" v-model="specialization" id="specialization" name="specialization" placeholder="Specialization" >
+	                            </div>
 	                        </div>
 
-	                        <div class="form-group mb-3">
-	                            <input type="text" class="form-control color-default rounded-pill" v-model="specialization" id="specialization" name="specialization" placeholder="Specialization" >
+	                        <div class="form-group row mb-3">
+	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white" style="font-size:15px">Chamber Name</label>
+	                            <div class="col-sm-9">
+	                            	<input type="email" class="form-control color-default rounded-pill" v-model="doctor_chamber_name" id="doctor_chamber_name" name="doctor_chamber_name" placeholder="Chamber Name">
+	                            </div>
+	                        </div>
+	                        <div class="form-group row mb-3">
+	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white" style="font-size:15px; padding: 0px;">Chamber Address</label>
+	                            <div class="col-sm-9">
+	                            	<input type="text" class="form-control color-default rounded-pill" v-model="doctor_chamber_address" id="doctor_chamber_address" name="doctor_chamber_address" placeholder="Doctor Chamber Address">
+	                        	</div>
 	                        </div>
 
-	                        <div class="form-group mb-3">
-	                            <input type="email" class="form-control color-default rounded-pill" v-model="doctor_chamber_name" id="doctor_chamber_name" name="doctor_chamber_name" placeholder="Chamber Name">
-	                        </div>
-	                        <div class="form-group mb-3">
-	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_chamber_address" id="doctor_chamber_address" name="doctor_chamber_address" placeholder="Doctor Chamber Address">
-	                        </div>
-
-	                        <div class="form-group mb-3">
-	                            <input type="text" class="form-control color-default rounded-pill" v-model="doctor_phone" id="doctor_phone" name="doctor_phone" placeholder="Doctor Phone" >
+	                        <div class="form-group row mb-3">
+	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">Phone</label>
+	                            <div class="col-sm-9">
+	                            	<input type="text" class="form-control color-default rounded-pill" v-model="doctor_phone" id="doctor_phone" name="doctor_phone" placeholder="Doctor Phone" >
+	                            </div>
 	                        </div>
 
-	                        <div class="form-group mb-3">
-	                            <input type="file" class="form-control color-default rounded-pill" id="file" name="file" >
+	                        <div class="form-group row mb-3">
+	                        	<label for="staticEmail" class="col-sm-3 col-form-label color-white">Image</label>
+	                            <div class="col-sm-9">
+	                            	<img src="https://ubl.sensetiveexpert.com/ubl_laravel/public/images/default.jpg" class="w-25" id="previewImage">
+	                            	<button type="button" @click="clearImage();" id="clearButton" style="display:none;">Clear</button>
+	                            </div>
+	                            
+	                        </div>
+
+	                        <div class="form-group row mb-3">
+	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">Update Image</label>
+	                            <div class="col-sm-9">
+	                            	<input type="file" class="form-control color-default rounded-pill" id="file" name="file" @change="showImage();">
+	                            </div>
 	                        </div>
 
 	                        
@@ -562,10 +596,21 @@
             	new_pass: '',
             	con_new_pass: '',
 
-            	forget_email: ''
+            	forget_email: '',
             	// user: {
             	// 	id : 1
             	// },
+
+            	designation_reg: '',
+            	department_reg: '',
+            	specialization_reg:'',
+            	chamber_name_reg: '',
+            	chamber_address_reg: '',
+            	education_reg: '',
+            	bmdc_number_reg: '',
+            	online_consultation_reg: '',
+            	location_reg: ''
+
 
             }
         },
@@ -592,7 +637,19 @@
 			})
     		
         },
+
+        
         methods: {
+        	showImage(){
+        		var file = $('#file')[0].files[0];
+        		$("#previewImage").attr("src",window.URL.createObjectURL(file));
+        		$("#clearButton").show();
+
+        	},
+        	clearImage(){
+        		$("#previewImage").attr("src","https://ubl.sensetiveexpert.com/ubl_laravel/public/images/default.jpg");
+        		$("#clearButton").hide();
+        	},
         	signUp(){
         		var vm = this;
         		if($("#signup_name").val()==""){
@@ -631,6 +688,8 @@
         			alert("Please agree to terms and conditions");
         			return false;
         		}
+        		console.log($('#signUpForm').serialize());
+        		// return false;
         		axios({	
         				url: this.getApiUrl()+"signUp",
                         method: "post",
@@ -638,14 +697,17 @@
                         data: $('#signUpForm').serialize() ,
                 }).then(function (response) {
                 	alert(response.data.message);
-                	$('#signupModal').modal('hide');
-                	$("#signup_name").val("");
-                	$("#email").val("");
-                	$("#signup_phone").val("");
-                	$("#password").val("");
-                	$("#con_password").val("");
-                	$("#role_id").val("");
-                	$("#agree").val("");
+                	if(response.data.success == true){
+                		$('#signupModal').modal('hide');
+	                	$("#signup_name").val("");
+	                	$("#email").val("");
+	                	$("#signup_phone").val("");
+	                	$("#password").val("");
+	                	$("#con_password").val("");
+	                	$("#role_id").val("");
+	                	$("#agree").val("");
+                	}
+                	
                     // vm.$router.push('/user/success') 
                     
                 }).catch(function (error) {
@@ -810,7 +872,8 @@
                 	vm.doctor_chamber_address= response.data[0].chamber_address;
                 	
                 	vm.doctor_phone= response.data[0].phone_number;
-                	$("#doctor_id").val(response.data[0].user_id)
+                	$("#doctor_id").val(response.data[0].user_id);
+                	$("#previewImage").attr("src","https://ubl.sensetiveexpert.com/ubl_laravel/"+response.data[0].imagelink);
                     
                 }).catch(function (error) {
                     vm.error = error
@@ -847,7 +910,7 @@
             	formData.append('doctor_name',vm.doctor_name);
             	formData.append('doctor_email', vm.doctor_email);
             	formData.append('doctor_designation', vm.doctor_designation);
-            	formData.append('doctor_institution', vm.doctor_institution);
+            	// formData.append('doctor_institution', vm.doctor_institution);
             	formData.append('bmdc_number', vm.bmdc_number);
             	formData.append('specialization', vm.specialization);
             	formData.append('doctor_chamber_name', vm.doctor_chamber_name);

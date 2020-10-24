@@ -1,12 +1,12 @@
 <template>
-    <!---Top-Header---Start--->
     <div>
         <section class="top-header desktop">
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 col-sm-12 menu">
                         <ul>
-                            <li><a href="index.html#"><i class="fa fa-envelope-o pes" aria-hidden="true"></i>careline.bd@unilever.com</a></li>
+                            <li><a href="mailto:careline.bd@unilever.com"><i class="fa fa-envelope-o pes" aria-hidden="true"></i>careline.bd@unilever.com</a>
+                            </li>
                             <li><a href="tel:09-666-999-666"><i class="fa fa-phone pes" aria-hidden="true"></i>09-666-999-666  (8 am - 12 pm, 7 days a week)</a></li>
                         </ul>
                     </div>
@@ -28,7 +28,7 @@
                 <div class="row">
                     <div class="col-md-9 col-sm-12 menu">
              
-                           <a href="tel:09-666-999-666"><i class="fa fa-envelope-o pes" aria-hidden="true"></i>careline.bd@unilever.com</a>
+                           <a href="mailto:careline.bd@unilever.com" class="text-secondary"><i class="fa fa-envelope p-1" aria-hidden="true"></i>careline.bd@unilever.com</a>
                             
                         
                     </div>

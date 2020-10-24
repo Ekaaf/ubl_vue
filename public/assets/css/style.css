@@ -485,7 +485,7 @@ input::placeholder {
 	border-radius: 15px;
 }
 .register-modal .modal-body .form-group {
-	width: 60%;
+	width: 80%;
 	margin: 0 auto;
 }
 .edit-info-modal .modal-body h5,

@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-md-5 select-var-font h2 ">
                     <div class="text-center">
-                        <img class="rounded-circle" :src="'http://ubl.sensetiveexpert.com/ubl_laravel/' + doctor.imagelink" style="max-width:350px; max-height: 350px;" />
+                        <img class="rounded-circle" :src="'http://ubl.sensetiveexpert.com/ubl_laravel/' + doctor.imagelink" style="max-width:350px; max-height: 350px;" @error="imageUrlAlt"/>
                         <!-- <img class="rounded-circle" :src="'http://localhost/ubl_laravel/' + doctor.imagelink" style="width:350px; height: 350px;" /> -->
                     </div>
 
@@ -147,6 +147,9 @@
         },
         mixins: [Mixin],
         methods: {
+            imageUrlAlt(){
+                event.target.src = "https://ubl.sensetiveexpert.com/ubl_laravel/public/images/default.jpg"
+            },
             getDoctorInfo(id){
                 var vm = this;
                 axios({
