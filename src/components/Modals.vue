@@ -39,13 +39,6 @@
 	                            <input type="text" class="form-control color-default rounded-pill" v-model="reg_info" id="reg_info" name="reg_info" placeholder="Phone Number" style="display:none;">
 	                        </div>
 
-	                        <div class="form-check mb-2">
-								<input type="checkbox" class="form-check-input" id="reg_agree">
-								<label class="form-check-label" for="exampleCheck1" style="color: white;">
-									I agree to<router-link to="/terms" style="color: white;"> terms and conditions</router-link>  and <router-link to="/privacy" style="color: white;"> privacy policy</router-link> and I am at least 18 years old
-								</label>
-							</div>
-
 							<div class="form-group text-center">
 								<button type="button" class="btn btn-sub-modal color-default" @click="regDentalCamp();">Submit & Register</button>
 							</div>
@@ -59,6 +52,46 @@
 	        </div>
 	    </div>
 
+
+	    <div class="modal fade register-modal" id="apply_dental_camp_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="z-index:999999999;">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content bg-default">
+	                <div class="modal-header">
+	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+	                    </button>
+	                    <br>
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Apply for free sample</h5>
+	                </div>
+	                <div class="modal-body">
+	                    <form id="apply_dental_camp_form">
+	                        <input type="hidden" name="apply_userid" id="apply_userid">
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" id="apply_name" name="apply_name" placeholder="Name" readonly>
+	                        </div>
+	                        <div class="form-group mb-3">
+	                            <input type="email" class="form-control color-default rounded-pill" id="apply_email" name="apply_email" placeholder="Email" readonly>
+	                        </div>
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" id="apply_phone" name="apply_phone" placeholder="Phone Number" readonly>
+	                        </div>
+
+	                        <div class="form-group mb-3">
+	                            <input type="text" class="form-control color-default rounded-pill" id="apply_address" name="apply_address" placeholder="Address">
+	                        </div>
+
+							<div class="form-group text-center">
+								<button type="button" class="btn btn-sub-modal color-default" @click="applySave();">Submit</button>
+							</div>
+	                    </form>
+	                </div>
+	                <!--<div class="modal-footer">
+	                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	                    <button type="button" class="btn bg-white color-default">Submit</button>
+	                </div>-->
+	            </div>
+	        </div>
+	    </div>
 
 
 	    <div class="modal fade bd-example-modal-lg register-modal" id="doctor_edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="z-index:999999999;">
@@ -85,6 +118,16 @@
 	                        	<label for="staticEmail" class="col-sm-3 col-form-label color-white">Email</label>
 	                            <div class="col-sm-9">
 	                            	<input type="text" class="form-control color-default rounded-pill" v-model="doctor_email" id="doctor_email" name="doctor_email" placeholder="Doctor Email" >
+	                        	</div>
+	                        </div>
+
+	                        <div class="form-group row mb-3">
+	                        	<label for="staticEmail" class="col-sm-3 col-form-label color-white">Department</label>
+	                            <div class="col-sm-9">
+	                            	<select class="form-control rounded-pill" id="department" name="department" v-model="department">
+								      <option value="" selected>Department</option>
+                            			<option v-for="option in departmentOptions" :value="option">{{option}}</option>
+								    </select>
 	                        	</div>
 	                        </div>
 
@@ -133,7 +176,7 @@
 	                        <div class="form-group row mb-3">
 	                        	<label for="staticEmail" class="col-sm-3 col-form-label color-white">Image</label>
 	                            <div class="col-sm-9">
-	                            	<img src="https://ubl.sensetiveexpert.com/ubl_laravel/public/images/default.jpg" class="w-25" id="previewImage">
+	                            	<img src="https://ubl.sensetiveexpert.com/ubl_laravel/public/images/default.jpg" class="w-25" id="previewImage" @error="imageUrlAlt">
 	                            	<button type="button" @click="clearImage();" id="clearButton" style="display:none;">Clear</button>
 	                            </div>
 	                            
@@ -381,15 +424,37 @@
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="login_agree">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
-											I agree to<router-link to="/terms" style="color: white;"> terms and conditions</router-link>  and <router-link to="/privacy" style="color: white;"> privacy policy</router-link> and I am at least 18 years old
+											I agree to<router-link to="/terms" style="color: white;"> terms and conditions</router-link>
+										</label>
+									</div>
+
+									<div class="form-check mb-2">
+										<input type="checkbox" class="form-check-input" id="login_privacy">
+										<label class="form-check-label" for="exampleCheck1" style="color: white;">
+											I agree to <router-link to="/privacy" style="color: white;"> privacy policy</router-link>
+										</label>
+									</div>
+
+									<div class="form-check mb-2">
+										<input type="checkbox" class="form-check-input" id="login_age">
+										<label class="form-check-label" for="exampleCheck1" style="color: white;">
+											I am at least 18 years old
 										</label>
 									</div>
 									<div class="form-group">
 	                                    <a href="#" style="color: white;" @click="showForgetPass();">Forgot password?</a>
 	                                </div>
 
-	                                <div class="form-group text-center">
-	                                    <button type="button" class="btn btn-sub-modal color-default" @click="login();">Login</button>
+	                                <div class="form-group ">
+	                                	<div class="row">
+	                                	<div class="col-6">
+	                                		<div class="g-signin2" data-onsuccess="onLogin"></div>
+	                                    </div>
+	                                	<div class="col-6">
+	                                		<button type="button" class="btn btn-sub-modal color-default" @click="login();">Login</button>
+	                                		
+	                                	</div>
+	                                	</div>
 	                                </div>
 	                            </div>
 	                            <div class="col-md-6">
@@ -463,7 +528,7 @@
 	                    </button>
 	                </div>
 	                <div class="modal-body">
-	                    <form id="signUpForm">
+	                    <form id="signUpForm" enctype="multipart/form-data">
 	                        <div class="row">
 	                            <div class="col-md-6 border-right2">
 	                            	<div class="form-group">
@@ -500,31 +565,55 @@
 									</div>
 
 									<div class="form-group" id="filediv" style="display:none;">
-	                                    <input type="file" class="form-control color-default rounded-pill" id="file" name="file" >
+	                                    <input type="file" class="form-control color-default rounded-pill" id="file_reg" name="file_reg" >
 	                                </div>
 
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="agree" name="agree" value="1">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
-											I agree to<router-link to="/terms" style="color: white;"> terms and conditions</router-link>  and <router-link to="/privacy" style="color: white;"> privacy policy</router-link> and I am at least 18 years old
+											I agree to<router-link to="/terms" style="color: white;"> terms and conditions</router-link>
 										</label>
 									</div>
-									<div class="form-group">
-	                                    <a href="" style="color: white;">Forgot password?</a>
+
+									<div class="form-check mb-2">
+										<input type="checkbox" class="form-check-input" id="privacy" name="privacy" value="1">
+										<label class="form-check-label" for="exampleCheck1" style="color: white;">
+											I agree to <router-link to="/privacy" style="color: white;"> privacy policy</router-link>
+										</label>
+									</div>
+
+									<div class="form-check mb-2">
+										<input type="checkbox" class="form-check-input" id="age" name="age" value="1">
+										<label class="form-check-label" for="exampleCheck1" style="color: white;">
+											I am at least 18 years old
+										</label>
+									</div>
+	                                <div class="form-group ">
+	                                	<div class="row">
+	                                	<div class="col-6">
+	                                		<div class="g-signin2" data-onsuccess="onSignIn"></div>
+	                                    </div>
+	                                	<div class="col-6">
+	                                		<button type="button" class="btn btn-sub-modal color-default" @click="signUp();">Sign Up</button>
+	                                		
+	                                	</div>
+	                                	</div>
 	                                </div>
-	                                <div class="form-group text-center">
-	                                    <button type="button" class="btn btn-sub-modal color-default" @click="signUp();">Sign Up</button>
-	                                </div>
+	                                
+
 	                            </div>
 	                            <div class="col-md-6" id="doctor_reg_div" style="display:none;">
 	                            	<div class="form-group">
 	                                    <input type="text" class="form-control color-default rounded-pill" id="designation_reg" name="designation_reg" placeholder="Designation" v-model="designation_reg">
 	                                </div>
 	                                <div class="form-group">
-	                                    <input type="text" class="form-control color-default rounded-pill" id="department_reg" name="department_reg" placeholder="Department" v-model="department_reg">
+	                                    <select class="form-control rounded-pill" id="department_reg" name="department_reg" v-model="department_reg">
+									      <option value="" selected>Department</option>
+                                			<option v-for="option in departmentOptions" :value="option">{{option}}</option>
+									    </select>
 	                                </div>
 	                                <div class="form-group">
-	                                    <input type="text" class="form-control color-default rounded-pill" id="specialization_reg" name="specialization_reg" placeholder="Specialization" v-model="specialization_reg">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="specialization_reg" name="specialization_reg" placeholder="Specialization" v-model="specialization_reg" required>
 	                                </div>
 	                                <div class="form-group">
 	                                    <input type="text" class="form-control color-default rounded-pill" id="chamber_name_reg" name="chamber_name_reg" placeholder="Chamber Name" v-model="chamber_name_reg">
@@ -536,7 +625,7 @@
 	                                    <input type="text" class="form-control color-default rounded-pill" id="education_reg" name="education_reg" placeholder="Education" v-model="education_reg">
 	                                </div>
 	                                <div class="form-group">
-	                                    <input type="text" class="form-control color-default rounded-pill" id="bmdc_number_reg" name="bmdc_number_reg" placeholder="Bmdc Number" v-model="bmdc_number_reg">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="bmdc_number_reg" name="bmdc_number_reg" placeholder="BMDC Number" v-model="bmdc_number_reg">
 	                                </div>
 	                                <div class="form-group">
 	                                    <input type="text" class="form-control color-default rounded-pill" id="online_consultation_reg" name="online_consultation_reg" placeholder="Online Consultation" v-model="online_consultation_reg">
@@ -609,7 +698,9 @@
             	education_reg: '',
             	bmdc_number_reg: '',
             	online_consultation_reg: '',
-            	location_reg: ''
+            	location_reg: '',
+            	department: "",
+            	departmentOptions:['PAEDIATRIC DENTISTRY','DEPARTMENT OF PROSTHODONTICS','ORAL ANATOMY & PHYSIOLOGY','CONSERVATIVE DENTISTRY & ENDODONTICS','ORAL AND MAXILLOFACIAL SURGERY','ORAL PATHOLOGY & PERIODONTOLOGY','ORTHODONTICS','DEPARTMENT  OF LIFE SCIENCE','PERIODENTOLOGY & ORAL PATHOLOGY','FACULTY OF DENTISTRY','DIAGNOSIS DEPARTMENT','GENERAL & DENTAL PHARMACOLOGY','DENTAL PUBLIC HEALTH','DENTAL DEPARTMENT','HEALTH','DENTAL ANATOMY','SCIENCE OF DENTAL MATERIALS'],
 
 
             }
@@ -635,11 +726,82 @@
 			$('#user_edit').on('shown.bs.modal', function () {
 	  			vm.getUserInfo(vm.loggedinUserId);
 			})
+
+			$('#apply_dental_camp_modal').on('shown.bs.modal', function () {
+	  			var user = accessToken.user;
+	  			$("#apply_userid").val(user.id);
+	  			$("#apply_name").val(user.name);
+	  			$("#apply_email").val(user.email);
+	  			$("#apply_phone").val(user.phone_number);
+			})
     		
         },
 
         
         methods: {
+        	imageUrlAlt(){
+                event.target.src = "https://ubl.sensetiveexpert.com/ubl_laravel/public/images/default.jpg"
+            },
+        	applySave(){
+        		axios({	
+        				headers: authHeader(),
+	    				url: this.getApiUrl()+"applySave",
+	                    method: "post",
+	                    data: {
+	                    	id: $("#apply_userid").val(),
+	                    	address: $("#apply_address").val()
+	                    },
+	            }).then(function (response) {
+	            	alert(response.data.message);
+	            	if(response.data.success == true){
+	            		$('#apply_dental_camp_modal').modal('hide');
+	                	$("#apply_address").val("");
+	            	}
+	                
+	            }).catch(function (error) {
+	                vm.error = error
+	            });
+        	},
+        	onLogin(googleUser){
+        		console.log('google');
+        	},
+        	onSignIn(googleUser) {
+        	// signuptest(){
+	            // console.log('google');
+	            // var profile = googleUser.getBasicProfile();
+	            // console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+	            // console.log('Name: ' + profile.getName());
+	            // console.log('Image URL: ' + profile.getImageUrl());
+	            // console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+
+	            axios({	
+	    				url: this.getApiUrl()+"signUpGoogle",
+	                    method: "post",
+	                    // params: query,
+	                    data: {
+	                    	name: profile.getName(),
+	                    	email: profile.getEmail(),
+	                    	imagelink: profile.getImageUrl()
+	                    },
+	            }).then(function (response) {
+	            	alert(response.data.message);
+	            	if(response.data.success == true){
+	            		$('#signupModal').modal('hide');
+	                	$("#signup_name").val("");
+	                	$("#email").val("");
+	                	$("#signup_phone").val("");
+	                	$("#password").val("");
+	                	$("#con_password").val("");
+	                	$("#role_id").val("");
+	                	$("#agree").val("");
+	            	}
+	            	
+	                // vm.$router.push('/user/success') 
+	                
+	            }).catch(function (error) {
+	                vm.error = error
+	            });
+	        },
         	showImage(){
         		var file = $('#file')[0].files[0];
         		$("#previewImage").attr("src",window.URL.createObjectURL(file));
@@ -684,17 +846,75 @@
         			return false;
         		}
 
+        		if($("#role_id").val()==2 && $("#specialization_reg").val()==""){
+        			alert("Please enter Specialization");
+        			return false;
+        		}
+
+        		if($("#role_id").val()==2 && $("#chamber_name_reg").val()==""){
+        			alert("Please enter Chamber Name");
+        			return false;
+        		}
+
+
+        		if($("#role_id").val()==2 && $("#chamber_address_reg").val()==""){
+        			alert("Please enter Chamber Address");
+        			return false;
+        		}
+
+
+        		if($("#role_id").val()==2 && $("#bmdc_number_reg").val()==""){
+        			alert("Please enter BMDC No.");
+        			return false;
+        		}
+
+
         		if(!$("#agree").is(':checked')){
         			alert("Please agree to terms and conditions");
         			return false;
         		}
-        		console.log($('#signUpForm').serialize());
-        		// return false;
+
+        		if(!$("#privacy").is(':checked')){
+        			alert("Please agree to our privacy and policy");
+        			return false;
+        		}
+
+        		if(!$("#age").is(':checked')){
+        			alert("You must be at least 18 years old to register");
+        			return false;
+        		}
+        		
+        		var formData = new FormData();
+            	formData.append('signup_name',$("#signup_name").val());
+				formData.append('email',$("#email").val());
+				formData.append('signup_phone',$("#signup_phone").val());
+				formData.append('password',$("#password").val());
+				formData.append('con_password',$("#con_password").val());
+				formData.append('role_id',$("#role_id").val());
+				formData.append('agree',$("#agree").val());
+				formData.append('privacy',$("#privacy").val());
+				formData.append('age',$("#age").val());
+				formData.append('designation_reg',$("#designation_reg").val());
+				formData.append('department_reg',$("#department_reg").val());
+				formData.append('specialization_reg',$("#specialization_reg").val());
+				formData.append('chamber_name_reg',$("#chamber_name_reg").val());
+				formData.append('chamber_address_reg',$("#chamber_address_reg").val());
+				formData.append('education_reg',$("#education_reg").val());
+				formData.append('bmdc_number_reg',$("#bmdc_number_reg").val());
+				formData.append('online_consultation_reg',$("#online_consultation_reg").val());
+				formData.append('location_reg',$("#location_reg").val());
+				if($('#file_reg').val()){
+					formData.append('image', $('#file_reg')[0].files[0]);
+				}
+				
+
+
         		axios({	
         				url: this.getApiUrl()+"signUp",
                         method: "post",
                         // params: query,
-                        data: $('#signUpForm').serialize() ,
+                        data: formData, 
+                        // $('#signUpForm').serialize() ,
                 }).then(function (response) {
                 	alert(response.data.message);
                 	if(response.data.success == true){
@@ -747,16 +967,29 @@
         			alert("Please agree to terms and conditions");
         			return false;
         		}
+        		if(!$("#login_privacy").is(':checked')){
+        			alert("Please agree to our privacy and policy");
+        			return false;
+        		}
+        		if(!$("#login_age").is(':checked')){
+        			alert("You must be at least 18 years old to login");
+        			return false;
+        		}
                 axios({
                         url: this.getApiUrl()+"postlogin",
                         method: "post",
                         data: request_data,
                         
                 }).then(function (response) {
-                    console.log(response.data)
-                    vm.loggedin = true
-                    localStorage.setItem('accessToken',JSON.stringify(response.data));
-                    window.location.reload();
+                    if(response.data.success){
+                    	vm.loggedin = true
+	                    localStorage.setItem('accessToken',JSON.stringify(response.data));
+	                    window.location.reload();
+                    }
+                    else{
+                    	alert("Please activate your account by checking your email");
+                    }
+                    
                     // vm.$router.push('/user/dashboard') 
                 }).catch(function (error) {
                     if(error.response.data.success == false){
@@ -871,9 +1104,11 @@
                 	vm.doctor_chamber_name= response.data[0].chamber_name;
                 	vm.doctor_chamber_address= response.data[0].chamber_address;
                 	
+                	vm.department= response.data[0].department;
+
                 	vm.doctor_phone= response.data[0].phone_number;
                 	$("#doctor_id").val(response.data[0].user_id);
-                	$("#previewImage").attr("src","https://ubl.sensetiveexpert.com/ubl_laravel/"+response.data[0].imagelink);
+                	$("#previewImage").attr("src","https://ubl.sensetiveexpert.com/ubl_laravel/public/images/doctor/"+response.data[0].bmdc_number+".jpg");
                     
                 }).catch(function (error) {
                     vm.error = error
@@ -916,7 +1151,7 @@
             	formData.append('doctor_chamber_name', vm.doctor_chamber_name);
             	formData.append('doctor_chamber_address', vm.doctor_chamber_address);
             	formData.append('doctor_phone', vm.doctor_phone);
-            	// formData.append('designation', 'designation');
+            	formData.append('department', vm.department);
             	// formData.append('designation', 'designation');
 				formData.append('image', $('input[type=file]')[0].files[0]); 
             	axios({

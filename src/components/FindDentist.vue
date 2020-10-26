@@ -22,7 +22,7 @@
                 <div class="row mt-3 mb-4">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" class="form-control rounded-pill right-side" id="location" name="location" v-model= "location" placeholder="Location" style="width: 80%;">
+                            <input type="text" class="form-control rounded-pill right-side" id="location" name="location" v-model= "location" placeholder="Location" style="width: 80%;" >
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -106,9 +106,10 @@
                 name: '',
                 chamber_name: '',
                 department: '',
-                departmentOptions:[1,2,3,4],
+                departmentOptions:['PAEDIATRIC DENTISTRY','DEPARTMENT OF PROSTHODONTICS','ORAL ANATOMY & PHYSIOLOGY','CONSERVATIVE DENTISTRY & ENDODONTICS','ORAL AND MAXILLOFACIAL SURGERY','ORAL PATHOLOGY & PERIODONTOLOGY','ORTHODONTICS','DEPARTMENT  OF LIFE SCIENCE','PERIODENTOLOGY & ORAL PATHOLOGY','FACULTY OF DENTISTRY','DIAGNOSIS DEPARTMENT','GENERAL & DENTAL PHARMACOLOGY','DENTAL PUBLIC HEALTH','DENTAL DEPARTMENT','HEALTH','DENTAL ANATOMY','SCIENCE OF DENTAL MATERIALS'],
                 doctors: [],
-                location : []
+                location : [],
+                page: 1
             }
         },
         methods: {
@@ -120,7 +121,7 @@
             	var vm = this;
                 var data = $('#findDoctorForm').serialize();
                 vm.doctors = [];
-                data = data+"&latitude="+vm.currentPosition.latitude+"&longitude="+this.currentPosition.longitude;
+                data = data+"&latitude="+vm.currentPosition.latitude+"&longitude="+this.currentPosition.longitude+"&page="+vm.page;
                 
             	axios({
                         url: this.getApiUrl()+"findDoctor",
@@ -138,18 +139,307 @@
                     vm.error = error
                 });
             },
+            getAllLocation(){
+                // if($("#location").val().length<3){
+                //     return false;
+                // }
+                var vm = this;
+                axios({
+                        url: this.getApiUrl()+"getAllLocation",
+                        method: "get",
+                        params: {
+                            location : $("#location").val()
+                        },
+                }).then(function (response) {
+                    
+                    var json_data = response.data;
+                    var result = [];
 
+                    for(var i in json_data)
+                        result.push(json_data [i]['chamber_address']);
+                    
+                    $( function() {
+                    $( "#location" ).autocomplete({
+                      source: result
+                    });
+                    });
+                }).catch(function (error) {
+                    vm.error = error
+                });
+            }
         },
 
         mounted(){
+
+            $( function() {
+                var availableTags = [
+                    "ADABOR",
+                    "AJMIRIGANJ",
+                    "AKHAURA",
+                    "AKKELPUR",
+                    "ARICHA",
+                    "AZIMPUR",
+                    "BADDA",
+                    "BAGERHAT",
+                    "BAGHERHAT",
+                    "BAKERGANJ",
+                    "BALIAKANDI",
+                    "BANARIPARA",
+                    "BANDARBAN",
+                    "BANGSHAL",
+                    "BARGUNA",
+                    "BARISAL",
+                    "BARISHAL",
+                    "BARLEKHA",
+                    "BAROIYARHAT",
+                    "BASAIL",
+                    "BAUNIA",
+                    "BAUPHAL",
+                    "BEANIBAZAR",
+                    "BETAGI",
+                    "BHALUKA",
+                    "BHANDARIA",
+                    "BHOLA",
+                    "BHUAPUR",
+                    "BIMANBANDAR",
+                    "BISAWANTH",
+                    "BOALKHALI",
+                    "BOGRA",
+                    "BOGURA",
+                    "BORHANUDDIN",
+                    "BRAHMANBARIA",
+                    "BURICHONG",
+                    "CANTONMENT",
+                    "CHANDANAISH",
+                    "CHANDPUR",
+                    "CHAR FASSON",
+                    "CHATTAGRAM",
+                    "CHAWKBAZAR",
+                    "CHHAGALNAIYA",
+                    "CHHATAK",
+                    "CHITTAGONG",
+                    "CHOWMUHANI",
+                    "CHUADANGA",
+                    "CHUNARUGHAT",
+                    "COMILLA",
+                    "COX'S BAZAR",
+                    "CUMILLA",
+                    "DAGANBHUIYAN",
+                    "DAKSHINKHAN",
+                    "DARSHANA",
+                    "DARUS SALAM",
+                    "DARUSSALAM",
+                    "DAULATKHAN",
+                    "DEMRA",
+                    "DERAI",
+                    "DHAKA",
+                    "DHAKA CANTONMENT",
+                    "DHANBARI",
+                    "DHANMONDI",
+                    "DHUNAT",
+                    "DINAJPUR",
+                    "ELENGA",
+                    "FARIDPUR",
+                    "FATIKCHHARI",
+                    "FENI",
+                    "FULBARIA",
+                    "GAFFARGAON",
+                    "GAIBANDHA",
+                    "GALACHIPA",
+                    "GAZIPUR",
+                    "GENDARIA",
+                    "GHATAIL",
+                    "GHORASHAL",
+                    "GOLAPGANJ",
+                    "GOPALPUR",
+                    "GOURIPUR",
+                    "GOURNADI",
+                    "GULSHAN",
+                    "GULSHAN 1",
+                    "GULSHAN 2",
+                    "HABIGANJ",
+                    "HALUAGHAT",
+                    "HATHAZARI",
+                    "HATIYA",
+                    "HAZARBAGH",
+                    "HAZARIBAGH",
+                    "HAZIGANJ",
+                    "ISHWARGANJ",
+                    "ISWARDI",
+                    "JAGANNATHPUR",
+                    "JAIPURHAT",
+                    "JAMALPUR",
+                    "JASHORE",
+                    "JATRABARI",
+                    "JESSORE",
+                    "JHALAKATI",
+                    "JHALOKATI",
+                    "JHENAIDAH",
+                    "JOYPURHAT",
+                    "KACHUKHETH",
+                    "KADAMTALI",
+                    "KAFRUL",
+                    "KAJIPARA",
+                    "KALABAGAN",
+                    "KALAI",
+                    "KALAPARA",
+                    "KALIGANJ",
+                    "KALIHATI",
+                    "KAMRANGIRCHAR",
+                    "KANAIGHAT",
+                    "KARATIA",
+                    "KAZIPARA",
+                    "KHAGRACHARI",
+                    "KHAGRACHHARI",
+                    "KHETLAL",
+                    "KHILGAON",
+                    "KHILKHET",
+                    "KHULNA",
+                    "KISHOREGANJ",
+                    "KOCHUKHET",
+                    "KOMOLGANJ",
+                    "KOTWALI",
+                    "KUAKATA",
+                    "KULAURA",
+                    "KURIGRAM",
+                    "KUSHTIA",
+                    "LAKSAM",
+                    "LAKSHMIPUR",
+                    "LALBAGH",
+                    "LALBAGH",
+                    "LALMOHAN",
+                    "LALMONIRHAT",
+                    "MADARIPUR",
+                    "MADHABDI",
+                    "MADHABPUR",
+                    "MADHUPUR",
+                    "MAGURA",
+                    "MAIJDEE",
+                    "MANIKGANJ",
+                    "MATHBARIA",
+                    "MATLAB",
+                    "MEHENDIGANJ",
+                    "MEHERPUR",
+                    "MIRPUR",
+                    "MIRPUR 1",
+                    "MIRPUR 1",
+                    "MIRPUR 10",
+                    "MIRPUR 11",
+                    "MIRPUR 13",
+                    "MIRPUR 2",
+                    "MIRPUR 6",
+                    "MIRPUR MODEL",
+                    "MIRPUR 14",
+                    "MIRSHARAI",
+                    "MIRZAPUR",
+                    "MOHAMMADPUR",
+                    "MONOHARDI",
+                    "MOTIJHEEL",
+                    "MOULVIBAZAR",
+                    "MUKTAGACHHA",
+                    "MULADI",
+                    "MUNDUMALA",
+                    "MUNSHIGANJ",
+                    "MYMENSINGH",
+                    "NABIGANJ",
+                    "NALCHITY",
+                    "NANDAIL",
+                    "NAOGAON",
+                    "NARAIL",
+                    "NARAYANGANJ",
+                    "NARSINGDI",
+                    "NATORE",
+                    "NAWABGANJ",
+                    "NAZIR HAT",
+                    "NETRAKONA",
+                    "NEW MARKET",
+                    "NILPHAMARI",
+                    "NOAKHALI",
+                    "PABNA",
+                    "PALLABI",
+                    "PALTAN",
+                    "PANCHAGARH",
+                    "PANCHBIBI",
+                    "PANGSHA",
+                    "PARBATTYA",
+                    "PARSHURAM",
+                    "PATHARGHATA",
+                    "PATIYA",
+                    "PATUAKHALI",
+                    "PHULPUR",
+                    "PIROJPUR",
+                    "RAHANPUR",
+                    "RAIPURA",
+                    "RAJBARI",
+                    "RAJSHAHI",
+                    "RAMNA",
+                    "RAMPURA",
+                    "RANGAMATI",
+                    "RANGPUR",
+                    "RANGUNIA",
+                    "RAOZAN",
+                    "RUPNAGAR",
+                    "SABUJBAGH",
+                    "SAKHIPUR",
+                    "SANDWIP",
+                    "SANTHIA",
+                    "SARAIL",
+                    "SATKANIA",
+                    "SATKHIRA",
+                    "SAVAR",
+                    "SENPARA",
+                    "SHAH ALI",
+                    "SHAHALI",
+                    "SHAHBAGH",
+                    "SHAHJADPUR",
+                    "SHAISTAGANJ",
+                    "SHAMBHUGANJ",
+                    "SHARIATPUR",
+                    "SHER-E-BANGLA NAGAR",
+                    "SHERPUR",
+                    "SHERPUR, BOGRA",
+                    "SHEWRAPARA",
+                    "SHIBPUR",
+                    "SHYAMPUR",
+                    "SIRAJGANJ",
+                    "SITAKUNDA",
+                    "SONAGAZI",
+                    "SREEMANGAL",
+                    "SUNAMGANJ",
+                    "SUTRAPUR",
+                    "SWARUPKATI",
+                    "SYLHET",
+                    "TALTOLA",
+                    "TANGAIL",
+                    "TANORE",
+                    "TEJGAON",
+                    "TEJGAON I/A",
+                    "THAKURGAON",
+                    "TRISHAL",
+                    "TURAG",
+                    "ULLAPARA",
+                    "UTTAR KHAN",
+                    "UTTARA",
+                    "WAZIRPUR",
+                    "ZAKIGANJ",
+                ];    
+
+                $( "#location" ).autocomplete({
+                  source: availableTags
+                });
+            });
             var vm = this;
             vm.getCurrentpostion();
+            // vm.getAllLocation();
             $('body').keypress(function (e) {
                 var key = e.which;
                 if(key == 13){
                     vm.findDoctor();
                 }
-            });   
+            });
+            $('#location').on('autocompleteselect', function (e, ui) {
+                vm.location = ui.item.value;
+            });
         }
     }
 </script>

@@ -35,7 +35,7 @@
 	                    </ul>
 	                </div>
 	                <div class="col-md-3 col-sm-6 text-white py-2 visitors text-center rounded my-auto">
-	                    <h2 style="font-size:1.5rem;">0</h2>
+	                    <h2 style="font-size:1.5rem;" id="counter">0</h2>
 	                    <h3 style="font-size:1.1rem;">Current<br>Visitors</h3>
 	                </div>
 	            </div>
@@ -58,39 +58,16 @@
 </template>
 
 <script>
+	import Mixin  from "../mixin.js";
     export default {
         name: 'Footer',
+        mixins: [Mixin],
         mounted(){
+        	var vm = this;
         	if (this.getCookie('accepted') === 'yes') {
 		        document.getElementById("alert").style.display = "none";
 		    }
-
-		    // // user clicks the confirmation -> set the 'yes' value to cookie and set 'accepted' as name
-		    // function accpetCookie() {
-		    //     setCookie('accepted', 'yes', 100);
-		    // }
-
-		    // // code from :http://stackoverflow.com/a/4825695/191220
-		    // // set cookie method
-		    // function setCookie(c_name, value, exdays) {
-		    //     var exdate = new Date();
-		    //     exdate.setDate(exdate.getDate() + exdays);
-		    //     var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
-		    //     document.cookie = c_name + "=" + c_value;
-		    // }
-
-		    // // get cookie method   
-		    // function getCookie(c_name) {
-		    //     var i, x, y, ARRcookies = document.cookie.split(";");
-		    //     for (i = 0; i < ARRcookies.length; i++) {
-		    //         x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
-		    //         y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
-		    //         x = x.replace(/^\s+|\s+$/g, "");
-		    //         if (x == c_name) {
-		    //             return unescape(y);
-		    //         }
-		    //     }
-		    // }
+		    vm.getcounter();
         },
         methods: {
         	accpetCookie() {
@@ -113,7 +90,18 @@
 		                return unescape(y);
 		            }
 		        }
-		    }
+		    },
+
+		    getcounter(){
+	            axios({ 
+	                    url: this.getApiUrl()+"getcounter",
+	                    method: "get"
+	            }).then(function (response) {
+	                $("#counter").text(response.data);
+	            }).catch(function (error) {
+	                vm.error = error
+	            });
+	        }
         }
     }
 </script>
