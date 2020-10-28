@@ -424,14 +424,14 @@
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="login_agree">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
-											I agree to<router-link to="/terms" style="color: white;"> terms and conditions</router-link>
+											I give my consent to Unilever Bangladesh and its affiliated third parties to use, store and process my given information and communicate with me in the future.
 										</label>
 									</div>
 
 									<div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="login_privacy">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
-											I agree to <router-link to="/privacy" style="color: white;"> privacy policy</router-link>
+											I agree to  Unilever's <router-link to="/cookies" style="color: white;"> cookie </router-link> and <router-link to="/privacy" style="color: white;"> privacy policy</router-link>
 										</label>
 									</div>
 
@@ -571,14 +571,14 @@
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="agree" name="agree" value="1">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
-											I agree to<router-link to="/terms" style="color: white;"> terms and conditions</router-link>
+											I give my consent to Unilever Bangladesh and its affiliated third parties to use, store and process my given information and communicate with me in the future.
 										</label>
 									</div>
 
 									<div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="privacy" name="privacy" value="1">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
-											I agree to <router-link to="/privacy" style="color: white;"> privacy policy</router-link>
+											I agree to  Unilever's <router-link to="/cookies" style="color: white;"> cookie </router-link> and <router-link to="/privacy" style="color: white;"> privacy policy</router-link>
 										</label>
 									</div>
 

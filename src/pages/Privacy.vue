@@ -11,11 +11,11 @@
                 <p style="font-size:15px;">
                     We know that you care about your personal data and how it is used, and we want you to trust that Unilever uses your personal data carefully. This Privacy Notice will help you understand what personal data we collect, why we collect it and what we do with it.
                     <br><br>
-                    As you read our Notice, please keep in mind that it applies to all Unilever Bangladesh Limited companies..
+                    As you read our Notice, please keep in mind that it applies to all Unilever Bangladesh Limited companies.
                     <br><br>
                     Please take a moment to familiarise yourself with our privacy practices and let us know if you have any questions by sending us an email or submitting a request through the "Contact Us" form on our websites.
                     <br><br>
-                    We have tried to keep this Notice as simple as possible, but if you’re not familiar with terms, such as cookies, IP addresses, and browsers, then please read about these key terms first .
+                    We have tried to keep this Notice as simple as possible, but if you're not familiar with terms, such as cookies, IP addresses, and browsers, then please read about these key terms first .
                     <br><br>
                     You have the right to object to certain uses of your personal data including the use of your personal data for direct marketing. See what are your rights and how you can exercise them here.
 
@@ -34,9 +34,9 @@
                                     <p style="color: #843d71;font-size:15px;">
                                         Any personal data provided to or collected by Unilever is controlled by Unilever Bangladesh Limited , the data controller.
                                         <br><br>
-                                        This Privacy Notice applies to personal data collected by Unilever in connection with the services and products we offer. References to “Unilever” in this Notice means Unilever Bangladesh Limited and any company directly or indirectly owned and/or controlled by Unilever Bangladesh Limited that you are interacting with or have a business relationship with.
+                                        This Privacy Notice applies to personal data collected by Unilever in connection with the services and products we offer. References to "Unilever" in this Notice means Unilever Bangladesh Limited and any company directly or indirectly owned and/or controlled by Unilever Bangladesh Limited that you are interacting with or have a business relationship with.
                                         <br><br>
-                                        This Privacy Notice also applies to Unilever’s marketing content, including offers and advertisements for Unilever products and services, which we (or a service provider acting on our behalf) send to you on third-party websites, platforms and applications based on your site usage information. These third-party websites generally have their own Privacy Notice and Terms and Conditions. We encourage you to read them before using those websites.
+                                        This Privacy Notice also applies to Unilever's marketing content, including offers and advertisements for Unilever products and services, which we (or a service provider acting on our behalf) send to you on third-party websites, platforms and applications based on your site usage information. These third-party websites generally have their own Privacy Notice and Terms and Conditions. We encourage you to read them before using those websites.
                                     </p>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@
                                             <li>Personal data we collect automatically, and</li>
                                             <li>Personal data we collect from other sources.</li>
                                         </ul>
-                                        Personal data means any information that can be used to identify directly or indirectly a specific individual. This definition includes personal data collected offline through our Consumer Engagement Centres, direct marketing campaigns, sweepstakes and competitions and online through our websites, applications and branded pages on third-party platforms and applications accessed or used through third-party platforms.
+                                        Personal data means any information that can be used to identify directly or indirectly a specific individual. This definition includes personal data collected offline through our Consumer Engagement Centers, direct marketing campaigns, sweepstakes and competitions and online through our websites, applications and branded pages on third-party platforms and applications accessed or used through third-party platforms.
                                         <br><br>
                                         You may be asked to provide your personal data when you are in contact with us. Unilever Bangladesh Limited companies may share your personal data with each other and other Unilever Group companies and use it in a manner consistent with this Privacy Notice. We may also combine it with other information to improve our products, services, content, and advertising.
                                         <br><br>
@@ -78,20 +78,20 @@
                                         <br><br>
                                         <ul>
                                             <li>
-                                                Personal data you give us directly. We collect data about how you use our services and products, such as the types of content you view or engage with, or the frequency and duration of your activities. We also collect personal data you provide us when you sign up for a marketing newsletter, complete a survey or register for an account to buy our products. In so doing, we may ask for personal data, such as your name, gender, date of birth, address, email address, telephone number or credit card details. Some Unilever brands may collect “special categories of personal data” about you with your explicit consent. For more information on the special categories of data we collect and how we use it, please refer to the relevant section below.
+                                                Personal data you give us directly. We collect data about how you use our services and products, such as the types of content you view or engage with, or the frequency and duration of your activities. We also collect personal data you provide us when you sign up for a marketing newsletter, complete a survey or register for an account to buy our products. In so doing, we may ask for personal data, such as your name, gender, date of birth, address, email address, telephone number or credit card details. Some Unilever brands may collect "special categories of personal data" about you with your explicit consent. For more information on the special categories of data we collect and how we use it, please refer to the relevant section below.
                                             </li>
                                             <li>
-                                                Personal data we collect automatically. We also receive and store certain types of personal data whenever you interact with us online. For example, we use cookies and tracking technologies (to find out more, see our privacy key terms) to obtain personal data when your web browser accesses our websites or advertisements and other content served by or on behalf of Unilever on other websites. Your personal data is also collected when you search, buy, post, participate in a contest or questionnaire or communicate with our customer service teams. Examples of the types of personal data we collect include; IP address (to find out more see our privacy key terms), device ID, location data, computer and connection information such as browser type and version, time zone setting, browser plug-in types and versions, operating system, and purchase history – which Unilever sometimes aggregates with similar information from other consumers. During some of your internet browsing on Unilever’s websites we may also use software tools to measure and collect session information, including page response times, download errors, length of visits to certain pages, page interaction information, and methods used to browse away from the page. We may also collect technical information to help us identify your device for fraud prevention and diagnostic purposes.
+                                                Personal data we collect automatically. We also receive and store certain types of personal data whenever you interact with us online. For example, we use cookies and tracking technologies (to find out more, see our privacy key terms) to obtain personal data when your web browser accesses our websites or advertisements and other content served by or on behalf of Unilever on other websites. Your personal data is also collected when you search, buy, post, participate in a contest or questionnaire or communicate with our customer service teams. Examples of the types of personal data we collect include; IP address (to find out more see our privacy key terms), device ID, location data, computer and connection information such as browser type and version, time zone setting, browser plug-in types and versions, operating system, and purchase history – which Unilever sometimes aggregates with similar information from other consumers. During some of your internet browsing on Unilever's websites we may also use software tools to measure and collect session information, including page response times, download errors, length of visits to certain pages, page interaction information, and methods used to browse away from the page. We may also collect technical information to help us identify your device for fraud prevention and diagnostic purposes.
                                             </li>
                                             <li>
-                                                Personal data we collect from other sources. We collect personal data from other sources including our trusted partnerships with third-parties and where we operate Unilever accounts on third-party platforms: For example, when you use the “like” functionality on Facebook or the +1 functionality on Google+. Additionally, we receive information about you and other visitors’ interactions with our advertising to measure whether our advertising is relevant and successful. We also collect information about you and your activities from a third-party when we jointly offer services or products, or from third-party data enrichment providers (to find out more see our privacy key terms) who may deliver insights to Unilever about the personal data we hold.
+                                                Personal data we collect from other sources. We collect personal data from other sources including our trusted partnerships with third-parties and where we operate Unilever accounts on third-party platforms: For example, when you use the "like" functionality on Facebook or the +1 functionality on Google+. Additionally, we receive information about you and other visitors' interactions with our advertising to measure whether our advertising is relevant and successful. We also collect information about you and your activities from a third-party when we jointly offer services or products, or from third-party data enrichment providers (to find out more see our privacy key terms) who may deliver insights to Unilever about the personal data we hold.
                                             </li>
                                         </ul>
                                     
-                                        <a href="">When and why we collect “special categories of personal data”</a>
+                                        <a href="">When and why we collect "special categories of personal data"</a>
                                         <br><br>
 
-                                        Certain categories of personal data, such as race, ethnicity, religion, health, sexuality or biometric data are classified as “special categories of data” and benefit from additional protection under the European data protection legislation.
+                                        Certain categories of personal data, such as race, ethnicity, religion, health, sexuality or biometric data are classified as "special categories of data" and benefit from additional protection under the European data protection legislation.
                                         <br><br>
                                         We limit the circumstances where we collect and process these special categories of data.
                                         <br><br>
@@ -102,21 +102,21 @@
 
                                         <ul>
                                             <li>
-                                                Unilever collects expectant mothers’ due dates in its Zwitsal or Baby Dove newsletter sign-up page. It may also place cookies on the sign-up page which capture this information too. This data is then used to create an audience of expectant mothers to receive online advertising from relevant Unilever brands. For more information on Unilever’s profiling activities, please refer to the relevant section;
+                                                Unilever collects expectant mothers' due dates in its Zwitsal or Baby Dove newsletter sign-up page. It may also place cookies on the sign-up page which capture this information too. This data is then used to create an audience of expectant mothers to receive online advertising from relevant Unilever brands. For more information on Unilever's profiling activities, please refer to the relevant section;
                                             </li>
                                             <li>
-                                                Similarly, Unilever collects personal data related to consumers’ allergies to provide consumers with ads and promotions for products which are relevant to their needs.
+                                                Similarly, Unilever collects personal data related to consumers' allergies to provide consumers with ads and promotions for products which are relevant to their needs.
                                             </li>
                                         </ul>
                                     
-                                        <a href="">How do we protect children’s privacy?</a>
+                                        <a href="">How do we protect children's privacy?</a>
                                         <br><br>
 
                                         We understand the importance of taking extra precautions to protect the privacy and safety of children using Unilever products and services. 
                                         <br><br>
-                                        Most of Unilever’s websites are designed and intended for use by adults. Where one of our websites is intended for use by a younger audience, we will obtain consent from the person with parental responsibility before we collect personal data where it is required by applicable laws and regulations (the age at which consent is necessary varies from Country to Country).
+                                        Most of Unilever's websites are designed and intended for use by adults. Where one of our websites is intended for use by a younger audience, we will obtain consent from the person with parental responsibility before we collect personal data where it is required by applicable laws and regulations (the age at which consent is necessary varies from Country to Country).
                                         <br><br>
-                                        If you are a child under the age where parental consent is required in your Country, you should review the terms of this Privacy Notice with your parent or guardian to make sure you understand and accept them. If we discover that we have collected personal data from a child without consent from a parent or guardian where such consent should have been obtained, we will delete that personal data as soon as practical. Access to certain parts of the Unilever’s websites and/or eligibility to receive prizes, samples or other rewards are generally limited to users over a certain age. 
+                                        If you are a child under the age where parental consent is required in your Country, you should review the terms of this Privacy Notice with your parent or guardian to make sure you understand and accept them. If we discover that we have collected personal data from a child without consent from a parent or guardian where such consent should have been obtained, we will delete that personal data as soon as practical. Access to certain parts of the Unilever's websites and/or eligibility to receive prizes, samples or other rewards are generally limited to users over a certain age. 
                                         <br><br>
                                         We sometimes use your personal data to carry out age verification checks and enforce any such age restrictions.
                                     </p>
@@ -193,7 +193,7 @@
                                         <br><br>
                                         You can withdraw your consent to prevent your personal data being used this way at any time using the manage cookies section of our Cookie Notice or unsubscribing to the use of your email address if you have logged into one of our websites or signed up to any marketing newsletters.
                                         <br><br>
-                                        By way of example – 
+                                        By way of example -
                                         <br><br>
                                         <ul>
                                             <li>
@@ -203,7 +203,7 @@
                                                        Our websites about what you view and the way you interact with our content;   
                                                     </li>
                                                     <li>
-                                                        Our digital display advertising that we serve to you on social platforms and other publisher’s websites; and  
+                                                        Our digital display advertising that we serve to you on social platforms and other publisher's websites; and  
                                                     </li>
                                                     <li>
                                                         Forms you fill in online and send to us about what your interests are.
@@ -217,7 +217,7 @@
                                                 If you have asked to receive emails or SMS communications from us, we track whether you open, read or click on the content to see what you are interested in so that we can give you more content that we think you are more likely to enjoy.
                                             </li>
                                             <li>
-                                                We use this data to profile your likes and dislikes.  For instance, if we see that you are regularly viewing Vegan recipes on our “Recipedia” website, and you have opted in to receiving emails from us, we might give you an update on the new Vegan recipes that have just hit the site for your interest, or we may tailor our web content when you visit towards things we think you’ll be most interested in.
+                                                We use this data to profile your likes and dislikes.  For instance, if we see that you are regularly viewing Vegan recipes on our "Recipedia" website, and you have opted in to receiving emails from us, we might give you an update on the new Vegan recipes that have just hit the site for your interest, or we may tailor our web content when you visit towards things we think you'll be most interested in.
                                             </li>
                                             <li>
                                                 Based on this profile information, we may also give you advertising that we think you will like and want to see as you view content from us or from our network of publishers that we advertise with.  Sometimes, with your consent, we may use your current location to serve advertising to you that is to do with promotions or events that are happening nearby that we think you might be interested in.
@@ -233,7 +233,7 @@
                                         <br>
                                         <ul>
                                             <li>
-                                                Unilever uses game simulations of science-based behavioural assessments and data science techniques to assess prospective employees. Candidates are required to play a set of games and the behavioural patterns exhibited during gameplay are assessed by a Unilever customised algorithm to predict the candidate’s potential for a specific role. This algorithm is regularly tested to ensure it remains fair, effective and unbiased.
+                                                Unilever uses game simulations of science-based behavioural assessments and data science techniques to assess prospective employees. Candidates are required to play a set of games and the behavioural patterns exhibited during gameplay are assessed by a Unilever customised algorithm to predict the candidate's potential for a specific role. This algorithm is regularly tested to ensure it remains fair, effective and unbiased.
                                             </li>
                                         </ul>
                                         We will not make decisions based solely on automated decision making that have significant impact on you. If we do so we notify you and provide you with clear information about our decision to rely on automated processing to make our decision and our lawful basis for doing so. For example, Unilever processes your personal data using automated means only if it is necessary for the entering into or the performance of a contract with you, or when you have given your explicit consent.
@@ -264,17 +264,17 @@
                             <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
                                 <div class="card-body">
                                     <p style="color: #843d71;font-size:15px;">
-                                        As part of the Unilever Group, a global business, Unilever Bangladesh Limitedshares your personal data within the Unilever Group and with selected third-parties in the following circumstances:
+                                        As part of the Unilever Group, a global business, Unilever Bangladesh Limited shares your personal data within the Unilever Group and with selected third-parties in the following circumstances:
                                         <br><br>
                                         <ul>
                                             <li>
-                                                Third-party service providers. In order to carry out your requests, respond to your inquiries, fulfil your orders, honour coupons, provide you with samples, enable you to participate in sweepstakes or make various other features, services and materials available to you through our websites we share your personal data with third-party service providers that perform functions on our behalf, such as companies that: host or operate Unilever’s websites, process payments, analyse data, provide customer service, postal or delivery services, and sponsors or other third-parties that participate in or administer our promotions. They have access to personal data needed to perform their functions but may not use it for other purposes. Further, they must process this personal data in accordance with this Privacy Notice and as permitted by applicable data protection laws and regulations.
+                                                Third-party service providers. In order to carry out your requests, respond to your inquiries, fulfil your orders, honour coupons, provide you with samples, enable you to participate in sweepstakes or make various other features, services and materials available to you through our websites we share your personal data with third-party service providers that perform functions on our behalf, such as companies that: host or operate Unilever's websites, process payments, analyse data, provide customer service, postal or delivery services, and sponsors or other third-parties that participate in or administer our promotions. They have access to personal data needed to perform their functions but may not use it for other purposes. Further, they must process this personal data in accordance with this Privacy Notice and as permitted by applicable data protection laws and regulations.
                                             </li>
                                             <li>
                                                 Other third-parties. Your personal data will also be used by us or shared with our sponsors, advertisers, advertising networks, advertising servers, social media networks, and analytics companies or other third-parties in connection with marketing, promotional, data enrichment (to find out more about our privacy key terms follow the link) and other offers, as well as product information. 
                                             </li>
                                             <li>
-                                                Business transfers. Your personal data will be used by us or shared with the Unilever Group, primarily for business and operational purposes.  As Unilever Group continues to develop the business, it may sell or purchase assets, subsidiaries or business units.  In such transactions, your personal data generally is one of the transferred business assets but remains subject to the promises made in any pre-existing Privacy Notice (unless, of course, you consent otherwise). If another entity acquires us, our businesses or substantially all or part of our assets, or assets related to Unilever’s websites, your personal data will be disclosed to such entity as part of the due diligence process and will be transferred to such entity as one of the transferred assets.  Also, if any bankruptcy or reorganization proceeding is brought by or against us, all such personal data will be considered an asset of ours and as such it is possible they will be sold or transferred to third-parties. 
+                                                Business transfers. Your personal data will be used by us or shared with the Unilever Group, primarily for business and operational purposes.  As Unilever Group continues to develop the business, it may sell or purchase assets, subsidiaries or business units.  In such transactions, your personal data generally is one of the transferred business assets but remains subject to the promises made in any pre-existing Privacy Notice (unless, of course, you consent otherwise). If another entity acquires us, our businesses or substantially all or part of our assets, or assets related to Unilever's websites, your personal data will be disclosed to such entity as part of the due diligence process and will be transferred to such entity as one of the transferred assets.  Also, if any bankruptcy or reorganization proceeding is brought by or against us, all such personal data will be considered an asset of ours and as such it is possible they will be sold or transferred to third-parties. 
                                             </li>
                                             <li>
                                                 Legal disclosure. We may transfer and disclose your personal data to third-parties:
@@ -282,10 +282,10 @@
                                                     <li>To comply with a legal obligation;</li>
                                                     <li>When we believe in good faith that an applicable law requires it;</li>
                                                     <li>At the request of governmental authorities conducting an investigation; </li>
-                                                    <li>To verify or enforce our “Terms of Use” or other applicable policies;</li>
+                                                    <li>To verify or enforce our "Terms of Use" or other applicable policies;</li>
                                                     <li>To detect and protect against fraud, or any technical or security vulnerabilities;</li>
                                                     <li>To respond to an emergency; or otherwise</li>
-                                                    <li>To protect the rights, property, safety, or security of third-parties, visitors to Unilever’s websites, Unilever or the public. </li>
+                                                    <li>To protect the rights, property, safety, or security of third-parties, visitors to Unilever's websites, Unilever or the public. </li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -301,7 +301,7 @@
                                             <li>To work with our agents and advisers who we use to help run our business and services.</li>
                                         </ul>
                                         <br>
-                                        If we do transfer personal data to outside of the EEA, Unilever will make sure that it is protected in the same way as if it was being used in the EEA. We’ll use one of the following safeguards:
+                                        If we do transfer personal data to outside of the EEA, Unilever will make sure that it is protected in the same way as if it was being used in the EEA. We'll use one of the following safeguards:
                                         <br>
                                         <ul>
                                             <li>Transfer to a non-EEA Country whose privacy legislation ensures an adequate level of protection of personal data to the EEA one; </li>
@@ -374,11 +374,11 @@
                             <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
                                 <div class="card-body">
                                     <p style="color: #843d71;font-size:15px;">
-                                        Your rights in relation to your personal data how it is processed. You can exercise these rights at any point. We have provided an overview of these rights below together with what this entails for you. You can exercise your rights by sending an email or submitting a request through the “Contact Us” form on our websites.
+                                        Your rights in relation to your personal data how it is processed. You can exercise these rights at any point. We have provided an overview of these rights below together with what this entails for you. You can exercise your rights by sending an email or submitting a request through the "Contact Us" form on our websites.
                                         <br><br>
-                                        Where we process your personal data, you have a number of rights over how the data is processed and can exercise these rights at any point. We have provided an overview of these rights below together with what this entails for you. You can exercise your rights by sending an email or submitting a request through the “Contact Us” form on our websites.<br>
+                                        Where we process your personal data, you have a number of rights over how the data is processed and can exercise these rights at any point. We have provided an overview of these rights below together with what this entails for you. You can exercise your rights by sending an email or submitting a request through the "Contact Us" form on our websites.<br>
                                         <ul>
-                                            <li>The right to be informed. You have the right to be provided with clear, transparent and easily understandable information about how we use your personal data and your rights. Therefore, we’re providing you with the information in this Notice.</li>
+                                            <li>The right to be informed. You have the right to be provided with clear, transparent and easily understandable information about how we use your personal data and your rights. Therefore, we're providing you with the information in this Notice.</li>
                                             <li>The right to access and rectification. You have the right to access, correct or update your personal data at any time. We understand the importance of this and should you want to exercise your rights, please contact us.</li>
                                             <li>
                                                 The right to data portability. The personal data you have provided us with is portable. This means it can be moved, copied or transmitted electronically under certain circumstances.
@@ -431,9 +431,9 @@
                             <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
                                 <div class="card-body">
                                     <p style="color: #843d71;font-size:15px;">
-                                        Unilever Bangladesh’s Privacy Officer can be contacted by email .
+                                        Unilever Bangladesh's Privacy Officer can be contacted by email .
                                         <br><br>
-                                        If you have any questions or concerns about Unilever’s Privacy Notice or data processing or if you would like to make a complaint about a possible breach of local privacy laws, please do so by sending an e-mail or submitting a request through the “Contact Us” form on our websites.
+                                        If you have any questions or concerns about Unilever's Privacy Notice or data processing or if you would like to make a complaint about a possible breach of local privacy laws, please do so by sending an e-mail or submitting a request through the "Contact Us" form on our websites.
                                         <br><br>
                                         When a privacy question or access request is received we have a dedicated team which triages the contacts and seeks to address the specific concern or query which you are seeking to raise. Where your issue may be more substantive in nature, more information may be sought from you. All such substantive contacts receive a response. If you are unsatisfied with the reply received, you may refer your complaint to the relevant Supervisory Authority in your Country. If you ask us, we will endeavour to provide you with information about relevant complaint avenues which may be applicable to your circumstances.
                                     </p>
@@ -455,7 +455,7 @@
                                     <p style="color: #843d71;font-size:15px;">
                                         We will update this Privacy Notice when necessary to reflect customer feedback and changes in our products and services
                                         <br><br>
-                                        We will update this Privacy Notice when necessary to reflect customer feedback and changes in our products and services. When we post changes to this statement, we will revise the “last updated” date at the top of this Notice. If the changes are significant, we will provide a more prominent notice (including, for certain services, email notification of Privacy Notice changes). We will also keep prior versions of this Privacy Notice in an archive for your review.
+                                        We will update this Privacy Notice when necessary to reflect customer feedback and changes in our products and services. When we post changes to this statement, we will revise the "last updated" date at the top of this Notice. If the changes are significant, we will provide a more prominent notice (including, for certain services, email notification of Privacy Notice changes). We will also keep prior versions of this Privacy Notice in an archive for your review.
                                         <br><br>
                                         We will not reduce your rights under this Privacy Notice without your consent.
                                         <br><br>

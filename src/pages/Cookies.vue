@@ -14,7 +14,7 @@
                     <br><br>
                     Please take a moment to familiarise yourself with our cookie practices and let us know if you have any questions by sending us an email or submitting a request through the "Contact Us" form on our websites.
                     <br><br>
-                    We have tried to keep this Notice as simple as possible, but if you’re not familiar with terms, such as cookies, IP addresses, and browsers, then read about these <a href="key terms">key terms</a> first.
+                    We have tried to keep this Notice as simple as possible, but if you're not familiar with terms, such as cookies, IP addresses, and browsers, then read about these <a href="key terms">key terms</a> first.
                     <br>
 
                     <div id="accordion">
@@ -37,7 +37,7 @@
                                         <br><br>
                                         Any personal data provided to or collected by Unilever via cookies and other tracking technologies is controlled by both Unilever PLC, Port Sunlight, Wirral, Merseyside, CH62 4ZD United Kingdom, and Unilever N.V., Weena 455, PO Box 760 3000 DK Rotterdam The Netherlands, which are the joint parent companies of the Unilever Group (all Unilever Group companies, together the data controllers).
                                         <br><br>
-                                        This Cookie Notice applies to any websites, apps, branded pages on third-party platforms (such as Facebook or YouTube), and applications accessed or used through such websites or third-party platforms (hereinafter, “our websites”) which are operated by or on behalf of Unilever. References to “Unilever” in this Notice means the companies within the Unilever Group including subsidiaries, affiliates, joint ventures and franchises that you are interacting with or have a business relationship with (hereinafter, “Unilever Group”). Find out more about the Unilever Group at <a href="https://www.unilever.com/about/">https://www.unilever.com/about/</a>.
+                                        This Cookie Notice applies to any websites, apps, branded pages on third-party platforms (such as Facebook or YouTube), and applications accessed or used through such websites or third-party platforms (hereinafter, "our websites") which are operated by or on behalf of Unilever. References to "Unilever" in this Notice means the companies within the Unilever Group including subsidiaries, affiliates, joint ventures and franchises that you are interacting with or have a business relationship with (hereinafter, "Unilever Group"). Find out more about the Unilever Group at <a href="https://www.unilever.com/about/">https://www.unilever.com/about/</a>.
                                         <br><br>
                                         By using our websites, you are consenting to our use of cookies in accordance with this Cookie Notice and our Privacy Notice. If you do not agree to our use of cookies in this way, you should set your browser settings accordingly, disable the cookies that we use or not use our websites at all. If you disable the cookies we use, this may impact your user experience while on the websites.
                                         <br><br>
@@ -64,7 +64,7 @@
                             <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
                                 <div class="card-body">
                                     <p style="color: #843d71;font-size:15px;">
-                                        Cookies, pixel tags and similar technologies (collectively ‘cookies’) are files containing small amounts of information which are downloaded to any internet enabled device – such as your computer, smartphone or tablet – when you visit a website. Cookies are then sent back to the originating website on each subsequent visit, or to another website that recognises that cookie. Cookies do lots of different and useful jobs, such as remembering your preferences, generally improving your online experience, and helping us to offer you the best product and services.
+                                        Cookies, pixel tags and similar technologies (collectively 'cookies') are files containing small amounts of information which are downloaded to any internet enabled device – such as your computer, smartphone or tablet – when you visit a website. Cookies are then sent back to the originating website on each subsequent visit, or to another website that recognises that cookie. Cookies do lots of different and useful jobs, such as remembering your preferences, generally improving your online experience, and helping us to offer you the best product and services.
                                         <br><br>
                                         There are many types of cookies. They all work in the same way, but have minor differences. For a detailed list of cookies used on our websites, please refer to the below relevant section.
                                     </p>
@@ -232,7 +232,7 @@
                                         <ul>
                                             <li>Session Cookies. These cookies are temporary cookies that remain on your device until you leave our websites; or</li>
                                             <li>
-                                                Persistent Cookies. These cookies remain on your device for much longer or until you manually delete them (how long the cookie remains on your device will depend on the duration or “lifetime” of the specific cookie, as well as your browser settings, as stated below).
+                                                Persistent Cookies. These cookies remain on your device for much longer or until you manually delete them (how long the cookie remains on your device will depend on the duration or "lifetime" of the specific cookie, as well as your browser settings, as stated below).
                                             </li>
                                         </ul>
                                     </p>

@@ -48,7 +48,7 @@
 		  	<router-link to="/cookies" tag="button" class="mr-1" onclick="accpetCookie()"> Learn More</router-link>
 		  	
 		  	<button @click="accpetCookie()">
-		    	Click here for accpet cookie
+		    	Click here to accept cookie
 		 	</button>
 		</div>
 		<!-- <div class="scroll">
