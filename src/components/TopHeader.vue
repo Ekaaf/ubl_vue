@@ -14,7 +14,7 @@
                     <div class="col-md-3 col-sm-12 social-icon">
                         <ul>
                             <!-- <li><a href="index.html"><i class="fa fa-facebook-official facbok" aria-hidden="true"></i></a></li> -->
-
+                            <li style="font-size:13px;color:white;"><router-link to="/cookies" style="font-size:13px;color:white;margin-left:5%;text-decoration: none;"> Cookie Policy </router-link> </li>
                             <li><a target="_blank" href="https://www.facebook.com/SensitiveExpert"><img src="/assets/img/fb.png" class="img-fluid" height="18" width="18" style="margin-top: -2%;"></a></li>
                             <li><a target="_blank" href="https://www.youtube.com/channel/UCfErz4OnrzZM4nej4J833yw"><i class="fa fa-youtube-play facbok" aria-hidden="true"></i></a></li>
                         </ul>
@@ -29,8 +29,8 @@
                     <div class="col-md-9 col-sm-12 menu">
              
                            <a href="mailto:careline.bd@unilever.com" class="text-secondary"><i class="fa fa-envelope p-1" aria-hidden="true"></i>careline.bd@unilever.com</a>
-                            
-                        
+                           
+                           <router-link to="/cookies" style="font-size:13px;color:white;margin-left:5%;text-decoration: none;"> Cookie Policy </router-link> 
                     </div>
                     <div class="col-md-3 col-sm-12 social-icon">
                         <ul>

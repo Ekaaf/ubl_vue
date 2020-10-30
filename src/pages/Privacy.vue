@@ -72,7 +72,7 @@
                                         You are not required to provide Unilever the personal data that we request, but if you choose not to do so, we may not be able to provide you with our products or services, or with a high quality of service or respond to any queries you may have.
                                         <br><br>
                                     
-                                        <a href="">Ways in which we collect your personal data</a>
+                                        <a  href="javascript:void(0);" style="text-decoration:none;">Ways in which we collect your personal data</a>
                                         <br><br>
                                         We may collect personal data from a variety of sources. This includes:
                                         <br><br>
@@ -88,7 +88,7 @@
                                             </li>
                                         </ul>
                                     
-                                        <a href="">When and why we collect "special categories of personal data"</a>
+                                        <a  href="javascript:void(0);" style="text-decoration:none;">When and why we collect "special categories of personal data"</a>
                                         <br><br>
 
                                         Certain categories of personal data, such as race, ethnicity, religion, health, sexuality or biometric data are classified as "special categories of data" and benefit from additional protection under the European data protection legislation.
@@ -109,7 +109,7 @@
                                             </li>
                                         </ul>
                                     
-                                        <a href="">How do we protect children's privacy?</a>
+                                        <a  href="javascript:void(0);" style="text-decoration:none;">How do we protect children's privacy?</a>
                                         <br><br>
 
                                         We understand the importance of taking extra precautions to protect the privacy and safety of children using Unilever products and services. 
@@ -187,7 +187,7 @@
                                         <br><br>
                                         We also process your personal data when we have a legal obligation (e.g., tax or social security obligations) to perform such processing. For example, a court order or a subpoena may require us to process personal data for a particular purpose, or we may be compelled to process personal data to report suspicious transactions under the local anti-money laundering rules.
                                         <br><br>
-                                        <a href="">Profiling</a>
+                                        <a  href="javascript:void(0);" style="text-decoration:none;">Profiling</a>
                                         <br><br>
                                         Unilever uses your personal data to build profiles. We create profiles by analysing the information about your online surfing, searching and buying behaviour and your interactions with our brand communications by building segments (creating groups that have certain common characteristics) and by placing your personal data in one or more segments. These segments are used by Unilever to personalise the website and our communications to you (such as showing relevant content to you when you visit our site or in a newsletter to you), and to display relevant offers and advertisements from the Unilever brands on the Unilever sites, and via third-party websites. The segments can also be used for third-party campaigns on the Unilever sites. Unilever profiles your data where you have provided consent for us to do so; for example, accepting the setting of cookies on your browser online or signing up for email newsletters from one of our brands.
                                         <br><br>
@@ -227,7 +227,7 @@
                                             </li>
                                         </ul>
                                         
-                                        <a href="">Automated decision-making</a>
+                                        <a  href="javascript:void(0);" style="text-decoration:none;">Automated decision-making</a>
                                         <br><br>
                                         In some instances, Unilever processes your personal data using automated means. An automated decision is a decision which is made solely by automatic means, where no humans are involved in the decision-making process related to your personal data. For example:
                                         <br>
@@ -289,7 +289,7 @@
                                                 </ul>
                                             </li>
                                         </ul>
-                                        <a href="">International data transfers</a>
+                                        <a  href="javascript:void(0);" style="text-decoration:none;">International data transfers</a>
                                         <br><br>
                                         Unilever shares personal data within the Unilever Group or with third-parties for purposes described in this Privacy Notice. 
                                         <br><br>
@@ -459,7 +459,7 @@
                                         <br><br>
                                         We will not reduce your rights under this Privacy Notice without your consent.
                                         <br><br>
-                                        <a href="">Additional Privacy Terms or Notices</a>
+                                        <a  href="javascript:void(0);" style="text-decoration:none;">Additional Privacy Terms or Notices</a>
                                         <br><br>
                                         In addition to this Privacy Notice, there may be specific campaigns or promotions which will be governed by additional privacy terms or notices. We encourage you to read these additional terms or notices before participating in any such campaigns or promotions as you will be required to comply with them if you participate. Any additional privacy terms or notices will be made prominently available to you.
                                     </p>

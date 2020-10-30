@@ -14,7 +14,7 @@
                     <br><br>
                     Please take a moment to familiarise yourself with our cookie practices and let us know if you have any questions by sending us an email or submitting a request through the "Contact Us" form on our websites.
                     <br><br>
-                    We have tried to keep this Notice as simple as possible, but if you're not familiar with terms, such as cookies, IP addresses, and browsers, then read about these <a href="key terms">key terms</a> first.
+                    We have tried to keep this Notice as simple as possible, but if you're not familiar with terms, such as cookies, IP addresses, and browsers, then read about these <a href="https://www.unilevernotices.com/privacy-key-terms.html">key terms</a> first.
                     <br>
 
                     <div id="accordion">
@@ -64,7 +64,7 @@
                             <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
                                 <div class="card-body">
                                     <p style="color: #843d71;font-size:15px;">
-                                        Cookies, pixel tags and similar technologies (collectively 'cookies') are files containing small amounts of information which are downloaded to any internet enabled device – such as your computer, smartphone or tablet – when you visit a website. Cookies are then sent back to the originating website on each subsequent visit, or to another website that recognises that cookie. Cookies do lots of different and useful jobs, such as remembering your preferences, generally improving your online experience, and helping us to offer you the best product and services.
+                                        Cookies, pixel tags and similar technologies (collectively 'cookies') are files containing small amounts of information which are downloaded to any internet enabled device such as your computer, smartphone or tablet when you visit a website. Cookies are then sent back to the originating website on each subsequent visit, or to another website that recognises that cookie. Cookies do lots of different and useful jobs, such as remembering your preferences, generally improving your online experience, and helping us to offer you the best product and services.
                                         <br><br>
                                         There are many types of cookies. They all work in the same way, but have minor differences. For a detailed list of cookies used on our websites, please refer to the below relevant section.
                                     </p>
@@ -118,7 +118,7 @@
                                             <li>You can use our cookie management tool to disable Unilever or third-party cookies.</li>
                                         </ul>
 
-                                        <a href="">Control via your browser settings</a>
+                                        <a href="javascript:void(0);" style="text-decoration:none;">Control via your browser settings</a>
                                         <br>
                                         Most internet browsers are initially set up to automatically accept cookies. If you do not want our websites to store cookies on your device, you can change your browser settings so that you receive a warning before certain cookies are stored. You can also adjust your settings so that your browser refuses most of our cookies or only certain cookies from third parties. You can also withdraw your consent to cookies by deleting the cookies that have already been stored.<br><br>
 
@@ -148,7 +148,7 @@
                                         To find out more about cookies, including how to see what cookies have been set and how to manage and delete them, visit <a href="http://www.allaboutcookies.org/">www.allaboutcookies.org.</a>  
 
                                         <br><br>
-                                        <a href="">Control via our cookie management tool</a><br>
+                                        <a  href="javascript:void(0);" style="text-decoration:none;">Control via our cookie management tool</a><br>
                                         You can disable Unilever or third-party cookies by use of our cookie consent tool which can be found here. 
                                         <br><br>
                                         Switching off tracking cookies, for example, ensures that Unilever will no longer track your online behaviour. However please note that opting-out from tracking cookies does not necessarily mean that you will receive less Unilever advertising. It just means that the advertising you receive will not be tailored to your interests.
@@ -224,7 +224,7 @@
                                             </li>
                                         </ul>
                                         <br><br>
-                                        <a href="">Duration of the cookie we use</a>
+                                        <a  href="javascript:void(0);" style="text-decoration:none;">Duration of the cookie we use</a>
                                         <br>
                                         <br>
 
