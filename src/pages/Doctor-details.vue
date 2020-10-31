@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-md-5 select-var-font h2 ">
                     <div class="text-center">
-                        <img class="rounded-circle" :src="'http://ubl.sensetiveexpert.com/ubl_laravel/' + doctor.imagelink" style="max-width:350px; max-height: 350px;" @error="imageUrlAlt"/>
+                        <img class="rounded-circle" :src="'https://ubl.sensetiveexpert.com/ubl_laravel/' + doctor.imagelink" style="max-width:350px; max-height: 350px;" @error="imageUrlAlt"/>
                         <!-- <img class="rounded-circle" :src="'http://localhost/ubl_laravel/' + doctor.imagelink" style="width:350px; height: 350px;" /> -->
                     </div>
 
@@ -121,7 +121,12 @@
                         &q=Space+Needle,Seattle+WA" allowfullscreen>
                     </iframe> -->
 
-                    <iframe class="embed-responsive-item" :src="'https://maps.google.com/maps?q='+doctor.latitude+','+doctor.longitude+'&amp&z=15&output=embed'" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                    <!-- <iframe class="embed-responsive-item" :src="'https://maps.google.com/maps?q='+doctor.latitude+','+doctor.longitude+'&amp&z=15&output=embed'" width="100%" height="100%" frameborder="0" style="border:0"></iframe> -->
+
+                    <!-- <iframe class="embed-responsive-item"
+                      frameborder="0" style="border:0"
+                      :src="'https://www.google.com/maps/embed/v1/place?key=AIzaSyDLqNWnYkNp_0evHq3cYA2L1cfEZ19rbSI&q='+doctor.location" allowfullscreen>
+                    </iframe> -->
 
                     <!-- <iframe src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" width="100%" height="100%" frameborder="0" style="border:0"></iframe> -->
 
@@ -142,7 +147,7 @@
             return {
                 doctor: [],
                 degrees: "",
-                test: "23.74531,90.38201"
+                test: ""
             }
         },
         mixins: [Mixin],
@@ -161,15 +166,16 @@
                         // data: form_data,
                 }).then(function (response) {
                     vm.doctor = response.data[0];
-                    // vm.degrees = vm.doctor.education.split(",");
-                    // console.log(vm.degrees);
+                    if(vm.doctor.location=='null'){
+                        alert("vm.doctor.location")
+                        // vm.doctor.location = vm.doctor.latitude+','+vm.longitude;
+                    }
                     if(vm.doctor.education ==null || vm.doctor.education==""){
                         vm.degrees[0] = "BDS";
                     }
                     else{
                         vm.degrees = vm.doctor.education.split(",");
                     }
-                    
                 }).catch(function (error) {
                     vm.error = error
                 });

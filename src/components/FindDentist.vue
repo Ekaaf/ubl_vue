@@ -84,7 +84,7 @@
                                 </p>
                             </div>
                         </div>
-                        <router-link type="button" class="btn btn-find-now more-details" v-bind:to="'/Doctor/' + doctor.user_id" @click="findDoctor();">More Details</router-link>
+                        <router-link type="button" class="btn btn-find-now more-details" v-bind:to="'/Doctor/' + doctor.id" >More Details</router-link>
                     </div>
                     
                 </div>
