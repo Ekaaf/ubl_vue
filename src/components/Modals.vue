@@ -1088,7 +1088,8 @@
                         url: this.getApiUrl()+"getDoctorInfo",
                         method: "GET",
                         params: {
-                        	id : id
+                        	id : id,
+                        	login: true
                         },
                         // data: form_data,
                 }).then(function (response) {

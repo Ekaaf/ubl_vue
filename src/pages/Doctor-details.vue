@@ -123,10 +123,10 @@
 
                     <!-- <iframe class="embed-responsive-item" :src="'https://maps.google.com/maps?q='+doctor.latitude+','+doctor.longitude+'&amp&z=15&output=embed'" width="100%" height="100%" frameborder="0" style="border:0"></iframe> -->
 
-                    <!-- <iframe class="embed-responsive-item"
+                    <iframe class="embed-responsive-item"
                       frameborder="0" style="border:0"
                       :src="'https://www.google.com/maps/embed/v1/place?key=AIzaSyDLqNWnYkNp_0evHq3cYA2L1cfEZ19rbSI&q='+doctor.location" allowfullscreen>
-                    </iframe> -->
+                    </iframe>
 
                     <!-- <iframe src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" width="100%" height="100%" frameborder="0" style="border:0"></iframe> -->
 
@@ -166,9 +166,9 @@
                         // data: form_data,
                 }).then(function (response) {
                     vm.doctor = response.data[0];
-                    if(vm.doctor.location=='null'){
-                        alert("vm.doctor.location")
-                        // vm.doctor.location = vm.doctor.latitude+','+vm.longitude;
+                    if(vm.doctor.location== null){
+                        vm.doctor.location = vm.doctor.latitude+','+vm.doctor.longitude;
+                        // alert(vm.doctor.location)
                     }
                     if(vm.doctor.education ==null || vm.doctor.education==""){
                         vm.degrees[0] = "BDS";
