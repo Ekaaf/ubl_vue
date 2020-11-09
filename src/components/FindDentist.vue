@@ -89,6 +89,22 @@
                     
                 </div>
                 
+                <paginate v-if="pageCount>1"
+                    v-model="page"
+                    :page-count="pageCount"
+                    :page-range="3"
+                    :margin-pages="2"
+                    :click-handler="findDoctor"
+                    :prev-text="'Prev'"
+                    :prev-class="'page-link'"
+                    :break-view-text = "'--'"
+                    :next-text="'Next'"
+                    :next-class="'page-link'"
+                    :container-class="'pagination'"
+                    :page-class="'page-item'"
+                    :page-link-class="'page-link'">
+                </paginate>
+
             </div>
 
         </section>
@@ -96,7 +112,8 @@
 </template>
 
 <script>
-	import Mixin  from "../mixin.js";
+    import Mixin  from "../mixin.js";
+
     export default {
         name: 'FindDentist',
         mixins: [Mixin],
@@ -109,6 +126,7 @@
                 departmentOptions:['PAEDIATRIC DENTISTRY','DEPARTMENT OF PROSTHODONTICS','ORAL ANATOMY & PHYSIOLOGY','CONSERVATIVE DENTISTRY & ENDODONTICS','ORAL AND MAXILLOFACIAL SURGERY','ORAL PATHOLOGY & PERIODONTOLOGY','ORTHODONTICS','DEPARTMENT  OF LIFE SCIENCE','PERIODENTOLOGY & ORAL PATHOLOGY','FACULTY OF DENTISTRY','DIAGNOSIS DEPARTMENT','GENERAL & DENTAL PHARMACOLOGY','DENTAL PUBLIC HEALTH','DENTAL DEPARTMENT','HEALTH','DENTAL ANATOMY','SCIENCE OF DENTAL MATERIALS'],
                 doctors: [],
                 location : [],
+                pageCount: 0,
                 page: 1
             }
         },
@@ -119,9 +137,10 @@
             },
             findDoctor(){
             	var vm = this;
+                console.log(vm.currentPosition);
                 var data = $('#findDoctorForm').serialize();
                 vm.doctors = [];
-                data = data+"&latitude="+vm.currentPosition.latitude+"&longitude="+this.currentPosition.longitude+"&page="+vm.page;
+                data = data+"&latitude="+vm.currentPosition.latitude+"&longitude="+vm.currentPosition.longitude+"&page="+vm.page;
                 
             	axios({
                         url: this.getApiUrl()+"findDoctor",
@@ -129,7 +148,8 @@
                         // data: $('#findDoctorForm').serialize(),
                         data: data,
                 }).then(function (response) {
-                    vm.doctors = response.data;
+                    vm.doctors = response.data.doctors;
+                    vm.pageCount = response.data.pageCount;
                     $.each(vm.doctors, function(index, item) {
                         // do something with `item` (or `this` is also `item` if you like)
                         vm.doctors.index[0] = item.split(",");
@@ -444,7 +464,26 @@
     }
 </script>
 
+
+<style>
+
+.pagination{
+        float: right;
+    }
+
+    .page-link{
+        color: #843d71!important;
+    }
+
+    .page-item.active .page-link {
+        background-color: #561343 !important;
+        border-color: #561343 !important;
+        color:white !important;
+    }
+</style>
+
 <style scoped>
+    
     .rounded-pill{
         border: 1px solid white;
         color: white!important;
@@ -528,6 +567,8 @@
         .mobile-doc img{
             width: 50%;
         }
+
+
     }
   
 </style>

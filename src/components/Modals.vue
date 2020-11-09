@@ -98,7 +98,7 @@
 	        <div class="modal-dialog modal-lg" role="document">
 	            <div class="modal-content bg-default">
 	                <div class="modal-header">
-	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle"> Edit Information</h5>
+	                    <h5 class="modal-title bg-white w-100 text-center p-2 " id="exampleModalLongTitle">Please click to any field to edit your profile</h5>
 	                    <button type="button" class="close bg-default text-secondary" data-dismiss="modal" aria-label="Close">
 	                        <span aria-hidden="true"><i class="fa fa-window-close" aria-hidden="true"></i></span>
 	                    </button>
@@ -107,6 +107,22 @@
 	                    <form id="doctor_edit_form" enctype="multipart/form-data">
 	                        <input type="hidden" id="doctor_id" name="doctor_id">
 
+	                        <div class="form-group row mb-3">
+	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">Update Image</label>
+	                            <div class="col-sm-9">
+	                            	<input type="file" class="form-control color-default rounded-pill" id="file" name="file" @change="showImage();">
+	                            </div>
+	                        </div>
+
+	                        <div class="form-group row mb-3">
+	                        	<label for="staticEmail" class="col-sm-3 col-form-label color-white">Image</label>
+	                            <div class="col-sm-9">
+	                            	<img src="https://ubl.sensetiveexpert.com/ubl_laravel/public/images/default.jpg" class="w-25" id="previewImage" @error="imageUrlAlt">
+	                            	<button type="button" @click="clearImage();" id="clearButton" style="display:none;">Clear</button>
+	                            </div>
+	                            
+	                        </div>
+	                        
 	                        <div class="form-group row mb-3">
 	                        	<label for="staticEmail" class="col-sm-3 col-form-label color-white">Name</label>
 	                            <div class="col-sm-9">
@@ -142,7 +158,7 @@
 	                        <div class="form-group row mb-3">
 	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">BMDC No</label>
 	                            <div class="col-sm-9">
-	                            	<input type="text" class="form-control color-default rounded-pill" v-model="bmdc_number" id="bmdc_number" name="bmdc_number" placeholder="BMDC Number" >
+	                            	<input type="text" class="form-control color-default rounded-pill" v-model="bmdc_number" id="bmdc_number" name="bmdc_number" placeholder="BMDC Number" disabled>
 	                        	</div>
 	                        </div>
 
@@ -167,27 +183,20 @@
 	                        </div>
 
 	                        <div class="form-group row mb-3">
+	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white" style="font-size:15px">Education</label>
+	                            <div class="col-sm-9">
+	                            	<input type="email" class="form-control color-default rounded-pill" v-model="doctor_education" id="doctor_education" name="doctor_education" placeholder="Doctor Education">
+	                            </div>
+	                        </div>
+
+	                        <div class="form-group row mb-3">
 	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">Phone</label>
 	                            <div class="col-sm-9">
 	                            	<input type="text" class="form-control color-default rounded-pill" v-model="doctor_phone" id="doctor_phone" name="doctor_phone" placeholder="Doctor Phone" >
 	                            </div>
 	                        </div>
 
-	                        <div class="form-group row mb-3">
-	                        	<label for="staticEmail" class="col-sm-3 col-form-label color-white">Image</label>
-	                            <div class="col-sm-9">
-	                            	<img src="https://ubl.sensetiveexpert.com/ubl_laravel/public/images/default.jpg" class="w-25" id="previewImage" @error="imageUrlAlt">
-	                            	<button type="button" @click="clearImage();" id="clearButton" style="display:none;">Clear</button>
-	                            </div>
-	                            
-	                        </div>
-
-	                        <div class="form-group row mb-3">
-	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">Update Image</label>
-	                            <div class="col-sm-9">
-	                            	<input type="file" class="form-control color-default rounded-pill" id="file" name="file" @change="showImage();">
-	                            </div>
-	                        </div>
+	                        
 
 	                        
 
@@ -532,42 +541,47 @@
 	                        <div class="row">
 	                            <div class="col-md-6 border-right2">
 	                            	<div class="form-group">
-	                                    <input type="text" class="form-control color-default rounded-pill" id="signup_name" name="signup_name" placeholder="Name" v-model="signup_name">
+	                                    <input type="text" class="form-control color-default rounded-pill asterisk" id="signup_name" name="signup_name" placeholder="* Name" v-model="signup_name">
 	                                </div>
 	                                <div class="form-group">
-	                                    <input type="text" class="form-control color-default rounded-pill" id="email" name="email" placeholder="Email" v-model="signup_email">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="email" name="email" placeholder="* Email" v-model="signup_email">
 	                                </div>
 	                                <div class="form-group">
-	                                    <input type="number" class="form-control color-default rounded-pill" id="signup_phone" name="signup_phone" placeholder="Phone Number" v-model="signup_phone">
+	                                    <input type="number" class="form-control color-default rounded-pill" id="signup_phone" name="signup_phone" placeholder="* Phone Number" v-model="signup_phone">
 	                                </div>
 	                                <!-- <div class="form-group">
 	                                    <input type="password" class="form-control color-default rounded-pill" id="password" name="password" placeholder="Password" v-model="signup_password">
 	                                </div> -->
 
 	                                <div class="input-group mb-3">
-									  	<input type="password" class="form-control color-default rounded-pill" id="password" name="password" placeholder="Password" v-model="signup_password">
+									  	<input type="password" class="form-control color-default rounded-pill" id="password" name="password" placeholder="* Password" v-model="signup_password">
 									  	<div class="input-group-append">
 									    	<i class=" fa fa-eye" aria-hidden="true" style="position:absolute;margin-left:-25px;margin-top:10px;cursor:pointer;z-index:99999;" @click="showPassword('password');"></i>
 									  	</div>
 									</div>
 									
 	                                <div class="form-group">
-	                                    <input type="password" class="form-control color-default rounded-pill" id="con_password" name="con_password" placeholder="Confirm Password" v-model="signup_con_password">
+	                                    <input type="password" class="form-control color-default rounded-pill" id="con_password" name="con_password" placeholder="* Confirm Password" v-model="signup_con_password">
 	                                </div>
 
-	                                <div class="form-group">
+	                                <div class="form-group" id="userdiv" style="margin-bottom:0px;">
 									    <label for="exampleFormControlSelect1" style="color:white;">I am </label>
 									    <select class="form-control rounded-pill" id="role_id" name="role_id" v-model="signup_role_id" @change="showDoctorReg();">
-									      <option value="">Select</option>
+									      <option value="">* Select</option>
 									      <option value="2">Doctor</option>
 									      <option value="3">Patient</option>
 									    </select>
 									</div>
 
-									<div class="form-group" id="filediv" style="display:none;">
+									<div class="form-group" id="filediv" style="display:none;margin-bottom: 0px;">
 	                                    <input type="file" class="form-control color-default rounded-pill" id="file_reg" name="file_reg" >
 	                                </div>
 
+	                                <div class="form-check">
+										<label class="form-check-label" for="exampleCheck1" style="color: red;font-size:12px;">
+											* Marks field are mandatory
+										</label>
+									</div>
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="agree" name="agree" value="1">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
@@ -616,23 +630,30 @@
 	                                    <input type="text" class="form-control color-default rounded-pill" id="specialization_reg" name="specialization_reg" placeholder="Specialization" v-model="specialization_reg" required>
 	                                </div>
 	                                <div class="form-group">
-	                                    <input type="text" class="form-control color-default rounded-pill" id="chamber_name_reg" name="chamber_name_reg" placeholder="Chamber Name" v-model="chamber_name_reg">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="chamber_name_reg" name="chamber_name_reg" placeholder="* Chamber Name" v-model="chamber_name_reg">
 	                                </div>
 	                                <div class="form-group">
-	                                    <input type="text" class="form-control color-default rounded-pill" id="chamber_address_reg" name="chamber_address_reg" placeholder="Chamber Address" v-model="chamber_address_reg">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="chamber_address_reg" name="chamber_address_reg" placeholder="* Chamber Address" v-model="chamber_address_reg">
 	                                </div>
 	                                <div class="form-group">
-	                                    <input type="text" class="form-control color-default rounded-pill" id="education_reg" name="education_reg" placeholder="Education" v-model="education_reg">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="education_reg" name="education_reg" placeholder="* Education" v-model="education_reg">
 	                                </div>
 	                                <div class="form-group">
-	                                    <input type="text" class="form-control color-default rounded-pill" id="bmdc_number_reg" name="bmdc_number_reg" placeholder="BMDC Number" v-model="bmdc_number_reg">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="bmdc_number_reg" name="bmdc_number_reg" placeholder="* BMDC Number" v-model="bmdc_number_reg">
 	                                </div>
-	                                <div class="form-group">
+
+	                                <div class="form-check mb-2">
+										<input type="checkbox" class="form-check-input" id="location_reg" name="location_reg" value="1">
+										<label class="form-check-label" for="exampleCheck1" style="color: white;">
+											Take My Location as current Location
+										</label>
+									</div>
+	                                <!-- <div class="form-group">
 	                                    <input type="text" class="form-control color-default rounded-pill" id="online_consultation_reg" name="online_consultation_reg" placeholder="Online Consultation" v-model="online_consultation_reg">
 	                                </div>
 	                                <div class="form-group">
 	                                    <input type="text" class="form-control color-default rounded-pill" id="location_reg" name="location_reg" placeholder="Lat, Long" v-model="location_reg">
-	                                </div>
+	                                </div> -->
 	                                
 	                            </div>
 	                        </div>
@@ -675,7 +696,7 @@
             	specialization: '',	
             	doctor_chamber_name: '',
             	doctor_chamber_address: '',
-            	
+            	doctor_education: '',
             	doctor_phone: '',
             	loggedinUserId: '',
             	user_name: '',
@@ -726,7 +747,7 @@
 			$('#user_edit').on('shown.bs.modal', function () {
 	  			vm.getUserInfo(vm.loggedinUserId);
 			})
-
+			vm.getCurrentpostion();
 			$('#apply_dental_camp_modal').on('shown.bs.modal', function () {
 	  			var user = accessToken.user;
 	  			$("#apply_userid").val(user.id);
@@ -846,10 +867,7 @@
         			return false;
         		}
 
-        		if($("#role_id").val()==2 && $("#specialization_reg").val()==""){
-        			alert("Please enter Specialization");
-        			return false;
-        		}
+        		
 
         		if($("#role_id").val()==2 && $("#chamber_name_reg").val()==""){
         			alert("Please enter Chamber Name");
@@ -869,6 +887,11 @@
         		}
 
 
+        		if($("#role_id").val()==2 && $("#education_reg").val()==""){
+        			alert("Please enter education");
+        			return false;
+        		}
+
         		if(!$("#agree").is(':checked')){
         			alert("Please agree to terms and conditions");
         			return false;
@@ -884,6 +907,16 @@
         			return false;
         		}
         		
+
+        		if(!$("#location_reg").is(':checked')){
+        			vm.location_reg = "";
+        		}
+        		else{
+        			vm.location_reg = vm.currentPosition.latitude+','+vm.currentPosition.longitude;
+        		}
+        		console.log(vm.currentPosition)
+        		alert(vm.location_reg);
+        		return false;
         		var formData = new FormData();
             	formData.append('signup_name',$("#signup_name").val());
 				formData.append('email',$("#email").val());
@@ -902,7 +935,7 @@
 				formData.append('education_reg',$("#education_reg").val());
 				formData.append('bmdc_number_reg',$("#bmdc_number_reg").val());
 				formData.append('online_consultation_reg',$("#online_consultation_reg").val());
-				formData.append('location_reg',$("#location_reg").val());
+				formData.append('location_reg',vm.location_reg);
 				if($('#file_reg').val()){
 					formData.append('image', $('#file_reg')[0].files[0]);
 				}
@@ -940,10 +973,12 @@
         		if(role_id==2){
         			$("#doctor_reg_div").show();
         			$("#filediv").show();
+        			$("#userdiv").css("margin-bottom", "15px");
         		}
         		else{
         			$("#doctor_reg_div").hide();
         			$("#filediv").hide();
+        			$("#userdiv").css("margin-bottom", "0px");
         		}
         	},
 
@@ -1104,8 +1139,13 @@
                 	
                 	vm.doctor_chamber_name= response.data[0].chamber_name;
                 	vm.doctor_chamber_address= response.data[0].chamber_address;
-                	
-                	vm.department= response.data[0].department;
+                	vm.doctor_education= response.data[0].education;
+                	if(response.data[0].department == "" || response.data[0].department == null){
+                		vm.department= "";
+                	}
+                	else{
+                		vm.department= response.data[0].department;
+                	}
 
                 	vm.doctor_phone= response.data[0].phone_number;
                 	$("#doctor_id").val(response.data[0].user_id);
@@ -1151,6 +1191,7 @@
             	formData.append('specialization', vm.specialization);
             	formData.append('doctor_chamber_name', vm.doctor_chamber_name);
             	formData.append('doctor_chamber_address', vm.doctor_chamber_address);
+            	formData.append('doctor_education', vm.doctor_education);
             	formData.append('doctor_phone', vm.doctor_phone);
             	formData.append('department', vm.department);
             	// formData.append('designation', 'designation');

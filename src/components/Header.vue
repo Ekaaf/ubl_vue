@@ -32,7 +32,7 @@
                                     <li class="dropdown doctorbutton" v-if="role_id==2">
                                         <button class="btn btn-secondary dropdown-toggle bg-default" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctor</button>
                                         <div class="dropdown-menu m-0" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#doctor_edit">Edit Profile</a>
+                                            <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#doctor_edit">View & Edit Profile</a>
                                             <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#change_pass">Change Password</a>
                                             <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#exampleModal-2" data-whatever="@mdo">Provide A Notice</a>
                                             <a class="dropdown-item py-1 px-2" @click="logout();">Log Out</a>
