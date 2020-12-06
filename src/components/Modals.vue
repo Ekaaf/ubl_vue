@@ -196,6 +196,21 @@
 	                            </div>
 	                        </div>
 
+	                        <div class="form-group row mb-3">
+	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">Latitude</label>
+	                            <div class="col-sm-9">
+	                            	<input type="number" class="form-control color-default rounded-pill" v-model="latitude" id="latitude" name="latitude" placeholder="Doctor Phone" >
+	                            </div>
+	                        </div>
+
+
+	                        <div class="form-group row mb-3">
+	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">Longitude</label>
+	                            <div class="col-sm-9">
+	                            	<input type="text" class="form-control color-default rounded-pill" v-model="longitude" id="longitude" name="longitude" placeholder="Doctor Phone" >
+	                            </div>
+	                        </div>
+
 	                        
 
 	                        
@@ -722,6 +737,8 @@
             	location_reg: '',
             	department: "",
             	departmentOptions:['PAEDIATRIC DENTISTRY','DEPARTMENT OF PROSTHODONTICS','ORAL ANATOMY & PHYSIOLOGY','CONSERVATIVE DENTISTRY & ENDODONTICS','ORAL AND MAXILLOFACIAL SURGERY','ORAL PATHOLOGY & PERIODONTOLOGY','ORTHODONTICS','DEPARTMENT  OF LIFE SCIENCE','PERIODENTOLOGY & ORAL PATHOLOGY','FACULTY OF DENTISTRY','DIAGNOSIS DEPARTMENT','GENERAL & DENTAL PHARMACOLOGY','DENTAL PUBLIC HEALTH','DENTAL DEPARTMENT','HEALTH','DENTAL ANATOMY','SCIENCE OF DENTAL MATERIALS'],
+            	latitude: "",
+            	longitude: ""
 
 
             }
@@ -1148,6 +1165,8 @@
                 	}
 
                 	vm.doctor_phone= response.data[0].phone_number;
+                	vm.latitude= response.data[0].latitude;
+                	vm.longitude= response.data[0].longitude;
                 	$("#doctor_id").val(response.data[0].user_id);
                 	$("#previewImage").attr("src","https://ubl.sensetiveexpert.com/ubl_laravel/public/images/doctor/"+response.data[0].bmdc_number+".jpg");
                     
@@ -1194,6 +1213,8 @@
             	formData.append('doctor_education', vm.doctor_education);
             	formData.append('doctor_phone', vm.doctor_phone);
             	formData.append('department', vm.department);
+            	formData.append('latitude', vm.latitude);
+            	formData.append('longitude', vm.longitude);
             	// formData.append('designation', 'designation');
 				formData.append('image', $('input[type=file]')[0].files[0]); 
             	axios({
