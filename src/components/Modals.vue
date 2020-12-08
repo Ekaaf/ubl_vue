@@ -181,6 +181,12 @@
 	                            	<input type="text" class="form-control color-default rounded-pill" v-model="doctor_chamber_address" id="doctor_chamber_address" name="doctor_chamber_address" placeholder="Doctor Chamber Address">
 	                        	</div>
 	                        </div>
+	                        <div class="form-group row mb-3">
+	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white" style="font-size:14.5px;padding: 0;">Chamber Availability</label>
+	                            <div class="col-sm-9">
+	                            	<input type="email" class="form-control color-default rounded-pill" v-model="doctor_chamber_availability" id="doctor_chamber_availability" name="doctor_chamber_availability" placeholder="Chamber Availability">
+	                            </div>
+	                        </div>
 
 	                        <div class="form-group row mb-3">
 	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white" style="font-size:15px">Education</label>
@@ -197,18 +203,30 @@
 	                        </div>
 
 	                        <div class="form-group row mb-3">
-	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">Latitude</label>
+	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white"></label>
 	                            <div class="col-sm-9">
-	                            	<input type="number" class="form-control color-default rounded-pill" v-model="latitude" id="latitude" name="latitude" placeholder="Doctor Phone" >
+	                            	<input type="checkbox" class="form-check-input" id="update_location_reg" name="update_location_reg" value="1">
+	                            	<label class="form-check-label" for="exampleCheck1" style="color: white;">
+										Take my current location as my chamber location
+									</label>
 	                            </div>
 	                        </div>
 
+							<div id="updateLocationDiv">
+		                        <div class="form-group row mb-3">
+		                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">Latitude</label>
+		                            <div class="col-sm-9">
+		                            	<input type="number" class="form-control color-default rounded-pill" v-model="latitude" id="latitude" name="latitude" placeholder="Doctor Phone" >
+		                            </div>
+		                        </div>
 
-	                        <div class="form-group row mb-3">
-	                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">Longitude</label>
-	                            <div class="col-sm-9">
-	                            	<input type="text" class="form-control color-default rounded-pill" v-model="longitude" id="longitude" name="longitude" placeholder="Doctor Phone" >
-	                            </div>
+
+		                        <div class="form-group row mb-3">
+		                            <label for="staticEmail" class="col-sm-3 col-form-label color-white">Longitude</label>
+		                            <div class="col-sm-9">
+		                            	<input type="text" class="form-control color-default rounded-pill" v-model="longitude" id="longitude" name="longitude" placeholder="Doctor Phone" >
+		                            </div>
+		                        </div>
 	                        </div>
 
 	                        
@@ -648,6 +666,9 @@
 	                                    <input type="text" class="form-control color-default rounded-pill" id="chamber_name_reg" name="chamber_name_reg" placeholder="* Chamber Name" v-model="chamber_name_reg">
 	                                </div>
 	                                <div class="form-group">
+	                                    <input type="text" class="form-control color-default rounded-pill" id="chamber_availability_reg" name="chamber_availability_reg" placeholder="Chamber Availability" v-model="chamber_availability_reg">
+	                                </div>
+	                                <div class="form-group">
 	                                    <input type="text" class="form-control color-default rounded-pill" id="chamber_address_reg" name="chamber_address_reg" placeholder="* Chamber Address" v-model="chamber_address_reg">
 	                                </div>
 	                                <div class="form-group">
@@ -660,7 +681,7 @@
 	                                <div class="form-check mb-2">
 										<input type="checkbox" class="form-check-input" id="location_reg" name="location_reg" value="1">
 										<label class="form-check-label" for="exampleCheck1" style="color: white;">
-											Take My Location as current Location
+											Take my current location as my chamber location
 										</label>
 									</div>
 	                                <!-- <div class="form-group">
@@ -711,6 +732,7 @@
             	specialization: '',	
             	doctor_chamber_name: '',
             	doctor_chamber_address: '',
+            	doctor_chamber_availability: '',
             	doctor_education: '',
             	doctor_phone: '',
             	loggedinUserId: '',
@@ -731,6 +753,7 @@
             	specialization_reg:'',
             	chamber_name_reg: '',
             	chamber_address_reg: '',
+            	chamber_availability_reg: '',
             	education_reg: '',
             	bmdc_number_reg: '',
             	online_consultation_reg: '',
@@ -745,6 +768,14 @@
         },
         mixins: [Mixin],
         mounted(){
+        	$('#update_location_reg').change(function() {
+		        if(!$("#update_location_reg").is(':checked')){
+        			$("#updateLocationDiv").show();
+        		}
+        		else{
+        			$("#updateLocationDiv").hide();
+        		}        
+		    });
         	if(sessionStorage.getItem('loaded')){
             	// alert('loaded');
 	        }
@@ -932,8 +963,6 @@
         			vm.location_reg = vm.currentPosition.latitude+','+vm.currentPosition.longitude;
         		}
         		console.log(vm.currentPosition)
-        		alert(vm.location_reg);
-        		return false;
         		var formData = new FormData();
             	formData.append('signup_name',$("#signup_name").val());
 				formData.append('email',$("#email").val());
@@ -948,11 +977,13 @@
 				formData.append('department_reg',$("#department_reg").val());
 				formData.append('specialization_reg',$("#specialization_reg").val());
 				formData.append('chamber_name_reg',$("#chamber_name_reg").val());
+				formData.append('chamber_availability_reg',$("#chamber_availability_reg").val());
 				formData.append('chamber_address_reg',$("#chamber_address_reg").val());
 				formData.append('education_reg',$("#education_reg").val());
 				formData.append('bmdc_number_reg',$("#bmdc_number_reg").val());
 				formData.append('online_consultation_reg',$("#online_consultation_reg").val());
-				formData.append('location_reg',vm.location_reg);
+				formData.append('latitude',vm.currentPosition.latitude);
+				formData.append('longitude',vm.currentPosition.longitude);
 				if($('#file_reg').val()){
 					formData.append('image', $('#file_reg')[0].files[0]);
 				}
@@ -1156,6 +1187,7 @@
                 	
                 	vm.doctor_chamber_name= response.data[0].chamber_name;
                 	vm.doctor_chamber_address= response.data[0].chamber_address;
+                	vm.doctor_chamber_availability= response.data[0].chamber_availability;
                 	vm.doctor_education= response.data[0].education;
                 	if(response.data[0].department == "" || response.data[0].department == null){
                 		vm.department= "";
@@ -1210,11 +1242,20 @@
             	formData.append('specialization', vm.specialization);
             	formData.append('doctor_chamber_name', vm.doctor_chamber_name);
             	formData.append('doctor_chamber_address', vm.doctor_chamber_address);
+            	formData.append('doctor_chamber_availability', vm.doctor_chamber_availability);
             	formData.append('doctor_education', vm.doctor_education);
             	formData.append('doctor_phone', vm.doctor_phone);
             	formData.append('department', vm.department);
-            	formData.append('latitude', vm.latitude);
-            	formData.append('longitude', vm.longitude);
+
+            	if(!$("#update_location_reg").is(':checked')){
+        			formData.append('latitude', vm.latitude);
+            		formData.append('longitude', vm.longitude);
+        		}
+        		else{
+        			formData.append('latitude', vm.currentPosition.latitude);
+            		formData.append('longitude', vm.currentPosition.longitude);
+        		}
+            	
             	// formData.append('designation', 'designation');
 				formData.append('image', $('input[type=file]')[0].files[0]); 
             	axios({

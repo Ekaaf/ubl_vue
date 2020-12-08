@@ -141,7 +141,7 @@
                 var data = $('#findDoctorForm').serialize();
                 vm.doctors = [];
                 data = data+"&latitude="+vm.currentPosition.latitude+"&longitude="+vm.currentPosition.longitude+"&page="+vm.page;
-                
+                // data = data+"&latitude=23.797911&longitude=90.414391&page="+vm.page;
             	axios({
                         url: this.getApiUrl()+"findDoctor",
                         method: "POST",

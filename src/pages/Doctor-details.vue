@@ -26,11 +26,12 @@
                             <h3 class="color-white">{{doctor.doctor_name}}</h3>
                             
                             <p class="color-white">
-                                {{doctor.designation}}<br v-if="doctor.designation"><br v-if="doctor.designation">
+                                <span v-if="doctor.designation">{{doctor.department}}</span>
                                 <span v-if="doctor.department"><b>DEPARTMENT:</b>  {{doctor.department}}</span> <br v-if="doctor.department">
                                 <span v-if="doctor.specialization"><b>SPECIALIZATION:</b> {{doctor.specialization}}</span><br v-if="doctor.specialization"><br v-if="doctor.specialization">
                                 <span v-if="doctor.chamber_name"><b>CHAMBER NAME:</b> {{doctor.chamber_name}}</span><br v-if="doctor.chamber_name">
-                                <span v-if="doctor.chamber_address"><b>CHAMBER ADDRESS:</b> {{doctor.chamber_address}}</span>
+                                <span v-if="doctor.chamber_address"><b>CHAMBER ADDRESS:</b> {{doctor.chamber_address}}</span><br v-if="doctor.chamber_address">
+                                <span v-if="doctor.chamber_availability"><b>CHAMBER AVAILABILITY:</b> {{doctor.chamber_availability}}</span>
                             </p>
                             <!-- <p class="color-white">
                                 {{doctor.designation}}<br><br>
