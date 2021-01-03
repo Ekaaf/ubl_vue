@@ -20,6 +20,7 @@ import Success from '@/pages/Success'
 import Term from '@/pages/Term'
 import Privacy from '@/pages/Privacy'
 import Cookies from '@/pages/Cookies'
+import Freecheckup from '@/pages/Freecheckup'
 
 import guard from '../guard';
 
@@ -54,6 +55,12 @@ const router =  new Router({
             path: '/privacy',
             name: 'Privacy',
             component: Privacy
+        },
+
+        {
+            path: '/freecheckup',
+            name: 'Freecheckup',
+            component: Freecheckup
         },
 
         {
