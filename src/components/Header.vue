@@ -27,8 +27,8 @@
 
                                     <a href="javascript:" class="nav-item nav-link" data-toggle="modal" data-target="#apply_dental_camp_modal" v-if="role_id==3">Apply for Free Sample</a>
 
-                                    <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#loginModal" v-if="!loggedin">Login</a>
-                                    <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#signupModal" v-if="!loggedin">SignUp</a>
+                                    <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#loginModal" v-if="!loggedin" id="loginmenu" @click="loginurl();">Login</a>
+                                    <a class="nav-item nav-link" href="javascript:" data-toggle="modal" data-target="#signupModal" v-if="!loggedin" id="signupmenu" @click="signupurl();">SignUp</a>
                                     <!-- Button trigger modal -->
                                     
 
@@ -107,8 +107,16 @@
             // }).catch(function (error) {
             //     vm.$router.push('/') 
             // });
-          }
+          },
+          loginurl(){
+                window.history.pushState({urlPath:'/login'},"",'/login')
+            },
+
+         signupurl(){
+                window.history.pushState({urlPath:'/signup'},"",'/signup')
+            }
         },
+            
         watch:{
             $route (to, from){
                 var vm = this;

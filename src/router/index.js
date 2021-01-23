@@ -9,6 +9,7 @@ import Router from 'vue-router'
 import Home from '@/pages/Home'
 import AboutUs from '@/pages/AboutUs'
 import ContactUs from '@/pages/ContactUs'
+import Signup from '@/pages/Signup'
 import DoctorDetails from '@/pages/Doctor-details'
 
 import Dashboard from '@/pages/Dashboard'
@@ -79,6 +80,12 @@ const router =  new Router({
             path: '/ContactUs',
             name: 'ContactUs',
             component: ContactUs
+        },
+
+        {
+            path: '/Signup',
+            name: 'Signup',
+            component: Signup
         },
 
         {

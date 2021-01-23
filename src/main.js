@@ -3,6 +3,11 @@ import App from './App.vue'
 import Paginate from 'vuejs-paginate'
 import router from './router'
 import mixin  from './mixin';
+import VueGtag from "vue-gtag";
+
+Vue.use(VueGtag, {
+  config: { id: "UA-136323734-1" }
+});
 
 Vue.config.productionTip = false
 Vue.component('paginate', Paginate)

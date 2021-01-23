@@ -12,6 +12,7 @@
     "core-js": "^2.6.11",
     "promise": "^8.1.0",
     "vue": "^2.6.12",
+    "vue-gtag": "^1.10.0",
     "vue-router": "^3.4.5",
     "vuejs-paginate": "^2.1.0"
   },
