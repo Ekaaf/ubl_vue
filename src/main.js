@@ -7,7 +7,8 @@ import VueGtag from "vue-gtag";
 
 Vue.use(VueGtag, {
   config: { id: "UA-136323734-1" }
-});
+}, router);
+
 
 Vue.config.productionTip = false
 Vue.component('paginate', Paginate)

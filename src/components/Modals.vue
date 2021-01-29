@@ -809,7 +809,7 @@
         
         methods: {
         	imageUrlAlt(){
-                event.target.src = "https://ubl.sensetiveexpert.com/ubl_laravel/public/images/default.jpg"
+                event.target.src = "https://bdsdentist.com/ubl_laravel/public/images/default.jpg"
             },
         	applySave(){
         		axios({	

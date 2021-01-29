@@ -37,7 +37,11 @@
             FindDentist
         },
         methods: {
-
+            track () {
+              this.$gtag.pageview({
+                page_path: '/aaaa',
+              })
+            },
             login(){
 
                 var vm = this;
