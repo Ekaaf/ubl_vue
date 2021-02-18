@@ -59,9 +59,19 @@
 </script>
 
 <style scoped>
-    @media only screen and (max-width: 640px) {
-        .img-fluid{
-            width: 70%;
-        }
+    .color-default{
+        color: #E7012E !important;
     }
+    .contact-form input,
+.contact-form textarea,
+.contact-form button {
+    border: 1px solid #E7012E !important;
+}
+
+input::placeholder {
+    color: #E7012E !important;
+}
+.contact-form button {
+    background: #E7012E;
+}
 </style>
