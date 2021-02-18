@@ -21,7 +21,9 @@ import Success from '@/pages/Success'
 import Term from '@/pages/Term'
 import Privacy from '@/pages/Privacy'
 import Cookies from '@/pages/Cookies'
+import Freedentalcheckup from '@/pages/Freedentalcheckup'
 import Freecheckup from '@/pages/Freecheckup'
+import RegPepsodent from '@/pages/RegPepsodent'
 
 import guard from '../guard';
 
@@ -59,9 +61,21 @@ const router =  new Router({
         },
 
         {
+            path: '/freedentalcheckup',
+            name: 'Freedentalcheckup',
+            component: Freedentalcheckup
+        },
+
+        {
             path: '/freecheckup',
             name: 'Freecheckup',
             component: Freecheckup
+        },
+
+        {
+            path: '/register/pepsodent',
+            name: 'RegPepsodent',
+            component: RegPepsodent
         },
 
         {
