@@ -61,7 +61,7 @@ const router =  new Router({
         },
 
         {
-            path: '/freedentalcheckup',
+            path: '/sensetive',
             name: 'Freedentalcheckup',
             component: Freedentalcheckup
         },
@@ -73,7 +73,7 @@ const router =  new Router({
         },
 
         {
-            path: '/register/pepsodent',
+            path: '/pepsodent',
             name: 'RegPepsodent',
             component: RegPepsodent
         },
