@@ -7,7 +7,7 @@
                     <div class="row justify-content-center py-4" >
                         <div class="col-8 justify-content-center py-1" style="background: white;border-radius: 191px;">
                             <h3 class="justify-content-center" style="font-weight: bold;color: white;text-align: center;;line-height: 164.06%;letter-spacing: 0.05em;background: #E7012E;border-radius: 191px;">
-                                <router-link class="nav-item nav-link"  to="/register/pepsodent" style="color: white;font-family: 'Siyam Rupali';">{{aaaa}}</router-link>
+                                <router-link class="nav-item nav-link"  to="/register/pepsodent" style="color: white;font-family: 'Siyam Rupali';">নিম্নে আপনার তথ্যসমূহ প্রদান করুন</router-link>
                             </h3>
                         </div>
                         
