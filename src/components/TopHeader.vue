@@ -7,7 +7,7 @@
                         <ul>
                             <li><a href="mailto:careline.bd@unilever.com"><i class="fa fa-envelope-o pes" aria-hidden="true"></i>careline.bd@unilever.com</a>
                             </li>
-                            <li><a href="tel:09-666-999-666"><i class="fa fa-phone pes" aria-hidden="true"></i>09-666-999-666  (8 am - 12 pm, 7 days a week)</a></li>
+                            <li><a href="tel:09-666-999-666"><i class="fa fa-phone pes" aria-hidden="true"></i>09-666-999-666  (8 am - 8 pm, 7 days a week)</a></li>
                         </ul>
                     </div>
 
