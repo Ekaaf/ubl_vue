@@ -3,7 +3,7 @@
     	<section class="slider" style="text-align: center;">
             <img class="w-100 mt-2" src="/assets/22.png">
             <router-link to="/pepsodent" >
-                <img class="w-25 mb-2" src="/assets/Group 271.png" style="margin-top: -12%;">
+                <img class="w-25 mb-2" src="/assets/271.jpeg" style="margin-top: -12%;">
             </router-link>
             <img class="w-100" src="/assets/11.png">
             <router-link to="/sensetive" >
