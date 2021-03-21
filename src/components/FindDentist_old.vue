@@ -47,7 +47,7 @@
                     <div class="col-md-8 select-var-font find-dentist-text">
                         <div class="row mb-5"  v-for="doctor in doctors">
                             <div class="col-4 text-center">
-                                <img class="img-fluid"  :src="'http://bdsdentist.com/ubl_laravel/' + doctor.imagelink">
+                                <img class="img-fluid"  :src="'http://bdsdentist.com/ubl/' + doctor.imagelink">
                                 <router-link class="btn btn-readmore rounded px-4 p-2 mt-3" v-bind:to="'/Doctor/' + doctor.user_id">More Details</router-link>
                             </div>
                             <div class="col-8" style="color: white;">

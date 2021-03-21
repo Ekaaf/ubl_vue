@@ -61,7 +61,7 @@
                     <div style="border: 1px solid white; border-radius: 10px;" v-for="(doctor, index) in doctors" class="col-6 color-white mb-5 p-3" >
                         <div class="row">
                             <div class="col-md-5 mobile-doc">
-                                <img  :src="'https://bdsdentist.com/ubl_laravel/' + doctor.imagelink"  @error="imageUrlAlt" class="img-fluid">
+                                <img  :src="'https://bdsdentist.com/ubl/' + doctor.imagelink"  @error="imageUrlAlt" class="img-fluid">
                             </div>
                             <div class="col-md-7">
                                 <p >
@@ -133,7 +133,7 @@
         methods: {
 
             imageUrlAlt(){
-                event.target.src = "https://bdsdentist.com/ubl_laravel/public/images/default.jpg"
+                event.target.src = "https://bdsdentist.com/ubl/public/images/default.jpg"
             },
             findDoctor(){
             	var vm = this;

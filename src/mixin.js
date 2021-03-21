@@ -14,8 +14,8 @@ export default {
         },
         getApiUrl(){
             // return 'https://'+document.domain+'/uniliver_laravel/api/auth/'
-            return 'https://bdsdentist.com/ubl_laravel/api/'
-            // return 'http://localhost/ubl_laravel/api/'
+            return 'https://bdsdentist.com/ubl/api/'
+            // return 'http://localhost/ubl/api/'
             // if(document.domain=='localhost'){
             //     return 'http://'+document.domain+'/uniliver_laravel/api/auth/'
             // }

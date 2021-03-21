@@ -117,7 +117,7 @@
 	                        <div class="form-group row mb-3">
 	                        	<label for="staticEmail" class="col-sm-3 col-form-label color-white">Image</label>
 	                            <div class="col-sm-9">
-	                            	<img src="https://bdsdentist.com/ubl_laravel/public/images/default.jpg" class="w-25" id="previewImage" @error="imageUrlAlt">
+	                            	<img src="https://bdsdentist.com/ubl/public/images/default.jpg" class="w-25" id="previewImage" @error="imageUrlAlt">
 	                            	<button type="button" @click="clearImage();" id="clearButton" style="display:none;">Clear</button>
 	                            </div>
 	                            
@@ -809,7 +809,7 @@
         
         methods: {
         	imageUrlAlt(){
-                event.target.src = "https://bdsdentist.com/ubl_laravel/public/images/default.jpg"
+                event.target.src = "https://bdsdentist.com/ubl/public/images/default.jpg"
             },
         	applySave(){
         		axios({	
@@ -878,7 +878,7 @@
 
         	},
         	clearImage(){
-        		$("#previewImage").attr("src","https://bdsdentist.com/ubl_laravel/public/images/default.jpg");
+        		$("#previewImage").attr("src","https://bdsdentist.com/ubl/public/images/default.jpg");
         		$("#clearButton").hide();
         	},
         	signUp(){
@@ -1200,7 +1200,7 @@
                 	vm.latitude= response.data[0].latitude;
                 	vm.longitude= response.data[0].longitude;
                 	$("#doctor_id").val(response.data[0].user_id);
-                	$("#previewImage").attr("src","https://bdsdentist.com/ubl_laravel/public/images/doctor/"+response.data[0].bmdc_number+".jpg");
+                	$("#previewImage").attr("src","https://bdsdentist.com/ubl/public/images/doctor/"+response.data[0].bmdc_number+".jpg");
                     
                 }).catch(function (error) {
                     vm.error = error

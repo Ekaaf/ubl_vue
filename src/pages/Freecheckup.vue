@@ -5,10 +5,10 @@
             <router-link to="/pepsodent" >
                 <img class="w-25 mb-2" src="/assets/271.jpeg" style="margin-top: -12%;">
             </router-link>
-            <img class="w-100" src="/assets/11.png">
+            <!-- <img class="w-100" src="/assets/11.png">
             <router-link to="/sensetive" >
                 <img class="w-25" src="/assets/Group 270.png" style="margin-top: -12%;">
-            </router-link>
+            </router-link> -->
             
             <!-- <div class="container-fluid px-5" style="background: #E7012E;">
         		<div class="row justify-content-center py-5" >

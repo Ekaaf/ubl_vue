@@ -20,7 +20,7 @@
                                         Registration for<br />
                                         <span>Free Dental Camp</span>
                                     </a> -->
-                                    <a href="javascript:" class="nav-item nav-link" data-toggle="modal" data-target="#reg_dental_camp_modal" >Registration for Free Dental Camp</a>
+                                    <!-- <a href="javascript:" class="nav-item nav-link" data-toggle="modal" data-target="#reg_dental_camp_modal" >Registration for Free Dental Camp</a> -->
 
                                     <router-link class="nav-item nav-link" v-bind:class = "(currentUrl=='Freecheckup')?'active':''"  
                                     to="/freecheckup" >Free CheckUp</router-link>
