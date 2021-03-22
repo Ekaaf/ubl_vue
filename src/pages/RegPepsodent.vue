@@ -6,8 +6,8 @@
                 <div class="container-fluid px-md-5">
                     <div class="row justify-content-center py-4" >
                         <div class="col-12 justify-content-center py-1" style="background: white;border-radius: 191px;">
-                            <h3 class="justify-content-center" style="font-weight: bold;color: white;text-align: center;;line-height: 164.06%;letter-spacing: 0.05em;background: #E7012E;border-radius: 191px;">
-                                <span class="nav-item nav-link" style="color: white;font-family: 'Siyam Rupali';" id="header1">নিম্নে আপনার তথ্যসমূহ প্রদান করুন</span>
+                            <h3 class="justify-content-center" style="font-weight: bold;color: #E7012E;text-align: center;;line-height: 164.06%;letter-spacing: 0.05em;border:1px solid #E7012E;;border-radius: 191px;">
+                                <span class="nav-item nav-link" style="color: #E7012E;font-family: 'Siyam Rupali';" id="header1">নিম্নে আপনার তথ্যসমূহ প্রদান করুন</span>
                             </h3>
                         </div>
                         
@@ -40,12 +40,12 @@
                     </div>
                     <div class="row justify-content-center my-2">
                         <div class="col-6 justify-content-center py-3" style="background: white;border-radius: 191px;">
-                            <h3 class="justify-content-center py-2" id="header2" style="font-weight: bold;color: white;text-align: center;;line-height: 164.06%;letter-spacing: 0.05em;background: #E7012E;border-radius: 191px;">
+                            <h3 class="justify-content-center py-2" id="header2" style="font-weight: bold;color: #E7012E;text-align: center;;line-height: 164.06%;letter-spacing: 0.05em;border:1px solid #E7012E;border-radius: 191px;">
                                 শর্তাবলী
                             </h3>
                         </div>
                     </div>
-                    <div class="contact-form p-5" style="background: #E7012E; color: white;border-radius: 50px;"> 
+                    <div class="contact-form p-5" style="border:1px solid #E7012E; color: #E7012E;border-radius: 50px;"> 
                         <span>
                             ১. ফ্রি ডেন্টাল চেকআপ পেতে পেপসোডেন্ট টুথপেস্ট এর "ফ্রি ডেন্টাল চেকআপ" লিখিত ২০০গ্রাম এর একটি খালি মোড়ক ডাক্তারের চেম্বারে জমা দিতে হবে। 
                         </span>
@@ -70,12 +70,12 @@
 
                     <div class="row justify-content-center my-2">
                         <div class="col-6 justify-content-center py-3" style="background: white;border-radius: 191px;">
-                            <h3 class="justify-content-center py-2" id="header2" style="font-weight: bold;color: white;text-align: center;;line-height: 164.06%;letter-spacing: 0.05em;background: #E7012E;border-radius: 191px;">
+                            <h3 class="justify-content-center py-2" id="header2" style="font-weight: bold;color: #E7012E;text-align: center;;line-height: 164.06%;letter-spacing: 0.05em;border:1px solid #E7012E;border-radius: 191px;">
                                 Terms & Conditions
                             </h3>
                         </div>
                     </div>
-                    <div class="contact-form p-5" style="background: #E7012E; color: white;border-radius: 50px;"> 
+                    <div class="contact-form p-5" style="border:1px solid #E7012E; color: #E7012E;border-radius: 50px;"> 
                         <span>
                             1. A free dental checkup can be availed from a dentist's chamber  providing an empty carton of Pepsodent toothpaste 200g, imprinted with ‘Free Dental Checkup’ on it.
                         </span>
@@ -104,7 +104,7 @@
                     <div class="row text-center mt-4">
                         <div class="col-md-5"></div>
                         <div class="col-md-2 text-center">
-                            <button type="button" class="btn text-white rounded px-4 p-2" @click="savePepsodant();" style="border-radius: 50px !important;background: red;">সাবমিট করুন</button>
+                            <button type="button" class="btn rounded px-4 p-2" @click="savePepsodant();" style="border-radius: 50px !important;border:1px solid #E7012E;color:#E7012E;">সাবমিট করুন</button>
                         </div>
                         <div class="col-md-5"></div>
                     </div>
