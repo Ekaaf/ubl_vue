@@ -23,7 +23,7 @@
                                     <!-- <a href="javascript:" class="nav-item nav-link" data-toggle="modal" data-target="#reg_dental_camp_modal" >Registration for Free Dental Camp</a> -->
 
                                     <router-link class="nav-item nav-link" v-bind:class = "(currentUrl=='Freecheckup')?'active':''"  
-                                    to="/freecheckup" >Free CheckUp</router-link>
+                                    to="/freecheckup" >Free Dental CheckUp</router-link>
 
                                     <a href="javascript:" class="nav-item nav-link" data-toggle="modal" data-target="#apply_dental_camp_modal" v-if="role_id==3">Apply for Free Sample</a>
 

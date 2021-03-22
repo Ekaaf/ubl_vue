@@ -47,19 +47,20 @@
                     </div>
                     <div class="contact-form p-5" style="background: #E7012E; color: white;border-radius: 50px;"> 
                         <span>
-                            ১. ফ্রী ডেন্টাল চেকআপ পেতে পেপসোডেন্ট টুথপেস্ট এর একটি খালি মোড়ক  ডাক্তারের চেম্বারে জমা দিতে হবে। 
+                            ১. ফ্রি ডেন্টাল চেকআপ পেতে পেপসোডেন্ট টুথপেস্ট এর "ফ্রি ডেন্টাল চেকআপ" লিখিত ২০০গ্রাম এর একটি খালি মোড়ক ডাক্তারের চেম্বারে জমা দিতে হবে। 
                         </span>
                         <br><br>
                         <span>
-                            ২. এই ফ্রী ডেন্টাল চেকআপ এর অফার আগামী এক মাস পর্যন্ত অব্যাহত থাকবে।
+                            ২. এই ফ্রি ডেন্টাল চেকআপ এর অফার আগামী ৩০শে এপ্রিল, ২০২১ পর্যন্ত অব্যাহত থাকবে।
                         </span>
                         <br><br>
                         <span>
-                            ৩. এই অফারে শুধুমাত্র একবার বিনামূল্যে চেকআপ এবং পরামর্শ অন্তর্ভুক্ত থাকবে। চেকআপ পরবর্তী কোন চিকিৎসা, ওষুধ ইত্যাদি এই অফারের আওতাধীন হিসেবে বিবেচনা করা হবে না।
+                            ৩. এই অফারে শুধুমাত্র একবার বিনামূল্যে চেকআপ এবং পরামর্শ অন্তর্ভুক্ত থাকবে। চেকআপ পরবর্তী কোন ডায়াগনোসিস, চিকিৎসা, ওষুধ ইত্যাদি এই অফারের আওতাধীন হিসেবে বিবেচিত হবে না। 
                         </span>
                         <br><br>
                         <span>
                             ৪. ইউনিলিভার বাংলাদেশ লিমিটেড যেকোনো সময়ে এই অফারের শর্তাবলী এবং সময়কাল পরিবর্তন, সংশোধন বা বাতিল করতে পারবে।
+
                         </span>
                         <br><br>
                         <span>
@@ -67,6 +68,35 @@
                         </span>
                     </div>
 
+                    <div class="row justify-content-center my-2">
+                        <div class="col-6 justify-content-center py-3" style="background: white;border-radius: 191px;">
+                            <h3 class="justify-content-center py-2" id="header2" style="font-weight: bold;color: white;text-align: center;;line-height: 164.06%;letter-spacing: 0.05em;background: #E7012E;border-radius: 191px;">
+                                Terms & Conditions
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="contact-form p-5" style="background: #E7012E; color: white;border-radius: 50px;"> 
+                        <span>
+                            1. A free dental checkup can be availed from a dentist's chamber  providing an empty carton of Pepsodent toothpaste 200g, imprinted with ‘Free Dental Checkup’ on it.
+                        </span>
+                        <br><br>
+                        <span>
+                            2. This offer will continue till April 30, 2021
+                        </span>
+                        <br><br>
+                        <span>
+                            3. This offer includes only one free dental checkup and consultation. No post-checkup diagnosis, treatment, medication, etc. will be considered as subject to this offer.
+                        </span>
+                        <br><br>
+                        <span>
+                            4. Unilever Bangladesh Limited reserves all rights to change, amend or cancel the terms and conditions of this offer at any time.
+
+                        </span>
+                        <br><br>
+                        <span>
+                            5. All images and videos associated with this program will be used for marketing and social media platforms of Pepsodent or Unilever Bangladesh Limited.
+                        </span>
+                    </div>
                     <div class="form-check mt-4" style="color: #E7012E;text-align: center;">
                         <input type="checkbox" class="form-check-input" id="acceptCheck" value="1">
                         <label class="form-check-label" for="exampleCheck1">সকল শর্তাবলী মেনে আমি উক্ত ক্যাম্পেইনে অংশগ্রহণ করলাম</label>
