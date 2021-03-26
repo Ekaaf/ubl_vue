@@ -42,7 +42,7 @@
 	        </div>
 	    </section>
 	    <div class="bottom" id="alert">
-			The Sensetive Expert website employs cookies to improve your user experience. We have updated our cookie policy to reflect changes in the law on cookies and tracking technologies used on websites. If you continue on this website, you will be providing your consent to our use of cookies.
+			The Sensitive Expert website employs cookies to improve your user experience. We have updated our cookie policy to reflect changes in the law on cookies and tracking technologies used on websites. If you continue on this website, you will be providing your consent to our use of cookies.
 		  	<br>
 
 		  	<router-link to="/cookies" tag="button" class="mr-1" onclick="accpetCookie()"> Learn More</router-link>
