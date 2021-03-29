@@ -17,25 +17,25 @@
                     <div class="row">
 
                         <div class="form-group col-md-12 col-sm-12">
-                            <input type="text" class="form-control border-round" v-model="name" id="name" name="name" placeholder="নাম">
+                            <input type="text" class="form-control border-round" v-model="name" id="name" name="name" placeholder="নাম/Name">
                         </div>
                         <div class="form-group col-md-12 col-sm-12">
-                            <input type="text" class="form-control border-round" v-model="email" id="email" name="email" rows="3" placeholder="ইমেইল">
+                            <input type="text" class="form-control border-round" v-model="email" id="email" name="email" rows="3" placeholder="ইমেইল/Email">
                         </div>
                         <div class="form-group col-md-12 col-sm-12">
-                            <input type="text" class="form-control border-round" v-model="phone" id="phone" name="phone" rows="3" placeholder="ফোন নাম্বার">
+                            <input type="text" class="form-control border-round" v-model="phone" id="phone" name="phone" rows="3" placeholder="ফোন নাম্বার/Phone No.">
                         </div>
                         <div class="form-group col-md-6 col-sm-12">
-                            <input type="text" class="form-control border-round" v-model="address" id="address" name="address" placeholder="ঠিকানা">
+                            <input type="text" class="form-control border-round" v-model="address" id="address" name="address" placeholder="ঠিকানা/Address">
                         </div>
                         <div class="form-group col-md-6 col-sm-12">
-                            <input type="email" class="form-control border-round" v-model="upazila" id="upazila" name="upazila" placeholder="উপজেলা">
+                            <input type="email" class="form-control border-round" v-model="upazila" id="upazila" name="upazila" placeholder="উপজেলা/Upazila">
                         </div>
                         <div class="form-group col-md-6 col-sm-12">
-                            <input type="text" class="form-control border-round" v-model="district" id="district" name="district" placeholder="জেলা">
+                            <input type="text" class="form-control border-round" v-model="district" id="district" name="district" placeholder="জেলা/District">
                         </div>
                         <div class="form-group col-md-6 col-sm-12">
-                            <input type="email" class="form-control border-round" v-model="division" id="division" name="division" placeholder="বিভাগ">
+                            <input type="email" class="form-control border-round" v-model="division" id="division" name="division" placeholder="বিভাগ/Division">
                         </div>
                     </div>
                     <div class="row justify-content-center my-2">

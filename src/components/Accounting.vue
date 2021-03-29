@@ -5,7 +5,7 @@
                 <div class="custom-width pb-2">
                     <div class="icon-color">
                         <i class="fa fa-thumbs-o-up style" aria-hidden="true"></i><br>
-                        <h1 class="bold">181</h1>
+                        <h1 class="bold">356</h1>
                         <p class="fdc">FDC Organized</p>
                     </div>
                 </div>
@@ -13,7 +13,7 @@
                 <div class="custom-width pb-2">
                     <div class="icon-color">
                         <i class="fa fa-users style" aria-hidden="true"></i>
-                        <h1 class="bold">728672</h1>
+                        <h1 class="bold">1750998</h1>
                         <p class="fdc">Patients Reached</p>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
                 <div class="custom-width pb-2">
                     <div class="icon-color">
                         <i class="fa fa-spinner style" aria-hidden="true"></i>
-                        <h1 class="bold">750524</h1>
+                        <h1 class="bold">1773600</h1>
                         <p class="fdc">Sample Distributed</p>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                 <div class="custom-width pb-2">
                     <div class="icon-color">
                         <i class="fa fa-user-md style" aria-hidden="true"></i>
-                        <h1 class="bold">19</h1>
+                        <h1 class="bold">25</h1>
                         <p class="fdc">Seminar Organized</p>
                     </div>
                 </div>
