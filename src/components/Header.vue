@@ -44,7 +44,7 @@
 
 
                                     <li class="dropdown doctorbutton" v-if="role_id==3">
-                                        <button class="btn btn-secondary dropdown-toggle bg-default" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</button>
+                                        <button class="btn btn-secondary dropdown-toggle bg-default" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{user.name}}</button>
                                         <div class="dropdown-menu m-0" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#user_edit">Edit Profile</a>
                                             <a class="dropdown-item py-1 px-2" href="javascript:" data-toggle="modal" data-target="#change_pass">Change Password</a>

@@ -87,6 +87,47 @@ export default {
             sessionStorage.setItem("counter", true);
             vm.counterup();
         }
+        if (window.location.href.indexOf("activate") > -1) {
+            var arr=window.location.href.split('/');
+            var verify = arr[5].split('?')
+            if(vm.loggedin == true){
+                return false;
+            }
+            axios({
+                    url: this.getApiUrl()+"postlogin",
+                    method: "post",
+                    data: {
+                        verify: verify[0]
+                    },
+                    
+            }).then(function (response) {
+                if(response.data.success){
+                    vm.loggedin = true;
+                    localStorage.setItem('accessToken',JSON.stringify(response.data));
+                    window.location.href = "http://bdsdentist.com/";
+                }
+                else{
+                    alert("Please activate your account by checking your email");
+                }
+                
+                // vm.$router.push('/user/dashboard') 
+            }).catch(function (error) {
+                console.log(error)
+                if(error.response.data.success == false){
+                    // alert("Email and password do not match");
+                    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                    if(!emailReg.test(vm.login_email) || vm.login_email==""){
+                    // if($("#email").val()==""){
+                        alert("BMDC No. and password do not match");
+                        // return false;
+
+                    }
+                    else{
+                        alert("Email and password do not match");
+                    }
+                }
+            });
+        }
     }
 }
 </script>
