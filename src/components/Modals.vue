@@ -1007,6 +1007,7 @@
 	                	$("#con_password").val("");
 	                	$("#role_id").val("");
 	                	$("#agree").val("");
+	                	window.history.pushState({urlPath:'/complete'},"",'/complete')
                 	}
                 	
                     // vm.$router.push('/user/success') 
